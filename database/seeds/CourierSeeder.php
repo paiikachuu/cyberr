@@ -12,21 +12,26 @@ class CourierSeeder extends Seeder
      */
     public function run()
     {
-        $items = array(
-            'Grab Express',
-            'Lala Move',
-            'J&T Express',
-            'Ninjavan',
-            'Angkas',
-            'Pickup'
-        );
+        DB::table('couriers')->insert([
+            [
+                'name' => 'Grab Express',
+            ],
+            [
+                'name' => 'Lala Move',
+            ],
+            [
+                'name' => 'J&T Express',
+            ],
+            [
+                'name' => 'Ninjavan',
+            ],
+            [
+                'name' => 'Angkas',
+            ],
+            [
+                'name' => 'Pickup',
+            ],
 
-        DB::table('couriers')->truncate();
-
-        foreach ($items as $item) {
-            Courier::create([
-                'name' => $item,    
-            ]);
-        }
+        ]);
     }
 }

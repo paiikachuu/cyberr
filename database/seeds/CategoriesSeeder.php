@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Categories;
 
-class Categories extends Seeder
+class CategoriesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,12 +19,13 @@ class Categories extends Seeder
             'Watches'
         );
 
-        DB::table('categories')->truncate();
+       // DB::table('categories')->truncate();
 
         foreach ($categories as $category) {
-            Courier::create([
-                'name' => $category,    
+            DB::table('categories')->insert([
+                'name' => $category, 
             ]);
+           
         }
     }
 }
