@@ -13,13 +13,13 @@ class CategoriesSeeder extends Seeder
     public function run()
     {
         $categories = array(
-            'Laptops',
-            'Smartphones',
-            'Wireless Speakers',
-            'Watches'
+            'Laptop',
+            'Mobile',
+            'Tablet',
+            'Desktop'
         );
 
-       // DB::table('categories')->truncate();
+        DB::table('categories')->truncate();
 
         foreach ($categories as $category) {
             DB::table('categories')->insert([
