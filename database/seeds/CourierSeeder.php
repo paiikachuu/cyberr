@@ -12,6 +12,7 @@ class CourierSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('couriers')->truncate();
         DB::table('couriers')->insert([
             [
                 'name' => 'Grab Express',

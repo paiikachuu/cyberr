@@ -12,6 +12,8 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('categories')->truncate();
+        
         $categories = array(
             'Laptop',
             'Mobile',
