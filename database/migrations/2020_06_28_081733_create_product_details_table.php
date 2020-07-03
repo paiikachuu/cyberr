@@ -28,8 +28,6 @@ class CreateProductDetailsTable extends Migration
             $table->string('sound');
             $table->string('camera');
             $table->timestamps();
-
-            // $table->foreign('product_id')->references('id')->on('products');
         });
     }
 

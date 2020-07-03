@@ -17,8 +17,6 @@ class CreateTagsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('product_id');
             $table->timestamps();
-
-            // $table->foreign('product_id')->references('id')->on($tableNames['products']);
         });
     }
 
