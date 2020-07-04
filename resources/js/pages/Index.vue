@@ -2,7 +2,7 @@
   <div>
     <SearchBar />
     <Banner />
-    <CyberrSale />
+    <FlashSaleTeaser />
     <Latest />
     <Footer />
   </div>
@@ -13,7 +13,7 @@ export default {
   components: {
     SearchBar: () => import("../components/Index/SearchBar"),
     Banner: () => import("../components/Index/Banner"),
-    CyberrSale: () => import("../components/Index/CyberrSale"),
+    FlashSaleTeaser: () => import("../components/Index/FlashSaleTeaser"),
     Latest: () => import("../components/Index/Latest"),
     Footer: () => import("../components/Index/Footer"),
   }
