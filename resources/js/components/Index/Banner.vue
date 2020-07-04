@@ -4,10 +4,9 @@
       <div class="row">
         <div class="col-3">
          <ul>
-             <li><a href="">Laptops & Peripherals</a></li>
-             <li><a href="">Smartphones</a></li>
-             <li><a href="">Watches</a></li>
-             <li><a href="">Wireless Speakers</a></li>
+             <li><a href="">Laptops</a></li>
+             <li><a href="">Mobile</a></li>
+             <li><a href="">Desktop</a></li>
              <hr>
              <button class="btn btn-outline-primary">View more</button>
          </ul>
