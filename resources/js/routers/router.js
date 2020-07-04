@@ -5,6 +5,9 @@ Vue.use(VueRouter);
 
 const routers = [
     {   path: '/', name: 'app', component: () => import('../pages/Index') },
+    {   path: '/product-detail', name: 'admin', component: () => import('../pages/ProductDetail') },
+
+    // Admin Side
     {   path: '/admin', name: 'admin', component: () => import('../pages/Admin/Dashboard') },
   ];
 
