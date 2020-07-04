@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Categories;
+use App\Models\Categories;
 
 class CategoriesSeeder extends Seeder
 {

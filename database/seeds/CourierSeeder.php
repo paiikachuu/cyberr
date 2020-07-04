@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Courier;
+use App\Models\Courier;
 
 class CourierSeeder extends Seeder
 {
