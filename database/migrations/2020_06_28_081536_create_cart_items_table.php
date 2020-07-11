@@ -17,7 +17,6 @@ class CreateCartItemsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_detail_id');
-            $table->boolean('saved_for_later');
             $table->unsignedBigInteger('quantity');
             $table->timestamps();
         });
