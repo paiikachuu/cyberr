@@ -1,14 +1,13 @@
 <template>
-  <div class="container">
-    <h4>Flash Sale</h4>
+  <div class="container pt-4">
     <div class="card">
-      <div class="card-body pt-5 pb-5">
-        <div class="col-12">
-          <div class="float-left">Ending in: 00:07:56</div>
-          <div class="float-right text-danger">
-            <router-link :to="'register'">View</router-link>
-          </div>
+      <div class="card-header">
+        <b>Flash Sale &nbsp;</b> <i class="fa fa-bolt text-danger"></i>
+        <div class="float-right text-danger">
+          <router-link :to="'register'">Go to shop</router-link>
         </div>
+      </div>
+      <div class="card-body">
         <div class="row col-12">
           <div class="card m-1 product" v-for="(product, i) in products" :key="i">
             <img class="card-img-top" src="/images/laptop-nitro5.png" />
@@ -65,10 +64,6 @@ export default {
 </script>
 
 <style scoped>
-.override-jumbotron {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 .product {
   width: 10rem;
 }

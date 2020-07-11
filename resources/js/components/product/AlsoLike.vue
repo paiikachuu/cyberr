@@ -1,13 +1,13 @@
 <template>
-  <div class="container pt-4">
+  <div class="pt-4">
     <div class="card">
       <div class="card-header">
-        <b>Latest Products</b>
+        <b>You May Also Like</b>
         <div class="float-right text-danger">
-          <router-link :to="'register'">Go to shop</router-link>
+          <router-link :to="'register'">View all</router-link>
         </div>
       </div>
-      <div class="card-body"> <h5 class="text-danger">No latest products.</h5></div>
+      <div class="card-body"> <h5 class="text-danger">No records found.</h5></div>
     </div>
   </div>
 </template>

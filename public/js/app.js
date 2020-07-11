@@ -2228,7 +2228,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Footer: function Footer() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/layout/Footer */ "./resources/js/components/layout/Footer.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/layout/Footer */ "./resources/js/components/layout/Footer.vue"));
     }
   }
 });
@@ -53768,44 +53768,44 @@ var routers = [{
   path: '/',
   name: 'app',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../pages/Index */ "./resources/js/pages/Index.vue"));
+    return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ../pages/Index */ "./resources/js/pages/Index.vue"));
   }
 }, {
   path: '/login',
   name: 'login',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../pages/auth/Login */ "./resources/js/pages/auth/Login.vue"));
+    return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ../pages/auth/Login */ "./resources/js/pages/auth/Login.vue"));
   }
 }, {
   path: '/register',
   name: 'register',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../pages/auth/Register */ "./resources/js/pages/auth/Register.vue"));
+    return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ../pages/auth/Register */ "./resources/js/pages/auth/Register.vue"));
   }
 }, {
   path: '/product-detail',
   name: 'product-detail',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../pages/ProductDetail */ "./resources/js/pages/ProductDetail.vue"));
+    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../pages/Product */ "./resources/js/pages/Product.vue"));
   }
 }, {
   path: '/cart',
   name: 'cart',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../pages/Cart */ "./resources/js/pages/Cart.vue"));
+    return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../pages/Cart */ "./resources/js/pages/Cart.vue"));
   }
 }, {
   path: '/checkout',
   name: 'checkout',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../pages/Checkout */ "./resources/js/pages/Checkout.vue"));
+    return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ../pages/Checkout */ "./resources/js/pages/Checkout.vue"));
   }
 }, // Admin Side
 {
   path: '/admin',
   name: 'admin',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../pages/admin/Dashboard */ "./resources/js/pages/admin/Dashboard.vue"));
+    return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ../pages/admin/Dashboard */ "./resources/js/pages/admin/Dashboard.vue"));
   }
 }];
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({

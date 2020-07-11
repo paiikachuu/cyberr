@@ -44,7 +44,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.loadProducts();
@@ -85,7 +84,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.override-jumbotron[data-v-3d344fcf] {\r\n  padding-top: 15px;\r\n  padding-bottom: 15px;\n}\n.product[data-v-3d344fcf] {\r\n  width: 10rem;\n}\r\n", ""]);
+exports.push([module.i, "\n.product[data-v-3d344fcf] {\r\n  width: 10rem;\n}\r\n", ""]);
 
 // exports
 
@@ -137,26 +136,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("h4", [_vm._v("Flash Sale")]),
-    _vm._v(" "),
+  return _c("div", { staticClass: "container pt-4" }, [
     _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-body pt-5 pb-5" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("div", { staticClass: "float-left" }, [
-            _vm._v("Ending in: 00:07:56")
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "float-right text-danger" },
-            [
-              _c("router-link", { attrs: { to: "register" } }, [_vm._v("View")])
-            ],
-            1
-          )
-        ]),
+      _c("div", { staticClass: "card-header" }, [
+        _c("b", [_vm._v("Flash Sale  ")]),
         _vm._v(" "),
+        _c("i", { staticClass: "fa fa-bolt text-danger" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "float-right text-danger" },
+          [
+            _c("router-link", { attrs: { to: "register" } }, [
+              _vm._v("Go to shop")
+            ])
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
         _c(
           "div",
           { staticClass: "row col-12" },
