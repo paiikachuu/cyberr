@@ -38,20 +38,18 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <router-link class="nav-link"  :to="'login'">Login</router-link>
                             </li>
-                            @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <router-link class="nav-link"  :to="'register'">Register</router-link>
                                 </li>
-                            @endif
                         @else
                             <li class="nav-item dropdown inline">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{-- {{ Auth::user()->name }}  --}}
+                                    <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -72,7 +70,8 @@
             </div>
         </nav>
         <main class="py-4">
-            @yield('content')
+        @yield('content')
+              <app></app>
         </main>
     </div>
 </body>

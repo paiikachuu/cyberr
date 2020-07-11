@@ -1,13 +1,12 @@
 import Vue from 'vue'
-import vueroute from './routers/router'
-import App from './pages/App'
+import Routes from './routers/router'
+import App from './pages/App' 
+import '@fortawesome/fontawesome-free/css/all.css'
 
 require('./bootstrap');
-import '@fortawesome/fontawesome-free/css/all.css'
+
   
 const app = new Vue({
-  components: {
-    App
-  }, 
-  router: vueroute
+  components: {App}, 
+  router: Routes
 }).$mount('#app')

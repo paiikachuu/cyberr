@@ -1,13 +1,14 @@
 <template>
-<div>
-  <router-view></router-view>
-</div>
+  <div>
+    <router-view></router-view>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-
-
 export default {
-  components: {}
+  components: {
+    Footer: () => import("../components/layout/Footer")
+  }
 };
 </script>

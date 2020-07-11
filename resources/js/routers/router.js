@@ -5,10 +5,12 @@ Vue.use(VueRouter);
 
 const routers = [
     {   path: '/', name: 'app', component: () => import('../pages/Index') },
-    {   path: '/product-detail', name: 'admin', component: () => import('../pages/ProductDetail') },
+    {   path: '/login', name: 'login', component: () => import('../pages/auth/Login') },
+    {   path: '/register', name: 'register', component: () => import('../pages/auth/Register') },
+    {   path: '/product-detail', name: 'product-detail', component: () => import('../pages/ProductDetail') },
 
     // Admin Side
-    {   path: '/admin', name: 'admin', component: () => import('../pages/Admin/Dashboard') },
+    {   path: '/admin', name: 'admin', component: () => import('../pages/admin/Dashboard') },
   ];
 
 export default new VueRouter({

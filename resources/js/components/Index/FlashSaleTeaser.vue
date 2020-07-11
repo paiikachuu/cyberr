@@ -4,7 +4,7 @@
     <div class="jumbotron override-jumbotron">
       <div class="col-12">
         <div class="float-left">Ending in: 00:07:56</div>
-        <div class="float-right text-danger"><a href="/all-flash-sale"> Shop now</a></div>
+        <div class="float-right text-danger"> <router-link :to="'register'">View</router-link></div>
       </div>
       <div class="row col-12">
         <div class="card m-1 product" v-for="(product, i) in products" :key="i">

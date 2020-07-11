@@ -18,23 +18,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     SearchBar: function SearchBar() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../components/Index/SearchBar */ "./resources/js/components/Index/SearchBar.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../components/Index/SearchBar */ "./resources/js/components/Index/SearchBar.vue"));
     },
     Banner: function Banner() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/Index/Banner */ "./resources/js/components/Index/Banner.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../components/Index/Banner */ "./resources/js/components/Index/Banner.vue"));
     },
-    CyberrSale: function CyberrSale() {
-      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../components/Index/CyberrSale */ "./resources/js/components/Index/CyberrSale.vue"));
+    FlashSaleTeaser: function FlashSaleTeaser() {
+      return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../components/Index/FlashSaleTeaser */ "./resources/js/components/Index/FlashSaleTeaser.vue"));
     },
     Latest: function Latest() {
       return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/Index/Latest */ "./resources/js/components/Index/Latest.vue"));
-    },
-    Footer: function Footer() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../components/Index/Footer */ "./resources/js/components/Index/Footer.vue"));
     }
   }
 });
@@ -63,11 +59,9 @@ var render = function() {
       _vm._v(" "),
       _c("Banner"),
       _vm._v(" "),
-      _c("CyberrSale"),
+      _c("FlashSaleTeaser"),
       _vm._v(" "),
-      _c("Latest"),
-      _vm._v(" "),
-      _c("Footer")
+      _c("Latest")
     ],
     1
   )

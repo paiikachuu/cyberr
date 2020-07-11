@@ -4,7 +4,6 @@
     <Banner />
     <FlashSaleTeaser />
     <Latest />
-    <Footer />
   </div>
 </template>
 
@@ -14,8 +13,7 @@ export default {
     SearchBar: () => import("../components/Index/SearchBar"),
     Banner: () => import("../components/Index/Banner"),
     FlashSaleTeaser: () => import("../components/Index/FlashSaleTeaser"),
-    Latest: () => import("../components/Index/Latest"),
-    Footer: () => import("../components/Index/Footer"),
+    Latest: () => import("../components/Index/Latest")
   }
 };
 </script>
