@@ -7,28 +7,25 @@
             <div class="img-big-wrap">
               <div>
                 <a href="#">
-                  <img src="/images/cyberr-default-image.jpg" />
+                  <img src="/images/laptop-nitro5.png" />
                 </a>
               </div>
             </div>
-            <!-- slider-product.// -->
             <div class="img-small-wrap">
               <div class="item-gallery">
-                <img src="https://s9.postimg.org/tupxkvfj3/image.jpg" />
+                <img src="/images/laptop-nitro5.png" />
               </div>
               <div class="item-gallery">
-                <img src="https://s9.postimg.org/tupxkvfj3/image.jpg" />
+                <img src="/images/laptop-nitro5.png" />
               </div>
               <div class="item-gallery">
-                <img src="https://s9.postimg.org/tupxkvfj3/image.jpg" />
+                <img src="/images/laptop-nitro5.png" />
               </div>
               <div class="item-gallery">
-                <img src="https://s9.postimg.org/tupxkvfj3/image.jpg" />
+                <img src="/images/laptop-nitro5.png" />
               </div>
             </div>
-            <!-- slider-nav.// -->
           </article>
-          <!-- gallery-wrap .end// -->
         </aside>
         <aside class="col-sm-7">
           <article class="card-body p-5">
@@ -41,7 +38,6 @@
               </span>
               <span>/per kg</span>
             </p>
-            <!-- price-detail-wrap .// -->
             <dl class="item-property">
               <dt>Description</dt>
               <dd>
@@ -56,17 +52,14 @@
               <dt>Model#</dt>
               <dd>12345611</dd>
             </dl>
-            <!-- item-property-hor .// -->
             <dl class="param param-feature">
               <dt>Color</dt>
               <dd>Black and white</dd>
             </dl>
-            <!-- item-property-hor .// -->
             <dl class="param param-feature">
               <dt>Delivery</dt>
               <dd>Russia, USA, and Europe</dd>
             </dl>
-            <!-- item-property-hor .// -->
 
             <hr />
             <div class="row">
@@ -83,7 +76,6 @@
                 </dl>
                 <!-- item-property .// -->
               </div>
-              <!-- col.// -->
               <div class="col-sm-7">
                 <dl class="param param-inline">
                   <dt>Size:</dt>
@@ -120,16 +112,13 @@
                     </label>
                   </dd>
                 </dl>
-                <!-- item-property .// -->
               </div>
-              <!-- col.// -->
             </div>
-            <!-- row.// -->
             <hr />
-            <a href="#" class="btn btn-lg btn-primary text-uppercase">Buy now</a>
-            <a href="#" class="btn btn-lg btn-outline-primary text-uppercase">
-              <i class="fas fa-shopping-cart"></i> Add to cart
-            </a>
+            <a href="#" class="btn btn-sm btn-primary text-uppercase">Buy now</a>
+            <router-link class="btn btn-sm btn-outline-primary text-uppercase" :to="'cart'">
+              <i class="fas fa-shopping-cart"></i>Add to Cart
+            </router-link>
           </article>
           <!-- card-body.// -->
         </aside>
@@ -157,7 +146,9 @@ export default {
 }
 
 .gallery-wrap .img-big-wrap img {
-  height: 450px;
+  height: 375px;
+  max-height: 375px;
+  max-width: 465px;
   width: auto;
   display: inline-block;
   cursor: zoom-in;

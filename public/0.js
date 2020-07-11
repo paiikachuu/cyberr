@@ -39,6 +39,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.loadProducts();
@@ -134,66 +140,68 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("h4", [_vm._v("Flash Sale")]),
     _vm._v(" "),
-    _c("div", { staticClass: "jumbotron override-jumbotron" }, [
-      _c("div", { staticClass: "col-12" }, [
-        _c("div", { staticClass: "float-left" }, [
-          _vm._v("Ending in: 00:07:56")
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-body pt-5 pb-5" }, [
+        _c("div", { staticClass: "col-12" }, [
+          _c("div", { staticClass: "float-left" }, [
+            _vm._v("Ending in: 00:07:56")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "float-right text-danger" },
+            [
+              _c("router-link", { attrs: { to: "register" } }, [_vm._v("View")])
+            ],
+            1
+          )
         ]),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "float-right text-danger" },
-          [_c("router-link", { attrs: { to: "register" } }, [_vm._v("View")])],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row col-12" },
-        _vm._l(_vm.products, function(product, i) {
-          return _c("div", { key: i, staticClass: "card m-1 product" }, [
-            _c("img", {
-              staticClass: "card-img-top",
-              attrs: { src: "/images/laptop-nitro5.png" }
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("p", { staticClass: "card-title" }, [
-                _vm._v(_vm._s(product.name))
-              ]),
+          { staticClass: "row col-12" },
+          _vm._l(_vm.products, function(product, i) {
+            return _c("div", { key: i, staticClass: "card m-1 product" }, [
+              _c("img", {
+                staticClass: "card-img-top",
+                attrs: { src: "/images/laptop-nitro5.png" }
+              }),
               _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(product.description))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(product.price))]),
-              _vm._v(" "),
-              _vm._m(0, true)
+              _c("div", { staticClass: "card-body" }, [
+                _c("p", { staticClass: "card-title" }, [
+                  _vm._v(_vm._s(product.name))
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(product.description))]),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(product.price))]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-sm btn-primary",
+                        attrs: { to: "/product-detail" }
+                      },
+                      [_vm._v("View details")]
+                    )
+                  ],
+                  1
+                )
+              ])
             ])
-          ])
-        }),
-        0
-      ),
-      _vm._v(" "),
-      _vm._m(1)
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _vm._m(0)
+      ])
     ])
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-sm btn-primary",
-          attrs: { href: "/product-detail" }
-        },
-        [_vm._v("View details")]
-      )
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

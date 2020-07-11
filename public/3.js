@@ -142,17 +142,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -174,7 +163,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.override-jumbotron[data-v-43d28932] {\r\n  padding-top: 5px;\n}\n.gallery-wrap .img-big-wrap img[data-v-43d28932] {\r\n  height: 450px;\r\n  width: auto;\r\n  display: inline-block;\r\n  cursor: zoom-in;\n}\n.gallery-wrap .img-small-wrap .item-gallery[data-v-43d28932] {\r\n  width: 60px;\r\n  height: 60px;\r\n  border: 1px solid #ddd;\r\n  margin: 7px 2px;\r\n  display: inline-block;\r\n  overflow: hidden;\n}\n.gallery-wrap .img-small-wrap[data-v-43d28932] {\r\n  text-align: center;\n}\n.gallery-wrap .img-small-wrap img[data-v-43d28932] {\r\n  max-width: 100%;\r\n  max-height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n  border-radius: 4px;\r\n  cursor: zoom-in;\n}\r\n", ""]);
+exports.push([module.i, "\n.override-jumbotron[data-v-43d28932] {\r\n  padding-top: 5px;\n}\n.gallery-wrap .img-big-wrap img[data-v-43d28932] {\r\n  height: 375px;\r\n  max-height: 375px;\r\n  max-width: 465px;\r\n  width: auto;\r\n  display: inline-block;\r\n  cursor: zoom-in;\n}\n.gallery-wrap .img-small-wrap .item-gallery[data-v-43d28932] {\r\n  width: 60px;\r\n  height: 60px;\r\n  border: 1px solid #ddd;\r\n  margin: 7px 2px;\r\n  display: inline-block;\r\n  overflow: hidden;\n}\n.gallery-wrap .img-small-wrap[data-v-43d28932] {\r\n  text-align: center;\n}\n.gallery-wrap .img-small-wrap img[data-v-43d28932] {\r\n  max-width: 100%;\r\n  max-height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n  border-radius: 4px;\r\n  cursor: zoom-in;\n}\r\n", ""]);
 
 // exports
 
@@ -226,219 +215,232 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("aside", { staticClass: "col-sm-5 border-right" }, [
-            _c("article", { staticClass: "gallery-wrap" }, [
-              _c("div", { staticClass: "img-big-wrap" }, [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: { src: "/images/cyberr-default-image.jpg" }
-                    })
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "img-small-wrap" }, [
-                _c("div", { staticClass: "item-gallery" }, [
-                  _c("img", {
-                    attrs: { src: "https://s9.postimg.org/tupxkvfj3/image.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "item-gallery" }, [
-                  _c("img", {
-                    attrs: { src: "https://s9.postimg.org/tupxkvfj3/image.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "item-gallery" }, [
-                  _c("img", {
-                    attrs: { src: "https://s9.postimg.org/tupxkvfj3/image.jpg" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "item-gallery" }, [
-                  _c("img", {
-                    attrs: { src: "https://s9.postimg.org/tupxkvfj3/image.jpg" }
-                  })
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("aside", { staticClass: "col-sm-7" }, [
-            _c("article", { staticClass: "card-body p-5" }, [
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("aside", { staticClass: "col-sm-7" }, [
+          _c(
+            "article",
+            { staticClass: "card-body p-5" },
+            [
               _c("h3", { staticClass: "title mb-3" }, [
                 _vm._v("Original Version of Some product name")
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "price-detail-wrap" }, [
-                _c("span", { staticClass: "price h3 text-warning" }, [
-                  _c("span", { staticClass: "currency" }, [_vm._v("US $")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "num" }, [_vm._v("1299")])
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("/per kg")])
-              ]),
+              _vm._m(1),
               _vm._v(" "),
-              _c("dl", { staticClass: "item-property" }, [
-                _c("dt", [_vm._v("Description")]),
-                _vm._v(" "),
-                _c("dd", [
-                  _c("p", [
-                    _vm._v(
-                      "\n                Here goes description consectetur adipisicing elit, sed do eiusmod\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                quis nostrud exercitation ullamco\n              "
-                    )
-                  ])
-                ])
-              ]),
+              _vm._m(2),
               _vm._v(" "),
-              _c("dl", { staticClass: "param param-feature" }, [
-                _c("dt", [_vm._v("Model#")]),
-                _vm._v(" "),
-                _c("dd", [_vm._v("12345611")])
-              ]),
+              _vm._m(3),
               _vm._v(" "),
-              _c("dl", { staticClass: "param param-feature" }, [
-                _c("dt", [_vm._v("Color")]),
-                _vm._v(" "),
-                _c("dd", [_vm._v("Black and white")])
-              ]),
+              _vm._m(4),
               _vm._v(" "),
-              _c("dl", { staticClass: "param param-feature" }, [
-                _c("dt", [_vm._v("Delivery")]),
-                _vm._v(" "),
-                _c("dd", [_vm._v("Russia, USA, and Europe")])
-              ]),
+              _vm._m(5),
               _vm._v(" "),
               _c("hr"),
               _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-5" }, [
-                  _c("dl", { staticClass: "param param-inline" }, [
-                    _c("dt", [_vm._v("Quantity:")]),
-                    _vm._v(" "),
-                    _c("dd", [
-                      _c(
-                        "select",
-                        {
-                          staticClass: "form-control form-control-sm",
-                          staticStyle: { width: "70px" }
-                        },
-                        [
-                          _c("option", [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("option", [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("option", [_vm._v("3")])
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-7" }, [
-                  _c("dl", { staticClass: "param param-inline" }, [
-                    _c("dt", [_vm._v("Size:")]),
-                    _vm._v(" "),
-                    _c("dd", [
-                      _c(
-                        "label",
-                        { staticClass: "form-check form-check-inline" },
-                        [
-                          _c("input", {
-                            staticClass: "form-check-input",
-                            attrs: {
-                              type: "radio",
-                              name: "inlineRadioOptions",
-                              id: "inlineRadio2",
-                              value: "option2"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "form-check-label" }, [
-                            _vm._v("SM")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "label",
-                        { staticClass: "form-check form-check-inline" },
-                        [
-                          _c("input", {
-                            staticClass: "form-check-input",
-                            attrs: {
-                              type: "radio",
-                              name: "inlineRadioOptions",
-                              id: "inlineRadio2",
-                              value: "option2"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "form-check-label" }, [
-                            _vm._v("MD")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "label",
-                        { staticClass: "form-check form-check-inline" },
-                        [
-                          _c("input", {
-                            staticClass: "form-check-input",
-                            attrs: {
-                              type: "radio",
-                              name: "inlineRadioOptions",
-                              id: "inlineRadio2",
-                              value: "option2"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "form-check-label" }, [
-                            _vm._v("XXL")
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ]),
+              _vm._m(6),
               _vm._v(" "),
               _c("hr"),
               _vm._v(" "),
               _c(
                 "a",
                 {
-                  staticClass: "btn btn-lg btn-primary text-uppercase",
+                  staticClass: "btn btn-sm btn-primary text-uppercase",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Buy now")]
               ),
               _vm._v(" "),
               _c(
-                "a",
+                "router-link",
                 {
-                  staticClass: "btn btn-lg btn-outline-primary text-uppercase",
-                  attrs: { href: "#" }
+                  staticClass: "btn btn-sm btn-outline-primary text-uppercase",
+                  attrs: { to: "cart" }
                 },
                 [
                   _c("i", { staticClass: "fas fa-shopping-cart" }),
-                  _vm._v(" Add to cart\n          ")
+                  _vm._v("Add to Cart\n          ")
                 ]
               )
+            ],
+            1
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("aside", { staticClass: "col-sm-5 border-right" }, [
+      _c("article", { staticClass: "gallery-wrap" }, [
+        _c("div", { staticClass: "img-big-wrap" }, [
+          _c("div", [
+            _c("a", { attrs: { href: "#" } }, [
+              _c("img", { attrs: { src: "/images/laptop-nitro5.png" } })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "img-small-wrap" }, [
+          _c("div", { staticClass: "item-gallery" }, [
+            _c("img", { attrs: { src: "/images/laptop-nitro5.png" } })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item-gallery" }, [
+            _c("img", { attrs: { src: "/images/laptop-nitro5.png" } })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item-gallery" }, [
+            _c("img", { attrs: { src: "/images/laptop-nitro5.png" } })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "item-gallery" }, [
+            _c("img", { attrs: { src: "/images/laptop-nitro5.png" } })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "price-detail-wrap" }, [
+      _c("span", { staticClass: "price h3 text-warning" }, [
+        _c("span", { staticClass: "currency" }, [_vm._v("US $")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "num" }, [_vm._v("1299")])
+      ]),
+      _vm._v(" "),
+      _c("span", [_vm._v("/per kg")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("dl", { staticClass: "item-property" }, [
+      _c("dt", [_vm._v("Description")]),
+      _vm._v(" "),
+      _c("dd", [
+        _c("p", [
+          _vm._v(
+            "\n                Here goes description consectetur adipisicing elit, sed do eiusmod\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                quis nostrud exercitation ullamco\n              "
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("dl", { staticClass: "param param-feature" }, [
+      _c("dt", [_vm._v("Model#")]),
+      _vm._v(" "),
+      _c("dd", [_vm._v("12345611")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("dl", { staticClass: "param param-feature" }, [
+      _c("dt", [_vm._v("Color")]),
+      _vm._v(" "),
+      _c("dd", [_vm._v("Black and white")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("dl", { staticClass: "param param-feature" }, [
+      _c("dt", [_vm._v("Delivery")]),
+      _vm._v(" "),
+      _c("dd", [_vm._v("Russia, USA, and Europe")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-5" }, [
+        _c("dl", { staticClass: "param param-inline" }, [
+          _c("dt", [_vm._v("Quantity:")]),
+          _vm._v(" "),
+          _c("dd", [
+            _c(
+              "select",
+              {
+                staticClass: "form-control form-control-sm",
+                staticStyle: { width: "70px" }
+              },
+              [
+                _c("option", [_vm._v("1")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("2")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("3")])
+              ]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-7" }, [
+        _c("dl", { staticClass: "param param-inline" }, [
+          _c("dt", [_vm._v("Size:")]),
+          _vm._v(" "),
+          _c("dd", [
+            _c("label", { staticClass: "form-check form-check-inline" }, [
+              _c("input", {
+                staticClass: "form-check-input",
+                attrs: {
+                  type: "radio",
+                  name: "inlineRadioOptions",
+                  id: "inlineRadio2",
+                  value: "option2"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "form-check-label" }, [_vm._v("SM")])
+            ]),
+            _vm._v(" "),
+            _c("label", { staticClass: "form-check form-check-inline" }, [
+              _c("input", {
+                staticClass: "form-check-input",
+                attrs: {
+                  type: "radio",
+                  name: "inlineRadioOptions",
+                  id: "inlineRadio2",
+                  value: "option2"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "form-check-label" }, [_vm._v("MD")])
+            ]),
+            _vm._v(" "),
+            _c("label", { staticClass: "form-check form-check-inline" }, [
+              _c("input", {
+                staticClass: "form-check-input",
+                attrs: {
+                  type: "radio",
+                  name: "inlineRadioOptions",
+                  id: "inlineRadio2",
+                  value: "option2"
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "form-check-label" }, [_vm._v("XXL")])
             ])
           ])
         ])

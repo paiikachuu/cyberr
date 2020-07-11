@@ -53788,6 +53788,18 @@ var routers = [{
   component: function component() {
     return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ../pages/ProductDetail */ "./resources/js/pages/ProductDetail.vue"));
   }
+}, {
+  path: '/cart',
+  name: 'cart',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../pages/Cart */ "./resources/js/pages/Cart.vue"));
+  }
+}, {
+  path: '/checkout',
+  name: 'checkout',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../pages/Checkout */ "./resources/js/pages/Checkout.vue"));
+  }
 }, // Admin Side
 {
   path: '/admin',

@@ -8,6 +8,8 @@ const routers = [
     {   path: '/login', name: 'login', component: () => import('../pages/auth/Login') },
     {   path: '/register', name: 'register', component: () => import('../pages/auth/Register') },
     {   path: '/product-detail', name: 'product-detail', component: () => import('../pages/ProductDetail') },
+    {   path: '/cart', name: 'cart', component: () => import('../pages/Cart') },
+    {   path: '/checkout', name: 'checkout', component: () => import('../pages/Checkout') },
 
     // Admin Side
     {   path: '/admin', name: 'admin', component: () => import('../pages/admin/Dashboard') },

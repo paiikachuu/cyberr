@@ -35,6 +35,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {}
 });
@@ -64,10 +72,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c(
-        "div",
-        { staticClass: "jumbotron jumbotron-fluid override-jumbotron" },
-        [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-body pt-5 pb-5" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-3" }, [
               _c("ul", [
@@ -105,8 +111,8 @@ var staticRenderFns = [
               ])
             ])
           ])
-        ]
-      )
+        ])
+      ])
     ])
   }
 ]
