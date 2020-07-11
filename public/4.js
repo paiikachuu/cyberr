@@ -39,10 +39,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {}
 });
@@ -76,41 +72,91 @@ var staticRenderFns = [
         _c("div", { staticClass: "card-body pt-5 pb-5" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-3" }, [
-              _c("ul", [
-                _c("li", [
-                  _c("a", { attrs: { href: "" } }, [_vm._v("Laptops")])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "" } }, [_vm._v("Mobile")])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "" } }, [_vm._v("Desktop")])
-                ]),
-                _vm._v(" "),
-                _c("hr"),
-                _vm._v(" "),
-                _c("button", { staticClass: "btn btn-outline-primary" }, [
-                  _vm._v("View more")
-                ])
-              ])
+              _c(
+                "div",
+                {
+                  staticClass: "list-group",
+                  attrs: { id: "list-tab", role: "tablist" }
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "list-group-item list-group-item-action active",
+                      attrs: {
+                        id: "list-home-list",
+                        "data-toggle": "list",
+                        href: "#list-home",
+                        role: "tab",
+                        "aria-controls": "home"
+                      }
+                    },
+                    [_vm._v("Laptops")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "list-group-item list-group-item-action",
+                      attrs: {
+                        id: "list-profile-list",
+                        "data-toggle": "list",
+                        href: "#list-profile",
+                        role: "tab",
+                        "aria-controls": "profile"
+                      }
+                    },
+                    [_vm._v("Mobiles")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "list-group-item list-group-item-action",
+                      attrs: {
+                        id: "list-messages-list",
+                        "data-toggle": "list",
+                        href: "#list-messages",
+                        role: "tab",
+                        "aria-controls": "messages"
+                      }
+                    },
+                    [_vm._v("Tablet")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "list-group-item list-group-item-action",
+                      attrs: {
+                        id: "list-settings-list",
+                        "data-toggle": "list",
+                        href: "#list-settings",
+                        role: "tab",
+                        "aria-controls": "settings"
+                      }
+                    },
+                    [_vm._v("Desktop")]
+                  )
+                ]
+              )
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-9" }, [
               _c("div", { staticClass: "container" }, [
                 _c("h1", { staticClass: "display-4" }, [
-                  _vm._v("Carousel with latest gadgets")
+                  _vm._v("Carousel Top Products")
                 ]),
                 _vm._v(" "),
-                _c("p", { staticClass: "lead" }, [
-                  _vm._v(
-                    "This is a modified jumbotron that occupies the entire horizontal space of its parent."
-                  )
-                ])
+                _c("p", { staticClass: "lead" })
               ])
             ])
-          ])
+          ]),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("h4", [_vm._v("Brands Here")])
         ])
       ])
     ])
