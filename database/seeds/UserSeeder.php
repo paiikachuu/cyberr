@@ -15,11 +15,12 @@ class UserSeeder extends Seeder
         DB::table('users')->truncate();
 
         $user = User::create([
-            'name' => env('ADMIN_FIRST_NAME'),
+            'first_name' => env('ADMIN_FIRST_NAME'),
+            'last_name' => env('ADMIN_LAST_NAME'),
             'email' => env('ADMIN_EMAIL'),
             'password' => Hash::make(env('ADMIN_PASSWORD')),
            // 'confirmation' => 'approved',
-            'email_verification_token' => Str::random(32),
+        //'email_verification_token' => Str::random(32),
         ]);
 
        // $user->assignRole('admin');
