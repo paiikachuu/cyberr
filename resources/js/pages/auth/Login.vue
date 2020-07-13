@@ -57,6 +57,7 @@
       login() {
         User.login(this.form)
           .then((res)=> {
+            this.$root.$emit('login', true);
             localStorage.setItem('auth', 'true')
             this.$router.push({ name: 'app' })
           })

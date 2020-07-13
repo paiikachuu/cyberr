@@ -52,7 +52,6 @@ export default {
         url: "/api/products"
       })
         .then(res => {
-          console.log(res.data);
           this.products = res.data;
         })
         .catch(err => {
