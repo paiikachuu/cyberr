@@ -70,17 +70,26 @@
 </template>
 
 <script>
+
+import BreadCrumb from '../components/product/BreadCrumb'
+import Images from '../components/product/Images'
+import Store from '../components/product/Store'
+import Specification from '../components/product/Specification'
+import Ratings from '../components/product/Ratings'
+import FromShop from '../components/product/FromShop'
+import SimilarProducts from '../components/product/SimilarProducts'
+import AlsoLike from '../components/product/AlsoLike'
+
 export default {
   components: {
-    BreadCrumb: () => import("../components/product/BreadCrumb"),
-    Images: () => import("../components/product/Images"),
-    Store: () => import("../components/product/Store"),
-    Specification: () => import("../components/product/Specification"),
-    Ratings: () => import("../components/product/Ratings"),
-    FromShop: () => import("../components/product/FromShop"),
-    SimilarProducts: () =>
-      import("../components/product/SimilarProducts"),
-    AlsoLike: () => import("../components/product/AlsoLike")
+    BreadCrumb,
+    Images,
+    Store,
+    Specification,
+    Ratings,
+    FromShop,
+    SimilarProducts,
+    AlsoLike
   },
   data() {
     return {};

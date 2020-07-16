@@ -80,10 +80,14 @@
 </template>
 
 <script>
+
+import Items from '../components/cart/Items'
+import AlsoLike from '../components/product/AlsoLike'
+
 export default {
   components: {
-    Items: () => import("../components/cart/Items"),
-    AlsoLike: () => import("../components/product/AlsoLike")
+    Items,
+    AlsoLike
   }
 };
 </script>
