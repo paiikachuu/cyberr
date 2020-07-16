@@ -15,29 +15,26 @@
               <!-- Right Side Of Navbar -->
               
               <ul class="navbar-nav ml-auto">
-                  <!-- @guest -->
-                      <li class="nav-item">
-                          <router-link v-if="!is_login" class="nav-link"  :to="'login'">Login</router-link>
-                      </li>
-                      <li class="nav-item">
-                          <router-link v-if="!is_login" class="nav-link"  :to="'register'">Register</router-link>
-                      </li>
-                      
-                  <!-- @else -->
-                      <li v-if="is_login && app_user != null" class="nav-item dropdown inline">
-                          
-                          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              {{ app_user.first_name }}
-                              <span class="caret"></span>
-                          </a>
-
-                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                              <a @click="logout()"
-                                  onclick="event.preventDefault();"
-                                  class="dropdown-item" href="#">Logout</a>
-                          </div>
-                      </li>
-                  <!-- @endguest -->
+                <li class="nav-item">
+                    <router-link v-if="!is_login" class="nav-link"  :to="'login'">Login</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link v-if="!is_login" class="nav-link"  :to="'register'">Register</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link v-if="is_login" class="nav-link"  :to="'dashboard'">Dashboard</router-link>
+                </li>
+                <li v-if="is_login && app_user != null" class="nav-item dropdown inline">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ app_user.first_name }}
+                        <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a @click="logout()"
+                            onclick="event.preventDefault();"
+                            class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
               </ul>
           </div>
       </div>
@@ -54,8 +51,9 @@ export default {
       }
   },
   mounted() {
+    
     this.$root.$on('login', () => {
-        this.is_login = true;
+        this.is_login = true
         User.auth().then((res)=>{
             this.app_user = res.data
         })

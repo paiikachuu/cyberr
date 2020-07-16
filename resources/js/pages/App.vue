@@ -9,10 +9,14 @@
 </template>
 
 <script>
+
+import Footer from '../components/layout/Footer'
+import Navigation from '../components/layout/Navigation'
+
 export default {
   components: {
-    Footer: () => import("../components/layout/Footer"),
-    Navigation: () => import("../components/layout/Navigation")
+    Footer,
+    Navigation
   },
 };
 </script>
