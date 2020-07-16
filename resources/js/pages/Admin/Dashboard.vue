@@ -1,13 +1,10 @@
 <template>
-  <v-app>
-      <h1>Dashboard Here</h1>
-  </v-app>
+  <h1>Dashboard Here</h1>
 </template>
 
 <script>
-
-
-export default {
-  components: {}
-};
+  export default {
+    components: {
+    }
+  };
 </script>
