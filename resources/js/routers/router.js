@@ -1,5 +1,6 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
+import store from '../store'
 
 Vue.use(VueRouter);
 
@@ -24,7 +25,7 @@ const routers = [
   ];
 
   function isLoggedIn() {
-    return localStorage.auth
+    return store.state.currentUser.is_auth
   }
 
   const router = new VueRouter({

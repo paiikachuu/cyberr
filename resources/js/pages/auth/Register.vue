@@ -109,7 +109,11 @@
       formSubmit() {
         User.register(this.form)
           .then((res)=> {
-            this.$router.push({ name: 'login' })
+            User.auth().then((res)=>{
+              this.$store.commit('currentUser/setUser', res.data)
+              this.$store.commit('currentUser/setIsAuth', true)
+              this.$router.push({ name: 'app' })
+            })
           })
           .catch((err)=> {
             if(err.response.status) {
