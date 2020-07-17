@@ -2403,19 +2403,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      app_user: null,
-      is_login: false
+      app_user: null
     };
   },
   mounted: function mounted() {
     var _this = this;
 
-    this.$root.$on('login', function () {
-      _this.is_login = true;
+    if (this.isLoggedIn()) {
+      //this.$root.$on('login', () => {
       _apis_User__WEBPACK_IMPORTED_MODULE_0__["default"].auth().then(function (res) {
         _this.app_user = res.data;
-      });
-    });
+      }); //})
+    }
   },
   methods: {
     logout: function logout() {
@@ -2423,13 +2422,15 @@ __webpack_require__.r(__webpack_exports__);
 
       _apis_User__WEBPACK_IMPORTED_MODULE_0__["default"].logout().then(function () {
         _this2.app_user = null;
-        _this2.is_login = false;
         localStorage.removeItem("auth");
 
         _this2.$router.push({
           name: 'login'
         });
       });
+    },
+    isLoggedIn: function isLoggedIn() {
+      return localStorage.auth;
     }
   }
 });
@@ -41246,7 +41247,7 @@ var render = function() {
                   "li",
                   { staticClass: "nav-item" },
                   [
-                    !_vm.is_login
+                    !_vm.isLoggedIn()
                       ? _c(
                           "router-link",
                           { staticClass: "nav-link", attrs: { to: "login" } },
@@ -41261,7 +41262,7 @@ var render = function() {
                   "li",
                   { staticClass: "nav-item" },
                   [
-                    !_vm.is_login
+                    !_vm.isLoggedIn()
                       ? _c(
                           "router-link",
                           {
@@ -41279,7 +41280,7 @@ var render = function() {
                   "li",
                   { staticClass: "nav-item" },
                   [
-                    _vm.is_login
+                    _vm.isLoggedIn()
                       ? _c(
                           "router-link",
                           {
@@ -41293,7 +41294,7 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _vm.is_login && _vm.app_user != null
+                _vm.isLoggedIn() && _vm.app_user != null
                   ? _c("li", { staticClass: "nav-item dropdown inline" }, [
                       _c(
                         "a",
@@ -57924,6 +57925,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/apis/Http.js":
+/*!***********************************!*\
+  !*** ./resources/js/apis/Http.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+var Http = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  baseURL: "http://127.0.0.1:8000"
+});
+/* harmony default export */ __webpack_exports__["default"] = (Http);
+
+/***/ }),
+
 /***/ "./resources/js/apis/User.js":
 /*!***********************************!*\
   !*** ./resources/js/apis/User.js ***!
@@ -57936,12 +57956,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Api */ "./resources/js/apis/Api.js");
-/* harmony import */ var _Csrf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Csrf */ "./resources/js/apis/Csrf.js");
+/* harmony import */ var _Http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Http */ "./resources/js/apis/Http.js");
+/* harmony import */ var _Csrf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Csrf */ "./resources/js/apis/Csrf.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 
 
 
@@ -57953,10 +57975,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _Csrf__WEBPACK_IMPORTED_MODULE_2__["default"].getCookie();
+              return _Csrf__WEBPACK_IMPORTED_MODULE_3__["default"].getCookie();
 
             case 2:
-              return _context.abrupt("return", _Api__WEBPACK_IMPORTED_MODULE_1__["default"].post("/register", form));
+              return _context.abrupt("return", _Http__WEBPACK_IMPORTED_MODULE_2__["default"].post("/register", form));
 
             case 3:
             case "end":
@@ -57973,10 +57995,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return _Csrf__WEBPACK_IMPORTED_MODULE_2__["default"].getCookie();
+              return _Csrf__WEBPACK_IMPORTED_MODULE_3__["default"].getCookie();
 
             case 2:
-              return _context2.abrupt("return", _Api__WEBPACK_IMPORTED_MODULE_1__["default"].post("/login", form));
+              return _context2.abrupt("return", _Http__WEBPACK_IMPORTED_MODULE_2__["default"].post("/login", form));
 
             case 3:
             case "end":
@@ -57993,10 +58015,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.next = 2;
-              return _Csrf__WEBPACK_IMPORTED_MODULE_2__["default"].getCookie();
+              return _Csrf__WEBPACK_IMPORTED_MODULE_3__["default"].getCookie();
 
             case 2:
-              return _context3.abrupt("return", _Api__WEBPACK_IMPORTED_MODULE_1__["default"].post("/logout", form));
+              return _context3.abrupt("return", _Http__WEBPACK_IMPORTED_MODULE_2__["default"].post("/logout", form));
 
             case 3:
             case "end":
@@ -58022,21 +58044,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _routers_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routers/router */ "./resources/js/routers/router.js");
-/* harmony import */ var _pages_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/App */ "./resources/js/pages/App.vue");
-
+/* harmony import */ var _routers_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routers/router */ "./resources/js/routers/router.js");
+/* harmony import */ var _pages_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/App */ "./resources/js/pages/App.vue");
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+var app = new Vue({
   components: {
-    App: _pages_App__WEBPACK_IMPORTED_MODULE_2__["default"]
+    App: _pages_App__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  router: _routers_router__WEBPACK_IMPORTED_MODULE_1__["default"]
+  router: _routers_router__WEBPACK_IMPORTED_MODULE_0__["default"]
 }).$mount('#app');
 
 /***/ }),
