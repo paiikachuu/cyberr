@@ -16,17 +16,17 @@
               
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <router-link v-if="!isLoggedIn()" class="nav-link"  :to="'login'">Login</router-link>
+                    <router-link v-if="!$store.state.currentUser.is_auth" class="nav-link"  :to="'login'">Login</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link v-if="!isLoggedIn()" class="nav-link"  :to="'register'">Register</router-link>
+                    <router-link v-if="!$store.state.currentUser.is_auth" class="nav-link"  :to="'register'">Register</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link v-if="isLoggedIn()" class="nav-link"  :to="'dashboard'">Dashboard</router-link>
+                    <router-link v-if="$store.state.currentUser.is_auth" class="nav-link"  :to="'dashboard'">Dashboard</router-link>
                 </li>
-                <li v-if="isLoggedIn() && app_user != null" class="nav-item dropdown inline">
+                <li v-if="$store.state.currentUser.is_auth" class="nav-item dropdown inline">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{ app_user.first_name }}
+                        {{ $store.state.currentUser.user.first_name }}
                         <span class="caret"></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -50,24 +50,14 @@ export default {
       }
   },
   mounted() {
-    if(this.isLoggedIn()) {
-      //this.$root.$on('login', () => {
-          User.auth().then((res)=>{
-              this.app_user = res.data
-          })
-      //})
-    }
   },
   methods: {
     logout() {
       User.logout().then(()=>{
         this.app_user = null
-        localStorage.removeItem("auth")
+        this.$store.commit('currentUser/setIsAuth', false)
         this.$router.push({name:'login'}) 
       })
-    },
-    isLoggedIn() {
-      return localStorage.auth
     }
   }
 };
