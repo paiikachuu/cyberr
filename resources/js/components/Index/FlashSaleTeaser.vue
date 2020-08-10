@@ -34,6 +34,8 @@
 </template>
 
 <script>
+import Product from "../../apis/Product"
+
 export default {
   mounted() {
     this.loadProducts();
@@ -47,16 +49,15 @@ export default {
 
   methods: {
     loadProducts() {
-      axios({
-        method: "get",
-        url: "/api/products"
-      })
-        .then(res => {
-          this.products = res.data;
+      Product.getProducts()
+        .then((res)=> {
+          products = res.data;
         })
-        .catch(err => {
-          console.log(err);
-        });
+        .catch((err)=> {
+          if(err.response) {
+            this.errors = err.response.data.errors;
+          }
+        })
     }
   }
 };

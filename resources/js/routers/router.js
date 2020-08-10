@@ -12,6 +12,7 @@ import Cart from '../pages/Cart'
 import Checkout from '../pages/Checkout'
 // Admin Side
 import Dashboard from '../pages/admin/Dashboard'
+import Notification from '../pages/admin/Notification'
 
 const routers = [
     {   path: '/', name: 'app', component: App },
@@ -22,6 +23,7 @@ const routers = [
     {   path: '/checkout', name: 'checkout', component: Checkout },
     // Admin Side
     {   path: '/dashboard', name: 'dashboard', component: Dashboard, meta: { auth:true} },
+    {   path: '/notification', name: 'dashboard', component: Notification, meta: { auth:true} },
   ];
 
   function isLoggedIn() {

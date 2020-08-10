@@ -1,10 +1,12 @@
 <template>
   <footer class="footer">
-    <br><br><hr>
+    <br />
+    <br />
+    <hr />
     <div class="container bottom_border">
       <div class="row">
         <div class="col-sm-4 col-md col-sm-4 col-12 col">
-          <h5 class="hseadin5_amrc col_white_amrc pt2">Find us</h5>
+          <h5 class="hseadin5_amrc col_white_amrc pt2">Customer Service</h5>
           <!--headin5_amrc-->
           <p
             class="mb10"
@@ -16,38 +18,38 @@
             <i class="fa fa-phone"></i> +91-9999878398
           </p>
           <p>
-            <i class="fa fa fa-envelope"></i> info@example.com
+            <i class="fa fa fa-envelope"></i> pailou.nuneza@gmail.com
           </p>
         </div>
 
         <div class="col-sm-4 col-md col-6 col">
-          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <h5 class="headin5_amrc col_white_amrc pt2">About Cyberr</h5>
           <!--headin5_amrc-->
           <ul class="footer_ul_amrc">
             <li>
-              <a href="http://webenlance.com">Image Rectoucing</a>
+              <a href="http://webenlance.com">About Us</a>
             </li>
             <li>
-              <a href="http://webenlance.com">Clipping Path</a>
+              <a href="http://webenlance.com">Privacy Policy</a>
             </li>
             <li>
-              <a href="http://webenlance.com">Hollow Man Montage</a>
+              <a href="http://webenlance.com">Cyberr Policies</a>
             </li>
             <li>
-              <a href="http://webenlance.com">Ebay & Amazon</a>
+              <a href="http://webenlance.com">Malls</a>
             </li>
             <li>
-              <a href="http://webenlance.com">Hair Masking/Clipping</a>
+              <a href="http://webenlance.com">Flash Sales</a>
             </li>
             <li>
-              <a href="http://webenlance.com">Image Cropping</a>
+              <a href="http://webenlance.com">Careers</a>
             </li>
           </ul>
           <!--footer_ul_amrc ends here-->
         </div>
 
         <div class="col-sm-4 col-md col-6 col">
-          <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+          <h5 class="headin5_amrc col_white_amrc pt2">Payment</h5>
           <!--headin5_amrc-->
           <ul class="footer_ul_amrc">
             <li>
@@ -117,32 +119,6 @@
     </div>
 
     <div class="container">
-      <ul class="foote_bottom_ul_amrc">
-        <li>
-          <a href="http://webenlance.com">Home</a>
-        </li>
-        <li>
-          <a href="http://webenlance.com">About</a>
-        </li>
-        <li>
-          <a href="http://webenlance.com">Services</a>
-        </li>
-        <li>
-          <a href="http://webenlance.com">Pricing</a>
-        </li>
-        <li>
-          <a href="http://webenlance.com">Blog</a>
-        </li>
-        <li>
-          <a href="http://webenlance.com">Contact</a>
-        </li>
-      </ul>
-      <!--foote_bottom_ul_amrc ends here-->
-      <p class="text-center">
-        Copyright @2020 | Designed With by
-        <a href="#">Pai</a>
-      </p>
-
       <ul class="social_footer_ul">
         <li>
           <a href="http://webenlance.com">
@@ -172,7 +148,7 @@
 
 <script>
 export default {
-  components: {}
+  components: {},
 };
 </script>
 
@@ -204,7 +180,6 @@ footer p {
   padding: 0px 0px 5px 0px;
 }
 .footer_ul_amrc li a:hover {
-
   text-decoration: none;
 }
 .fleft {
