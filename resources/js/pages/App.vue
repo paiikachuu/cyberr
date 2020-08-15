@@ -1,22 +1,21 @@
 <template>
   <div>
-    <Navigation/>
-    <main class="py-4">
-      <router-view></router-view>
-      <Footer></Footer>
-    </main>
+      <component :is='layout'>
+          <router-view />
+      </component>
   </div>
 </template>
 
 <script>
 
-import Footer from '../components/layout/Footer'
-import Navigation from '../components/layout/Navigation'
-
 export default {
   components: {
-    Footer,
-    Navigation
+    
   },
+  computed: {
+      layout() {
+          return (this.$route.meta.layout || 'auth') + '-layout'
+      }
+  }
 };
 </script>

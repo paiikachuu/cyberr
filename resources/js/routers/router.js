@@ -15,15 +15,15 @@ import Dashboard from '../pages/admin/Dashboard'
 import Notification from '../pages/admin/Notification'
 
 const routers = [
-    {   path: '/', name: 'app', component: App },
-    {   path: '/login', name: 'login', component: Login, meta: { guest:true} },
-    {   path: '/register', name: 'register', component: Register, meta: { guest:true} },
+    {   path: '/', name: 'app', component: App, meta: { guest:true, layout:'blank'} },
+    {   path: '/login', name: 'login', component: Login, meta: { guest:true, layout:'blank'} },
+    {   path: '/register', name: 'register', component: Register, meta: { guest:true, layout:'blank'} },
     {   path: '/product-detail', name: 'product-detail', component: ProductDetail },
     {   path: '/cart', name: 'cart', component: Cart },
     {   path: '/checkout', name: 'checkout', component: Checkout },
     // Admin Side
-    {   path: '/dashboard', name: 'dashboard', component: Dashboard, meta: { auth:true} },
-    {   path: '/notification', name: 'dashboard', component: Notification, meta: { auth:true} },
+    {   path: '/dashboard', name: 'dashboard', component: Dashboard, meta: { auth:true, layout:'admin'} },
+    {   path: '/notification', name: 'notification', component: Notification, meta: { auth:true, layout:'admin'} },
   ];
 
   function isLoggedIn() {
