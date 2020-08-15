@@ -15,7 +15,7 @@ import Dashboard from '../pages/admin/Dashboard'
 import Notification from '../pages/admin/Notification'
 
 const routers = [
-    {   path: '/', name: 'app', component: App, meta: { guest:true, layout:'blank'} },
+    {   path: '/', name: 'app', component: App, meta: { guest:true} },
     {   path: '/login', name: 'login', component: Login, meta: { guest:true, layout:'blank'} },
     {   path: '/register', name: 'register', component: Register, meta: { guest:true, layout:'blank'} },
     {   path: '/product-detail', name: 'product-detail', component: ProductDetail },

@@ -6,9 +6,11 @@ import store from './store'
 
 require('./bootstrap');
 
+import DefaultLayout from './layouts/DefaultLayout'
 import BlankLayout from './layouts/BlankLayout'
 import AdminLayout from './layouts/AdminLayout'
 
+Vue.component('default-layout', DefaultLayout)
 Vue.component('blank-layout', BlankLayout)
 Vue.component('admin-layout', AdminLayout)
 
