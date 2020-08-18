@@ -32,12 +32,12 @@
                     </a>
                 </li>
                 <li class=" nav-item">
-                    <a href="app-email.html">
-                        <i class="feather icon-phone"></i>
+                    <router-link :to="{name:'admin_products'}">
+                        <i class="feather icon-home"></i>
                         <span class="menu-title" data-i18n="Products">
                             Products
                         </span>
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </div>

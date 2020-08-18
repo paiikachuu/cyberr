@@ -13,6 +13,7 @@ import Checkout from '../pages/Checkout'
 // Admin Side
 import Dashboard from '../pages/admin/Dashboard'
 import Notification from '../pages/admin/Notification'
+import AdminProducts from '../pages/admin/Products'
 
 const routers = [
     {   path: '/', name: 'app', component: App, meta: { guest:true} },
@@ -24,6 +25,7 @@ const routers = [
     // Admin Side
     {   path: '/dashboard', name: 'dashboard', component: Dashboard, meta: { auth:true, layout:'admin'} },
     {   path: '/notification', name: 'notification', component: Notification, meta: { auth:true, layout:'admin'} },
+    {   path: '/admin-products', name: 'admin_products', component: AdminProducts, meta: { auth:true, layout:'admin'} },
   ];
 
   function isLoggedIn() {
