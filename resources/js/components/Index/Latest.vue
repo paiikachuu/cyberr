@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-4">
+  <div class="container">
     <div class="card">
       <div class="card-header">
         <b>Latest Products</b>
@@ -7,7 +7,9 @@
           <router-link :to="'register'">Go to shop</router-link>
         </div>
       </div>
-      <div class="card-body"> <h5 class="text-danger">No latest products.</h5></div>
+      <div class="card-body">
+      
+      </div>
     </div>
   </div>
 </template>

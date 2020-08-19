@@ -1,22 +1,28 @@
 <template>
-  <div class="container">
-    <div class="input-group mb-2">
-      <input type="text" class="form-control" placeholder="Search in Cyberr" />
-      <div class="input-group-append">
-        <button class="btn btn-secondary" type="button">
-          <i class="fa fa-search"></i>
-        </button>
+  <section id="ecommerce-searchbar" class="container">
+    <div class="row mt-1">
+      <div class="col-sm-12">
+        <fieldset class="form-group position-relative">
+          <input
+            type="text"
+            class="form-control search-product"
+            id="iconLeft5"
+            placeholder="Search here"
+          />
+          <div class="form-control-position">
+            <i class="feather icon-search"></i>
+          </div>
+        </fieldset>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  components: {}
+  components: {},
 };
 </script>
 
 <style scoped>
-
 </style>

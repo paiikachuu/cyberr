@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-4">
+  <div class="container">
     <div class="card">
       <div class="card-header">
         <b>Flash Sale &nbsp;</b> <i class="fa fa-bolt text-danger"></i>
