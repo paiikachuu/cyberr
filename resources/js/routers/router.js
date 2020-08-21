@@ -8,6 +8,7 @@ import App from '../pages/Index'
 import Login from '../pages/auth/Login'
 import Register from '../pages/auth/Register'
 import ProductDetail from '../pages/Product'
+import Search from '../pages/Search'
 import Cart from '../pages/Cart'
 import Checkout from '../pages/Checkout'
 // Admin Side
@@ -20,6 +21,7 @@ const routers = [
     {   path: '/login', name: 'login', component: Login, meta: { guest:true, layout:'blank'} },
     {   path: '/register', name: 'register', component: Register, meta: { guest:true, layout:'blank'} },
     {   path: '/product-detail', name: 'product-detail', component: ProductDetail },
+    {   path: '/search', name: 'search', component: Search },
     {   path: '/cart', name: 'cart', component: Cart },
     {   path: '/checkout', name: 'checkout', component: Checkout },
     // Admin Side

@@ -24,10 +24,10 @@ $config = [
     {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/vendors.min.css') }}">
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/extensions/toastr.css') }}"> --}}
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/tables/datatable/datatables.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/file-uploaders/dropzone.min.css') }}"> --}}
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css') }}"> --}}
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/extensions/nouislider.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/ui/prism.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/forms/select/select2.min.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/bootstrap-extended.css') }}">
@@ -38,21 +38,17 @@ $config = [
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/core/menu/menu-types/vertical-menu.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/core/colors/palette-gradient.css') }}">
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/extensions/toastr.css') }}"> --}}
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/file-uploaders/dropzone.css') }}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/authentication.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/knowledge-base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/plugins/extensions/noui-slider.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/app-ecommerce-shop.css') }}">
 
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/charts/apexcharts.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/extensions/tether-theme-arrows.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/extensions/tether.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/vendors/css/extensions/shepherd-theme-default.css') }}">
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/data-list-view.css') }}"> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('/app-assets/css/pages/data-list-view.css') }}">
 
     <!-- Styles -->
     {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
 </head>
-<body data-open="click" data-menu="vertical-menu-modern">
+<body class="vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
     <div id="app">  
         <app />
     </div>
@@ -64,31 +60,28 @@ $config = [
     <script src="{{ asset('/app-assets/vendors/js/pagination/jquery.twbsPagination.min.js') }}"></script>
     <!-- BEGIN Vendor JS-->
 
-    {{-- <script src="{{ asset('/app-assets/vendors/js/extensions/dropzone.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/vendors/js/tables/datatable/datatables.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/vendors/js/tables/datatable/dataTables.select.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js') }}"></script> --}}
+    <script src="{{ asset('/app-assets/vendors/js/ui/prism.min.js') }}"></script>
+    <script src="{{ asset('/app-assets/vendors/js/extensions/wNumb.js') }}"></script>
+    <script src="{{ asset('/app-assets/vendors/js/extensions/nouislider.min.js') }}"></script>
+    <script src="{{ asset('/app-assets/vendors/js/forms/select/select2.full.min.js') }}"></script>
 
     <!-- BEGIN: Theme JS-->
     <script src="{{ asset('/app-assets/js/core/app-menu.js') }}"></script>
     <script src="{{ asset('/app-assets/js/core/app.js') }}"></script>
     <script src="{{ asset('/app-assets/js/scripts/components.js') }}"></script>
+    
     <!-- END: Theme JS-->
 
     <!-- MUST TRANSFER TO LOGGEIN USERS-->
     <script src="{{ asset('/app-assets/vendors/js/charts/apexcharts.min.js') }}"></script>
     <script src="{{ asset('/app-assets/vendors/js/extensions/tether.min.js') }}"></script>
     <script src="{{ asset('/app-assets/vendors/js/extensions/shepherd.min.js') }}"></script>
+    <script src="{{ asset('/app-assets/js/scripts/pages/faq-kb.js') }}"></script>
     <!-- END-->
 
-    {{-- <script src="{{ asset('/app-assets/js/scripts/ui/data-list-view.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/js/scripts/extensions/toastr.js') }}"></script> --}}
-    {{-- <script src="{{ asset('/app-assets/js/scripts/extensions/sweet-alerts.js') }}"></script>
-    <script src="{{ asset('/app-assets/js/scripts/pagination/pagination.js') }}"></script> --}}
-
+    <!-- INDIVIDUAL PAGE START -->
+    {{-- <script src="{{ asset('/app-assets/js/scripts/pages/app-ecommerce-shop.js') }}"></script> --}}
+    <!-- INDIVIDUAL PAGE END -->
     <script>
         window.config = @json($config);
     </script>
