@@ -1921,6 +1921,22 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _apis_User__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../apis/User */ "./resources/js/apis/User.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1955,7 +1971,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])({
+    user: function user(state) {
+      return state.currentUser.user;
+    }
+  })),
   methods: {
     logout: function logout() {
       var _this = this;
@@ -1969,7 +1991,8 @@ __webpack_require__.r(__webpack_exports__);
         window.location.replace(window.config.appUrl + '/login');
       });
     }
-  }
+  },
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -1983,6 +2006,113 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/layout/Notification.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/layout/Notification.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2439,6 +2569,266 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/layouts/DefaultLayout.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/layouts/DefaultLayout.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_layout_Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/layout/Notification */ "./resources/js/components/layout/Notification.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Notification: _components_layout_Notification__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/App.vue?vue&type=script&lang=js& ***!
@@ -2579,7 +2969,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -2965,6 +3354,606 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/admin/Products.vue?vue&type=script&lang=js& ***!
   \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -36682,44 +37671,90 @@ var render = function() {
                     "mr-auto float-left bookmark-wrapper d-flex align-items-center"
                 }),
                 _vm._v(" "),
-                _c("ul", { staticClass: "nav navbar-nav float-right" }, [
-                  _c("li", { staticClass: "dropdown dropdown-user nav-item" }, [
-                    _vm._m(0),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "dropdown-menu dropdown-menu-right" },
-                      [
-                        _vm._m(1),
-                        _vm._m(2),
-                        _vm._m(3),
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "dropdown-divider" }),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: {
-                              onclick: "event.preventDefault();",
-                              href: "#"
+                _vm.user
+                  ? _c("ul", { staticClass: "nav navbar-nav float-right" }, [
+                      _c(
+                        "li",
+                        { staticClass: "dropdown dropdown-user nav-item" },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass:
+                                "dropdown-toggle nav-link dropdown-user-link",
+                              attrs: { href: "#", "data-toggle": "dropdown" }
                             },
-                            on: {
-                              click: function($event) {
-                                return _vm.logout()
-                              }
-                            }
-                          },
-                          [
-                            _c("i", { staticClass: "feather icon-power" }),
-                            _vm._v(" Logout\n                                ")
-                          ]
-                        )
-                      ]
-                    )
-                  ])
-                ])
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "user-nav d-sm-flex d-none" },
+                                [
+                                  _c(
+                                    "span",
+                                    { staticClass: "user-name text-bold-600" },
+                                    [
+                                      _vm._v(
+                                        "\n                                        " +
+                                          _vm._s(_vm.user.first_name) +
+                                          " " +
+                                          _vm._s(_vm.user.last_name) +
+                                          "\n                                    "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("span", { staticClass: "user-status" }, [
+                                    _vm._v("Available")
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _vm._m(0)
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "dropdown-menu dropdown-menu-right"
+                            },
+                            [
+                              _vm._m(1),
+                              _vm._m(2),
+                              _vm._m(3),
+                              _vm._m(4),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "dropdown-divider" }),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "dropdown-item",
+                                  attrs: {
+                                    onclick: "event.preventDefault();",
+                                    href: "#"
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.logout()
+                                    }
+                                  }
+                                },
+                                [
+                                  _c("i", {
+                                    staticClass: "feather icon-power"
+                                  }),
+                                  _vm._v(
+                                    " Logout\n                                "
+                                  )
+                                ]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  : _vm._e()
               ]
             )
           ])
@@ -36735,32 +37770,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "dropdown-toggle nav-link dropdown-user-link",
-        attrs: { href: "#", "data-toggle": "dropdown" }
-      },
-      [
-        _c("div", { staticClass: "user-nav d-sm-flex d-none" }, [
-          _c("span", { staticClass: "user-name text-bold-600" }, [
-            _vm._v("John Doe")
-          ]),
-          _c("span", { staticClass: "user-status" }, [_vm._v("Available")])
-        ]),
-        _c("span", [
-          _c("img", {
-            staticClass: "round",
-            attrs: {
-              src: "/app-assets/images/portrait/small/avatar-s-11.jpg",
-              alt: "avatar",
-              height: "40",
-              width: "40"
-            }
-          })
-        ])
-      ]
-    )
+    return _c("span", [
+      _c("img", {
+        staticClass: "round",
+        attrs: {
+          src: "/app-assets/images/portrait/small/avatar-s-11.jpg",
+          alt: "avatar",
+          height: "40",
+          width: "40"
+        }
+      })
+    ])
   },
   function() {
     var _vm = this
@@ -36941,7 +37961,29 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _vm._m(1),
+            _c(
+              "li",
+              { staticClass: " nav-item" },
+              [
+                _c("router-link", { attrs: { to: { name: "admin.users" } } }, [
+                  _c("i", { staticClass: "feather icon-user" }),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "menu-title",
+                      attrs: { "data-i18n": "Users" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Users\n                    "
+                      )
+                    ]
+                  )
+                ])
+              ],
+              1
+            ),
             _vm._v(" "),
             _c(
               "li",
@@ -36983,22 +38025,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", { staticClass: " navigation-header" }, [
       _c("span", [_vm._v("Menu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: " nav-item" }, [
-      _c("a", { attrs: { href: "app-email.html" } }, [
-        _c("i", { staticClass: "feather icon-user" }),
-        _vm._v(" "),
-        _c(
-          "span",
-          { staticClass: "menu-title", attrs: { "data-i18n": "Users" } },
-          [_vm._v("\n                        Users\n                    ")]
-        )
-      ])
     ])
   }
 ]
@@ -37146,6 +38172,286 @@ var staticRenderFns = [
         ])
       ])
     ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/layout/Notification.vue?vue&type=template&id=53a725d5&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/layout/Notification.vue?vue&type=template&id=53a725d5& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.$store.state.currentUser.is_auth
+    ? _c("li", { staticClass: "dropdown dropdown-notification nav-item" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1)
+      ])
+    : _vm._e()
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "nav-link nav-link-label",
+        attrs: { href: "#", "data-toggle": "dropdown" }
+      },
+      [
+        _c("i", { staticClass: "ficon feather icon-bell" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "badge badge-pill badge-primary badge-up" }, [
+          _vm._v("5")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "ul",
+      { staticClass: "dropdown-menu dropdown-menu-media dropdown-menu-right" },
+      [
+        _c("li", { staticClass: "dropdown-menu-header" }, [
+          _c("div", { staticClass: "dropdown-header m-0 p-2" }, [
+            _c("h3", { staticClass: "white" }, [_vm._v("5 New")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "notification-title" }, [
+              _vm._v("App Notifications")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "scrollable-container media-list" }, [
+          _c(
+            "a",
+            {
+              staticClass: "d-flex justify-content-between",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [
+              _c("div", { staticClass: "media d-flex align-items-start" }, [
+                _c("div", { staticClass: "media-left" }, [
+                  _c("i", {
+                    staticClass:
+                      "feather icon-plus-square font-medium-5 primary"
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "media-body" }, [
+                  _c("h6", { staticClass: "primary media-heading" }, [
+                    _vm._v("You have new order!")
+                  ]),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "notification-text" }, [
+                    _vm._v("Are your going to meet me tonight?")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("small", [
+                  _c(
+                    "time",
+                    {
+                      staticClass: "media-meta",
+                      attrs: { datetime: "2015-06-11T18:29:20+08:00" }
+                    },
+                    [_vm._v("9 hours ago")]
+                  )
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "d-flex justify-content-between",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [
+              _c("div", { staticClass: "media d-flex align-items-start" }, [
+                _c("div", { staticClass: "media-left" }, [
+                  _c("i", {
+                    staticClass:
+                      "feather icon-download-cloud font-medium-5 success"
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "media-body" }, [
+                  _c(
+                    "h6",
+                    { staticClass: "success media-heading red darken-1" },
+                    [_vm._v("99% Server load")]
+                  ),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "notification-text" }, [
+                    _vm._v("You got new order of goods.")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("small", [
+                  _c(
+                    "time",
+                    {
+                      staticClass: "media-meta",
+                      attrs: { datetime: "2015-06-11T18:29:20+08:00" }
+                    },
+                    [_vm._v("5 hour ago")]
+                  )
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "d-flex justify-content-between",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [
+              _c("div", { staticClass: "media d-flex align-items-start" }, [
+                _c("div", { staticClass: "media-left" }, [
+                  _c("i", {
+                    staticClass:
+                      "feather icon-alert-triangle font-medium-5 danger"
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "media-body" }, [
+                  _c(
+                    "h6",
+                    { staticClass: "danger media-heading yellow darken-3" },
+                    [_vm._v("Warning notifixation")]
+                  ),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "notification-text" }, [
+                    _vm._v("Server have 99% CPU usage.")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("small", [
+                  _c(
+                    "time",
+                    {
+                      staticClass: "media-meta",
+                      attrs: { datetime: "2015-06-11T18:29:20+08:00" }
+                    },
+                    [_vm._v("Today")]
+                  )
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "d-flex justify-content-between",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [
+              _c("div", { staticClass: "media d-flex align-items-start" }, [
+                _c("div", { staticClass: "media-left" }, [
+                  _c("i", {
+                    staticClass: "feather icon-check-circle font-medium-5 info"
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "media-body" }, [
+                  _c("h6", { staticClass: "info media-heading" }, [
+                    _vm._v("Complete the task")
+                  ]),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "notification-text" }, [
+                    _vm._v("Cake sesame snaps cupcake")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("small", [
+                  _c(
+                    "time",
+                    {
+                      staticClass: "media-meta",
+                      attrs: { datetime: "2015-06-11T18:29:20+08:00" }
+                    },
+                    [_vm._v("Last week")]
+                  )
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "d-flex justify-content-between",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [
+              _c("div", { staticClass: "media d-flex align-items-start" }, [
+                _c("div", { staticClass: "media-left" }, [
+                  _c("i", {
+                    staticClass: "feather icon-file font-medium-5 warning"
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "media-body" }, [
+                  _c("h6", { staticClass: "warning media-heading" }, [
+                    _vm._v("Generate monthly report")
+                  ]),
+                  _vm._v(" "),
+                  _c("small", { staticClass: "notification-text" }, [
+                    _vm._v("Chocolate cake oat cake tiramisu marzipan")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("small", [
+                  _c(
+                    "time",
+                    {
+                      staticClass: "media-meta",
+                      attrs: { datetime: "2015-06-11T18:29:20+08:00" }
+                    },
+                    [_vm._v("Last month")]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "dropdown-menu-footer" }, [
+          _c(
+            "a",
+            {
+              staticClass: "dropdown-item p-1 text-center",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [_vm._v("Read all notifications")]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -37650,11 +38956,142 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _vm._m(2),
+    _c(
+      "nav",
+      {
+        staticClass:
+          "header-navbar navbar-expand-lg navbar navbar-with-menu fix-top navbar-light navbar-shadow"
+      },
+      [
+        _c("div", { staticClass: "navbar-wrapper" }, [
+          _c("div", { staticClass: "navbar-container content" }, [
+            _c(
+              "div",
+              {
+                staticClass: "navbar-collapse",
+                attrs: { id: "navbar-mobile" }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "mr-auto float-left bookmark-wrapper d-flex align-items-center"
+                  },
+                  [
+                    _c("ul", { staticClass: "nav navbar-nav" }, [
+                      _vm.$store.state.currentUser.is_auth
+                        ? _c(
+                            "li",
+                            {
+                              staticClass:
+                                "nav-item mobile-menu d-xl-none mr-auto"
+                            },
+                            [_vm._m(0)]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      !_vm.$store.state.currentUser.is_auth
+                        ? _c("li", [
+                            _vm._v(
+                              "\n                Cyberr Gadget Shopping\n              "
+                            )
+                          ])
+                        : _vm._e()
+                    ]),
+                    _vm._v(" "),
+                    _vm.$store.state.currentUser.is_auth
+                      ? _c(
+                          "ul",
+                          { staticClass: "nav navbar-nav bookmark-icons" },
+                          [
+                            _vm._m(1),
+                            _vm._v(" "),
+                            _vm._m(2),
+                            _vm._v(" "),
+                            _vm._m(3)
+                          ]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.$store.state.currentUser.is_auth
+                      ? _c("ul", { staticClass: "nav navbar-nav" }, [_vm._m(4)])
+                      : _vm._e()
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  { staticClass: "nav navbar-nav float-right" },
+                  [
+                    _vm._m(5),
+                    _vm._v(" "),
+                    _c("Notification"),
+                    _vm._v(" "),
+                    _vm.$store.state.currentUser.is_auth
+                      ? _c(
+                          "li",
+                          { staticClass: "dropdown dropdown-user nav-item" },
+                          [_vm._m(6), _vm._v(" "), _vm._m(7)]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    !_vm.$store.state.currentUser.is_auth
+                      ? _c(
+                          "li",
+                          { staticClass: "dropdown dropdown-user nav-item" },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "dropdown-toggle nav-link dropdown-user-link",
+                                attrs: { href: "#", "data-toggle": "dropdown" }
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  [
+                                    _c(
+                                      "router-link",
+                                      {
+                                        staticClass: "btn btn-default",
+                                        attrs: { to: "login" }
+                                      },
+                                      [_vm._v("Login")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  [
+                                    _c(
+                                      "router-link",
+                                      {
+                                        staticClass: "btn btn-default",
+                                        attrs: { to: "register" }
+                                      },
+                                      [_vm._v("Sign Up")]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
     _vm._v(" "),
     _c("div", { staticClass: "app-content content" }, [
       _c("div", { staticClass: "content-overlay" }),
@@ -37690,18 +39127,14 @@ var render = function() {
                             _c(
                               "router-link",
                               { attrs: { to: { name: "app" } } },
-                              [
-                                _vm._v(
-                                  "\n                                            Home\n                                        "
-                                )
-                              ]
+                              [_vm._v("Home")]
                             )
                           ],
                           1
                         ),
                         _vm._v(" "),
                         _c("li", { staticClass: "breadcrumb-item active" }, [
-                          _vm._v("Shop\n                                    ")
+                          _vm._v("Shop")
                         ])
                       ])
                     ])
@@ -37710,7 +39143,7 @@ var render = function() {
               ]
             ),
             _vm._v(" "),
-            _vm._m(3)
+            _vm._m(8)
           ]),
           _vm._v(" "),
           _c("router-view")
@@ -37723,7 +39156,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "drag-target" }),
     _vm._v(" "),
-    _vm._m(4)
+    _vm._m(9)
   ])
 }
 var staticRenderFns = [
@@ -37732,1098 +39165,178 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "nav",
+      "a",
       {
-        staticClass:
-          "header-navbar navbar-expand-lg navbar navbar-with-menu fix-top navbar-light navbar-shadow"
+        staticClass: "nav-link nav-menu-main menu-toggle hidden-xs",
+        attrs: { href: "#" }
       },
-      [
-        _c("div", { staticClass: "navbar-wrapper" }, [
-          _c("div", { staticClass: "navbar-container content" }, [
-            _c(
-              "div",
-              {
-                staticClass: "navbar-collapse",
-                attrs: { id: "navbar-mobile" }
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "mr-auto float-left bookmark-wrapper d-flex align-items-center"
-                  },
-                  [
-                    _c("ul", { staticClass: "nav navbar-nav" }, [
-                      _c(
-                        "li",
-                        {
-                          staticClass: "nav-item mobile-menu d-xl-none mr-auto"
-                        },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass:
-                                "nav-link nav-menu-main menu-toggle hidden-xs",
-                              attrs: { href: "#" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass: "ficon feather icon-menu"
-                              })
-                            ]
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("ul", { staticClass: "nav navbar-nav bookmark-icons" }, [
-                      _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: {
-                              href: "app-todo.html",
-                              "data-toggle": "tooltip",
-                              "data-placement": "top",
-                              title: "Todo"
-                            }
-                          },
-                          [
-                            _c("i", {
-                              staticClass: "ficon feather icon-check-square"
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: {
-                              href: "app-chat.html",
-                              "data-toggle": "tooltip",
-                              "data-placement": "top",
-                              title: "Chat"
-                            }
-                          },
-                          [
-                            _c("i", {
-                              staticClass: "ficon feather icon-message-square"
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: {
-                              href: "app-email.html",
-                              "data-toggle": "tooltip",
-                              "data-placement": "top",
-                              title: "Email"
-                            }
-                          },
-                          [_c("i", { staticClass: "ficon feather icon-mail" })]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: {
-                              href: "app-calender.html",
-                              "data-toggle": "tooltip",
-                              "data-placement": "top",
-                              title: "Calendar"
-                            }
-                          },
-                          [
-                            _c("i", {
-                              staticClass: "ficon feather icon-calendar"
-                            })
-                          ]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("ul", { staticClass: "nav navbar-nav" }, [
-                      _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
-                        _c("a", { staticClass: "nav-link bookmark-star" }, [
-                          _c("i", {
-                            staticClass: "ficon feather icon-star warning"
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "bookmark-input search-input" },
-                          [
-                            _c("div", { staticClass: "bookmark-input-icon" }, [
-                              _c("i", {
-                                staticClass: "feather icon-search primary"
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("input", {
-                              staticClass: "form-control input",
-                              attrs: {
-                                type: "text",
-                                placeholder: "Explore Vuexy...",
-                                tabindex: "0",
-                                "data-search": "template-list"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("ul", {
-                              staticClass: "search-list search-list-bookmark"
-                            })
-                          ]
-                        )
-                      ])
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c("ul", { staticClass: "nav navbar-nav float-right" }, [
-                  _c(
-                    "li",
-                    { staticClass: "dropdown dropdown-language nav-item" },
-                    [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "dropdown-toggle nav-link",
-                          attrs: {
-                            id: "dropdown-flag",
-                            href: "#",
-                            "data-toggle": "dropdown",
-                            "aria-haspopup": "true",
-                            "aria-expanded": "false"
-                          }
-                        },
-                        [
-                          _c("i", { staticClass: "flag-icon flag-icon-us" }),
-                          _c("span", { staticClass: "selected-language" }, [
-                            _vm._v("English")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "dropdown-menu",
-                          attrs: { "aria-labelledby": "dropdown-flag" }
-                        },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#", "data-language": "en" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass: "flag-icon flag-icon-us"
-                              }),
-                              _vm._v(" English")
-                            ]
-                          ),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#", "data-language": "fr" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass: "flag-icon flag-icon-fr"
-                              }),
-                              _vm._v(" French")
-                            ]
-                          ),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#", "data-language": "de" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass: "flag-icon flag-icon-de"
-                              }),
-                              _vm._v(" German")
-                            ]
-                          ),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#", "data-language": "pt" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass: "flag-icon flag-icon-pt"
-                              }),
-                              _vm._v(" Portuguese")
-                            ]
-                          )
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
-                    _c("a", { staticClass: "nav-link nav-link-expand" }, [
-                      _c("i", { staticClass: "ficon feather icon-maximize" })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "nav-item nav-search" }, [
-                    _c("a", { staticClass: "nav-link nav-link-search" }, [
-                      _c("i", { staticClass: "ficon feather icon-search" })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "search-input" }, [
-                      _c("div", { staticClass: "search-input-icon" }, [
-                        _c("i", { staticClass: "feather icon-search primary" })
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "Explore Vuexy...",
-                          tabindex: "-1",
-                          "data-search": "template-list"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "search-input-close" }, [
-                        _c("i", { staticClass: "feather icon-x" })
-                      ]),
-                      _vm._v(" "),
-                      _c("ul", { staticClass: "search-list search-list-main" })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    { staticClass: "dropdown dropdown-notification nav-item" },
-                    [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "nav-link nav-link-label",
-                          attrs: { href: "#", "data-toggle": "dropdown" }
-                        },
-                        [
-                          _c("i", { staticClass: "ficon feather icon-bell" }),
-                          _c(
-                            "span",
-                            {
-                              staticClass:
-                                "badge badge-pill badge-primary badge-up"
-                            },
-                            [_vm._v("5")]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "ul",
-                        {
-                          staticClass:
-                            "dropdown-menu dropdown-menu-media dropdown-menu-right"
-                        },
-                        [
-                          _c("li", { staticClass: "dropdown-menu-header" }, [
-                            _c(
-                              "div",
-                              { staticClass: "dropdown-header m-0 p-2" },
-                              [
-                                _c("h3", { staticClass: "white" }, [
-                                  _vm._v("5 New")
-                                ]),
-                                _c(
-                                  "span",
-                                  { staticClass: "notification-title" },
-                                  [_vm._v("App Notifications")]
-                                )
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "li",
-                            { staticClass: "scrollable-container media-list" },
-                            [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "d-flex justify-content-between",
-                                  attrs: { href: "javascript:void(0)" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "media d-flex align-items-start"
-                                    },
-                                    [
-                                      _c("div", { staticClass: "media-left" }, [
-                                        _c("i", {
-                                          staticClass:
-                                            "feather icon-plus-square font-medium-5 primary"
-                                        })
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "media-body" }, [
-                                        _c(
-                                          "h6",
-                                          {
-                                            staticClass: "primary media-heading"
-                                          },
-                                          [_vm._v("You have new order!")]
-                                        ),
-                                        _c(
-                                          "small",
-                                          { staticClass: "notification-text" },
-                                          [
-                                            _vm._v(
-                                              " Are your going to meet me tonight?"
-                                            )
-                                          ]
-                                        )
-                                      ]),
-                                      _c("small", [
-                                        _c(
-                                          "time",
-                                          {
-                                            staticClass: "media-meta",
-                                            attrs: {
-                                              datetime:
-                                                "2015-06-11T18:29:20+08:00"
-                                            }
-                                          },
-                                          [_vm._v("9 hours ago")]
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "d-flex justify-content-between",
-                                  attrs: { href: "javascript:void(0)" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "media d-flex align-items-start"
-                                    },
-                                    [
-                                      _c("div", { staticClass: "media-left" }, [
-                                        _c("i", {
-                                          staticClass:
-                                            "feather icon-download-cloud font-medium-5 success"
-                                        })
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "media-body" }, [
-                                        _c(
-                                          "h6",
-                                          {
-                                            staticClass:
-                                              "success media-heading red darken-1"
-                                          },
-                                          [_vm._v("99% Server load")]
-                                        ),
-                                        _c(
-                                          "small",
-                                          { staticClass: "notification-text" },
-                                          [
-                                            _vm._v(
-                                              "You got new order of goods."
-                                            )
-                                          ]
-                                        )
-                                      ]),
-                                      _c("small", [
-                                        _c(
-                                          "time",
-                                          {
-                                            staticClass: "media-meta",
-                                            attrs: {
-                                              datetime:
-                                                "2015-06-11T18:29:20+08:00"
-                                            }
-                                          },
-                                          [_vm._v("5 hour ago")]
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "d-flex justify-content-between",
-                                  attrs: { href: "javascript:void(0)" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "media d-flex align-items-start"
-                                    },
-                                    [
-                                      _c("div", { staticClass: "media-left" }, [
-                                        _c("i", {
-                                          staticClass:
-                                            "feather icon-alert-triangle font-medium-5 danger"
-                                        })
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "media-body" }, [
-                                        _c(
-                                          "h6",
-                                          {
-                                            staticClass:
-                                              "danger media-heading yellow darken-3"
-                                          },
-                                          [_vm._v("Warning notifixation")]
-                                        ),
-                                        _c(
-                                          "small",
-                                          { staticClass: "notification-text" },
-                                          [_vm._v("Server have 99% CPU usage.")]
-                                        )
-                                      ]),
-                                      _c("small", [
-                                        _c(
-                                          "time",
-                                          {
-                                            staticClass: "media-meta",
-                                            attrs: {
-                                              datetime:
-                                                "2015-06-11T18:29:20+08:00"
-                                            }
-                                          },
-                                          [_vm._v("Today")]
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "d-flex justify-content-between",
-                                  attrs: { href: "javascript:void(0)" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "media d-flex align-items-start"
-                                    },
-                                    [
-                                      _c("div", { staticClass: "media-left" }, [
-                                        _c("i", {
-                                          staticClass:
-                                            "feather icon-check-circle font-medium-5 info"
-                                        })
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "media-body" }, [
-                                        _c(
-                                          "h6",
-                                          { staticClass: "info media-heading" },
-                                          [_vm._v("Complete the task")]
-                                        ),
-                                        _c(
-                                          "small",
-                                          { staticClass: "notification-text" },
-                                          [_vm._v("Cake sesame snaps cupcake")]
-                                        )
-                                      ]),
-                                      _c("small", [
-                                        _c(
-                                          "time",
-                                          {
-                                            staticClass: "media-meta",
-                                            attrs: {
-                                              datetime:
-                                                "2015-06-11T18:29:20+08:00"
-                                            }
-                                          },
-                                          [_vm._v("Last week")]
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "d-flex justify-content-between",
-                                  attrs: { href: "javascript:void(0)" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "media d-flex align-items-start"
-                                    },
-                                    [
-                                      _c("div", { staticClass: "media-left" }, [
-                                        _c("i", {
-                                          staticClass:
-                                            "feather icon-file font-medium-5 warning"
-                                        })
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "media-body" }, [
-                                        _c(
-                                          "h6",
-                                          {
-                                            staticClass: "warning media-heading"
-                                          },
-                                          [_vm._v("Generate monthly report")]
-                                        ),
-                                        _c(
-                                          "small",
-                                          { staticClass: "notification-text" },
-                                          [
-                                            _vm._v(
-                                              "Chocolate cake oat cake tiramisu marzipan"
-                                            )
-                                          ]
-                                        )
-                                      ]),
-                                      _c("small", [
-                                        _c(
-                                          "time",
-                                          {
-                                            staticClass: "media-meta",
-                                            attrs: {
-                                              datetime:
-                                                "2015-06-11T18:29:20+08:00"
-                                            }
-                                          },
-                                          [_vm._v("Last month")]
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "dropdown-menu-footer" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "dropdown-item p-1 text-center",
-                                attrs: { href: "javascript:void(0)" }
-                              },
-                              [_vm._v("Read all notifications")]
-                            )
-                          ])
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "dropdown dropdown-user nav-item" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass:
-                          "dropdown-toggle nav-link dropdown-user-link",
-                        attrs: { href: "#", "data-toggle": "dropdown" }
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "user-nav d-sm-flex d-none" },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "user-name text-bold-600" },
-                              [_vm._v("John Doe")]
-                            ),
-                            _c("span", { staticClass: "user-status" }, [
-                              _vm._v("Available")
-                            ])
-                          ]
-                        ),
-                        _c("span", [
-                          _c("img", {
-                            staticClass: "round",
-                            attrs: {
-                              src:
-                                "/app-assets/images/portrait/small/avatar-s-11.jpg",
-                              alt: "avatar",
-                              height: "40",
-                              width: "40"
-                            }
-                          })
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "dropdown-menu dropdown-menu-right" },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "page-user-profile.html" }
-                          },
-                          [
-                            _c("i", { staticClass: "feather icon-user" }),
-                            _vm._v(" Edit Profile")
-                          ]
-                        ),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "app-email.html" }
-                          },
-                          [
-                            _c("i", { staticClass: "feather icon-mail" }),
-                            _vm._v(" My Inbox")
-                          ]
-                        ),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "app-todo.html" }
-                          },
-                          [
-                            _c("i", {
-                              staticClass: "feather icon-check-square"
-                            }),
-                            _vm._v(" Task")
-                          ]
-                        ),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "app-chat.html" }
-                          },
-                          [
-                            _c("i", {
-                              staticClass: "feather icon-message-square"
-                            }),
-                            _vm._v(" Chats")
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "dropdown-divider" }),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "auth-login.html" }
-                          },
-                          [
-                            _c("i", { staticClass: "feather icon-power" }),
-                            _vm._v(" Logout")
-                          ]
-                        )
-                      ]
-                    )
-                  ])
-                ])
-              ]
-            )
-          ])
-        ])
-      ]
+      [_c("i", { staticClass: "ficon feather icon-menu" })]
     )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "main-search-list-defaultlist d-none" }, [
-      _c("li", { staticClass: "d-flex align-items-center" }, [
-        _c("a", { staticClass: "pb-25", attrs: { href: "#" } }, [
-          _c("h6", { staticClass: "text-primary mb-0" }, [_vm._v("Files")])
-        ])
+    return _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link",
+          attrs: {
+            href: "app-chat.html",
+            "data-toggle": "tooltip",
+            "data-placement": "top",
+            title: "Chat"
+          }
+        },
+        [_c("i", { staticClass: "ficon feather icon-message-square" })]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link",
+          attrs: {
+            href: "app-email.html",
+            "data-toggle": "tooltip",
+            "data-placement": "top",
+            title: "Email"
+          }
+        },
+        [_c("i", { staticClass: "ficon feather icon-mail" })]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link",
+          attrs: {
+            href: "app-calender.html",
+            "data-toggle": "tooltip",
+            "data-placement": "top",
+            title: "Calendar"
+          }
+        },
+        [_c("i", { staticClass: "ficon feather icon-calendar" })]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item d-none d-lg-block" }, [
+      _c("a", { staticClass: "nav-link bookmark-star" }, [
+        _c("i", { staticClass: "ficon feather icon-star warning" })
       ]),
       _vm._v(" "),
+      _c("div", { staticClass: "bookmark-input search-input" }, [
+        _c("div", { staticClass: "bookmark-input-icon" }, [
+          _c("i", { staticClass: "feather icon-search primary" })
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control input",
+          attrs: {
+            type: "text",
+            placeholder: "Explore Vuexy...",
+            tabindex: "0",
+            "data-search": "template-list"
+          }
+        }),
+        _vm._v(" "),
+        _c("ul", { staticClass: "search-list search-list-bookmark" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "dropdown dropdown-language nav-item" }, [
       _c(
-        "li",
+        "a",
         {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
+          staticClass: "dropdown-toggle nav-link",
+          attrs: {
+            id: "dropdown-flag",
+            href: "#",
+            "data-toggle": "dropdown",
+            "aria-haspopup": "true",
+            "aria-expanded": "false"
+          }
         },
         [
-          _c(
-            "a",
-            {
-              staticClass:
-                "d-flex align-items-center justify-content-between w-100",
-              attrs: { href: "#" }
-            },
-            [
-              _c("div", { staticClass: "d-flex" }, [
-                _c("div", { staticClass: "mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/icons/xls.png",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("Two new item submitted")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("Marketing Manager")
-                  ])
-                ])
-              ]),
-              _c(
-                "small",
-                { staticClass: "search-data-size mr-50 text-muted" },
-                [_vm._v("'17kb")]
-              )
-            ]
-          )
+          _c("i", { staticClass: "flag-icon flag-icon-us" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "selected-language" }, [_vm._v("English")])
         ]
       ),
       _vm._v(" "),
       _c(
-        "li",
+        "div",
         {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
+          staticClass: "dropdown-menu",
+          attrs: { "aria-labelledby": "dropdown-flag" }
         },
         [
           _c(
             "a",
             {
-              staticClass:
-                "d-flex align-items-center justify-content-between w-100",
-              attrs: { href: "#" }
+              staticClass: "dropdown-item",
+              attrs: { href: "#", "data-language": "en" }
             },
             [
-              _c("div", { staticClass: "d-flex" }, [
-                _c("div", { staticClass: "mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/icons/jpg.png",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("52 JPG file Generated")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("FontEnd Developer")
-                  ])
-                ])
-              ]),
-              _c(
-                "small",
-                { staticClass: "search-data-size mr-50 text-muted" },
-                [_vm._v("'11kb")]
-              )
+              _c("i", { staticClass: "flag-icon flag-icon-us" }),
+              _vm._v(" English\n                ")
             ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
-        },
-        [
+          ),
+          _vm._v(" "),
           _c(
             "a",
             {
-              staticClass:
-                "d-flex align-items-center justify-content-between w-100",
-              attrs: { href: "#" }
+              staticClass: "dropdown-item",
+              attrs: { href: "#", "data-language": "fr" }
             },
             [
-              _c("div", { staticClass: "d-flex" }, [
-                _c("div", { staticClass: "mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/icons/pdf.png",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("25 PDF File Uploaded")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("Digital Marketing Manager")
-                  ])
-                ])
-              ]),
-              _c(
-                "small",
-                { staticClass: "search-data-size mr-50 text-muted" },
-                [_vm._v("'150kb")]
-              )
+              _c("i", { staticClass: "flag-icon flag-icon-fr" }),
+              _vm._v(" French\n                ")
             ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
-        },
-        [
+          ),
+          _vm._v(" "),
           _c(
             "a",
             {
-              staticClass:
-                "d-flex align-items-center justify-content-between w-100",
-              attrs: { href: "#" }
+              staticClass: "dropdown-item",
+              attrs: { href: "#", "data-language": "de" }
             },
             [
-              _c("div", { staticClass: "d-flex" }, [
-                _c("div", { staticClass: "mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/icons/doc.png",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("Anna_Strong.doc")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("Web Designer")
-                  ])
-                ])
-              ]),
-              _c(
-                "small",
-                { staticClass: "search-data-size mr-50 text-muted" },
-                [_vm._v("'256kb")]
-              )
+              _c("i", { staticClass: "flag-icon flag-icon-de" }),
+              _vm._v(" German\n                ")
             ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("li", { staticClass: "d-flex align-items-center" }, [
-        _c("a", { staticClass: "pb-25", attrs: { href: "#" } }, [
-          _c("h6", { staticClass: "text-primary mb-0" }, [_vm._v("Members")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
-        },
-        [
+          ),
+          _vm._v(" "),
           _c(
             "a",
             {
-              staticClass:
-                "d-flex align-items-center justify-content-between py-50 w-100",
-              attrs: { href: "#" }
+              staticClass: "dropdown-item",
+              attrs: { href: "#", "data-language": "pt" }
             },
             [
-              _c("div", { staticClass: "d-flex align-items-center" }, [
-                _c("div", { staticClass: "avatar mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/portrait/small/avatar-s-8.jpg",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("John Doe")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("UI designer")
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass:
-                "d-flex align-items-center justify-content-between py-50 w-100",
-              attrs: { href: "#" }
-            },
-            [
-              _c("div", { staticClass: "d-flex align-items-center" }, [
-                _c("div", { staticClass: "avatar mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/portrait/small/avatar-s-1.jpg",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("Michal Clark")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("FontEnd Developer")
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass:
-                "d-flex align-items-center justify-content-between py-50 w-100",
-              attrs: { href: "#" }
-            },
-            [
-              _c("div", { staticClass: "d-flex align-items-center" }, [
-                _c("div", { staticClass: "avatar mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/portrait/small/avatar-s-14.jpg",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("Milena Gibson")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("Digital Marketing Manager")
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        {
-          staticClass:
-            "auto-suggestion d-flex align-items-center cursor-pointer"
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass:
-                "d-flex align-items-center justify-content-between py-50 w-100",
-              attrs: { href: "#" }
-            },
-            [
-              _c("div", { staticClass: "d-flex align-items-center" }, [
-                _c("div", { staticClass: "avatar mr-50" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/app-assets/images/portrait/small/avatar-s-6.jpg",
-                      alt: "png",
-                      height: "32"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "search-data" }, [
-                  _c("p", { staticClass: "search-data-title mb-0" }, [
-                    _vm._v("Anna Strong")
-                  ]),
-                  _c("small", { staticClass: "text-muted" }, [
-                    _vm._v("Web Designer")
-                  ])
-                ])
-              ])
+              _c("i", { staticClass: "flag-icon flag-icon-pt" }),
+              _vm._v(" Portuguese\n                ")
             ]
           )
         ]
@@ -38835,35 +39348,89 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "ul",
-      { staticClass: "main-search-list-defaultlist-other-list d-none" },
+      "a",
+      {
+        staticClass: "dropdown-toggle nav-link dropdown-user-link",
+        attrs: { href: "#", "data-toggle": "dropdown" }
+      },
       [
-        _c(
-          "li",
-          {
-            staticClass:
-              "auto-suggestion d-flex align-items-center justify-content-between cursor-pointer"
-          },
-          [
-            _c(
-              "a",
-              {
-                staticClass:
-                  "d-flex align-items-center justify-content-between w-100 py-50"
-              },
-              [
-                _c("div", { staticClass: "d-flex justify-content-start" }, [
-                  _c("span", {
-                    staticClass: "mr-75 feather icon-alert-circle"
-                  }),
-                  _c("span", [_vm._v("No results found.")])
-                ])
-              ]
-            )
-          ]
-        )
+        _c("div", { staticClass: "user-nav d-sm-flex d-none" }, [
+          _c("span", { staticClass: "user-name text-bold-600" }, [
+            _vm._v("John Doe")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "user-status" }, [_vm._v("Available")])
+        ]),
+        _vm._v(" "),
+        _c("span", [
+          _c("img", {
+            staticClass: "round",
+            attrs: {
+              src: "/app-assets/images/portrait/small/avatar-s-11.jpg",
+              alt: "avatar",
+              height: "40",
+              width: "40"
+            }
+          })
+        ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "dropdown-menu dropdown-menu-right" }, [
+      _c(
+        "a",
+        {
+          staticClass: "dropdown-item",
+          attrs: { href: "page-user-profile.html" }
+        },
+        [
+          _c("i", { staticClass: "feather icon-user" }),
+          _vm._v(" Edit Profile\n                ")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        { staticClass: "dropdown-item", attrs: { href: "app-email.html" } },
+        [
+          _c("i", { staticClass: "feather icon-mail" }),
+          _vm._v(" My Inbox\n                ")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        { staticClass: "dropdown-item", attrs: { href: "app-todo.html" } },
+        [
+          _c("i", { staticClass: "feather icon-check-square" }),
+          _vm._v(" Task\n                ")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        { staticClass: "dropdown-item", attrs: { href: "app-chat.html" } },
+        [
+          _c("i", { staticClass: "feather icon-message-square" }),
+          _vm._v(" Chats\n                ")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "dropdown-divider" }),
+      _vm._v(" "),
+      _c(
+        "a",
+        { staticClass: "dropdown-item", attrs: { href: "auth-login.html" } },
+        [
+          _c("i", { staticClass: "feather icon-power" }),
+          _vm._v(" Logout\n                ")
+        ]
+      )
+    ])
   },
   function() {
     var _vm = this
@@ -38897,9 +39464,11 @@ var staticRenderFns = [
               _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
                 _vm._v("Chat")
               ]),
+              _vm._v(" "),
               _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
                 _vm._v("Email")
               ]),
+              _vm._v(" "),
               _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
                 _vm._v("Calendar")
               ])
@@ -38919,7 +39488,7 @@ var staticRenderFns = [
           "span",
           { staticClass: "float-md-left d-block d-md-inline-block mt-25" },
           [
-            _vm._v("COPYRIGHT © 2019"),
+            _vm._v("\n        COPYRIGHT © 2019\n        "),
             _c(
               "a",
               {
@@ -38931,11 +39500,12 @@ var staticRenderFns = [
               },
               [_vm._v("Pixinvent,")]
             ),
-            _vm._v("All rights Reserved")
+            _vm._v("All rights Reserved\n      ")
           ]
         ),
+        _vm._v(" "),
         _c("span", { staticClass: "float-md-right d-none d-md-block" }, [
-          _vm._v("Hand-crafted & Made with"),
+          _vm._v("\n        Hand-crafted & Made with\n        "),
           _c("i", { staticClass: "feather icon-heart pink" })
         ]),
         _vm._v(" "),
@@ -42707,6 +43277,1345 @@ render._withStripped = true
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/admin/Products.vue?vue&type=template&id=68522026& ***!
   \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "data-list-view-header", attrs: { id: "data-list-view" } },
+      [
+        _c("div", { staticClass: "action-btns d-none" }, [
+          _c("div", { staticClass: "btn-dropdown mr-1 mb-1" }, [
+            _c("div", { staticClass: "btn-group dropdown actions-dropodown" }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "dropdown",
+                    "aria-haspopup": "true",
+                    "aria-expanded": "false"
+                  }
+                },
+                [_vm._v("\n                    Actions\n                ")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "dropdown-menu" }, [
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-trash" }),
+                    _vm._v("Delete")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-archive" }),
+                    _vm._v("Archive")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-file" }),
+                    _vm._v("Print")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-save" }),
+                    _vm._v("Another Action")
+                  ]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "table-responsive" }, [
+          _c("table", { staticClass: "table data-list-view" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th"),
+                _vm._v(" "),
+                _c("th", [_vm._v("NAME")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("CATEGORY")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("POPULARITY")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("ORDER STATUS")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("PRICE")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("ACTION")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Apple Watch series 4 GPS")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-success" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "97%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$69.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Beats HeadPhones")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "83%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("Delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$69.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Altec Lansing - Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "57%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Aluratek - Bluetooth Audio Receiver")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "65%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$29.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Aluratek - Bluetooth Audio Transmitter")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Basis - Peak Fitness and Sleep Tracker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "47%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Antec - Nano Diamond Thermal Compound")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "55%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$29.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Antec - SmartBean Bluetooth Adapter")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computer")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "63%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$39.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Beats by Dr. Dre - 3' USB-to-Micro USB Cable")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computer")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Beats by Dr. Dre - Bike Mount for Pill Speakers")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "40%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$49.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Bose® - SoundLink® Color Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "90%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$129.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("BRAVEN - Portable Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Craig - Portable Wireless Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-danger" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "20%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Definitive Technology - Wireless Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "75%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$399.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v(
+                    "Fitbit - Charge HR Activity Tracker + Heart Rate (Large)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "60%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$149.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v('Fitbit - Flex 1" USB Charging Cable')
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$14.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Fitbit - Activity Tracker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-danger" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "35%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$99.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Fitbit - Charge Wireless Activity Tracker (Large)")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$129.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Craig - Tower Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "68%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$69.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("BRAVEN - Outdoor Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "97%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Bose® - Bluetooth Speaker Travel Bag")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "89%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$44.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Altec Lansing - Mini H2O Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-success" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "add-new-data-sidebar" }, [
+          _c("div", { staticClass: "overlay-bg" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "add-new-data" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "div mt-2 px-2 d-flex new-data-title justify-content-between"
+              },
+              [
+                _c("div", [
+                  _c("h4", { staticClass: "text-uppercase" }, [
+                    _vm._v("List View Data")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "hide-data-sidebar" }, [
+                  _c("i", { staticClass: "feather icon-x" })
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "data-items pb-3" }, [
+              _c("div", { staticClass: "data-fields px-2 mt-3" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-name" } }, [
+                      _vm._v("Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "data-name" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-category" } }, [
+                      _vm._v(" Category ")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        staticClass: "form-control",
+                        attrs: { id: "data-category" }
+                      },
+                      [
+                        _c("option", [_vm._v("Audio")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Computers")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Fitness")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Appliance")])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-status" } }, [
+                      _vm._v("Order Status")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        staticClass: "form-control",
+                        attrs: { id: "data-status" }
+                      },
+                      [
+                        _c("option", [_vm._v("Pending")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Canceled")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Delivered")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("On Hold")])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-price" } }, [
+                      _vm._v("Price")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "data-price" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "col-sm-12 data-field-col data-list-upload"
+                    },
+                    [
+                      _c(
+                        "form",
+                        {
+                          staticClass: "dropzone dropzone-area",
+                          attrs: { action: "#", id: "dataListUpload" }
+                        },
+                        [
+                          _c("div", { staticClass: "dz-message" }, [
+                            _vm._v("Upload Image")
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "add-data-footer d-flex justify-content-around px-3 mt-2"
+              },
+              [
+                _c("div", { staticClass: "add-data-btn" }, [
+                  _c("button", { staticClass: "btn btn-primary" }, [
+                    _vm._v("Add Data")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "cancel-data-btn" }, [
+                  _c("button", { staticClass: "btn btn-outline-danger" }, [
+                    _vm._v("Cancel")
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/users/index.vue?vue&type=template&id=4184f89c&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/admin/users/index.vue?vue&type=template&id=4184f89c& ***!
+  \***************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -61773,6 +63682,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/layout/Notification.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/layout/Notification.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Notification_vue_vue_type_template_id_53a725d5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification.vue?vue&type=template&id=53a725d5& */ "./resources/js/components/layout/Notification.vue?vue&type=template&id=53a725d5&");
+/* harmony import */ var _Notification_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Notification.vue?vue&type=script&lang=js& */ "./resources/js/components/layout/Notification.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Notification_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Notification_vue_vue_type_template_id_53a725d5___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Notification_vue_vue_type_template_id_53a725d5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/layout/Notification.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/layout/Notification.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/layout/Notification.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Notification_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Notification.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/layout/Notification.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Notification_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/layout/Notification.vue?vue&type=template&id=53a725d5&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/layout/Notification.vue?vue&type=template&id=53a725d5& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notification_vue_vue_type_template_id_53a725d5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Notification.vue?vue&type=template&id=53a725d5& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/layout/Notification.vue?vue&type=template&id=53a725d5&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notification_vue_vue_type_template_id_53a725d5___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notification_vue_vue_type_template_id_53a725d5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/product/AlsoLike.vue":
 /*!******************************************************!*\
   !*** ./resources/js/components/product/AlsoLike.vue ***!
@@ -62491,15 +64469,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DefaultLayout_vue_vue_type_template_id_3ae3ccd2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DefaultLayout.vue?vue&type=template&id=3ae3ccd2& */ "./resources/js/layouts/DefaultLayout.vue?vue&type=template&id=3ae3ccd2&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _DefaultLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DefaultLayout.vue?vue&type=script&lang=js& */ "./resources/js/layouts/DefaultLayout.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _DefaultLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _DefaultLayout_vue_vue_type_template_id_3ae3ccd2___WEBPACK_IMPORTED_MODULE_0__["render"],
   _DefaultLayout_vue_vue_type_template_id_3ae3ccd2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -62513,6 +64493,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/layouts/DefaultLayout.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/layouts/DefaultLayout.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/layouts/DefaultLayout.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DefaultLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./DefaultLayout.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/layouts/DefaultLayout.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DefaultLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -63081,6 +65075,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/pages/admin/users/index.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/pages/admin/users/index.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index_vue_vue_type_template_id_4184f89c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=4184f89c& */ "./resources/js/pages/admin/users/index.vue?vue&type=template&id=4184f89c&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _index_vue_vue_type_template_id_4184f89c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_4184f89c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/admin/users/index.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/admin/users/index.vue?vue&type=template&id=4184f89c&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/pages/admin/users/index.vue?vue&type=template&id=4184f89c& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4184f89c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=4184f89c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/users/index.vue?vue&type=template&id=4184f89c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4184f89c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4184f89c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/pages/auth/Login.vue":
 /*!*******************************************!*\
   !*** ./resources/js/pages/auth/Login.vue ***!
@@ -63380,7 +65443,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_manage_Dashboard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../pages/manage/Dashboard */ "./resources/js/pages/manage/Dashboard.vue");
 /* harmony import */ var _pages_manage_Notification__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../pages/manage/Notification */ "./resources/js/pages/manage/Notification.vue");
 /* harmony import */ var _pages_admin_Dashboard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../pages/admin/Dashboard */ "./resources/js/pages/admin/Dashboard.vue");
-/* harmony import */ var _pages_admin_Products__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../pages/admin/Products */ "./resources/js/pages/admin/Products.vue");
+/* harmony import */ var _pages_admin_users_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../pages/admin/users/index */ "./resources/js/pages/admin/users/index.vue");
+/* harmony import */ var _pages_admin_Products__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../pages/admin/Products */ "./resources/js/pages/admin/Products.vue");
 
 
 
@@ -63395,6 +65459,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 
 
  // Admin Side
+
 
 
 
@@ -63464,9 +65529,17 @@ var routers = [{
     layout: 'admin'
   }
 }, {
+  path: '/admin/users',
+  name: 'admin.users',
+  component: _pages_admin_users_index__WEBPACK_IMPORTED_MODULE_13__["default"],
+  meta: {
+    auth: true,
+    layout: 'admin'
+  }
+}, {
   path: '/admin/products',
   name: 'admin.products',
-  component: _pages_admin_Products__WEBPACK_IMPORTED_MODULE_13__["default"],
+  component: _pages_admin_Products__WEBPACK_IMPORTED_MODULE_14__["default"],
   meta: {
     auth: true,
     layout: 'admin'

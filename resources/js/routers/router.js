@@ -18,6 +18,7 @@ import ManageNotification from '../pages/manage/Notification'
 
 // Admin Side
 import AdminDashboard from '../pages/admin/Dashboard'
+import AdminUsers from '../pages/admin/users/index'
 import AdminProducts from '../pages/admin/Products'
 
 const routers = [
@@ -35,6 +36,7 @@ const routers = [
     
     // Admin Side
     {   path: '/admin/dashboard', name: 'admin.dashboard', component: AdminDashboard, meta: { auth:true, layout:'admin'} },
+    {   path: '/admin/users', name: 'admin.users', component: AdminUsers, meta: { auth:true, layout:'admin'} },
     {   path: '/admin/products', name: 'admin.products', component: AdminProducts, meta: { auth:true, layout:'admin'} },
   ];
 

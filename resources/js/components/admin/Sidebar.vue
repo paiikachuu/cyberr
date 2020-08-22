@@ -24,12 +24,12 @@
                     </router-link>
                 </li>
                 <li class=" nav-item">
-                    <a href="app-email.html">
+                    <router-link :to="{name:'admin.users'}">
                         <i class="feather icon-user"></i>
                         <span class="menu-title" data-i18n="Users">
                             Users
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li class=" nav-item">
                     <router-link :to="{name:'admin.products'}">
