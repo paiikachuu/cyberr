@@ -76,7 +76,7 @@ export default {
         this.appendJavascript("/app-assets/js/scripts/ui/data-list-view.js")
 
         $('body').removeClass()
-        $('body').addClass('vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static')
+        $('body').addClass('vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static')
         $('body').attr('data-col', '2-columns')
     },
     methods: {

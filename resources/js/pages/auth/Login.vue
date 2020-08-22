@@ -111,7 +111,7 @@
               this.$store.commit('currentUser/setUser', res.data)
               this.$store.commit('currentUser/setIsAuth', true)
             //   this.$router.push({ name: 'dashboard' })
-    		    window.location.replace(window.config.appUrl + '/dashboard')
+    		    window.location.replace(window.config.appUrl + '/admin/dashboard')
             })
           })
           .catch((err)=> {

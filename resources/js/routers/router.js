@@ -11,9 +11,13 @@ import ProductDetail from '../pages/Product'
 import Search from '../pages/Search'
 import Cart from '../pages/Cart'
 import Checkout from '../pages/Checkout'
+
+// Manage Side or Login Users
+import ManageDashboard from '../pages/manage/Dashboard'
+import ManageNotification from '../pages/manage/Notification'
+
 // Admin Side
-import Dashboard from '../pages/admin/Dashboard'
-import Notification from '../pages/admin/Notification'
+import AdminDashboard from '../pages/admin/Dashboard'
 import AdminProducts from '../pages/admin/Products'
 
 const routers = [
@@ -24,10 +28,14 @@ const routers = [
     {   path: '/search', name: 'search', component: Search },
     {   path: '/cart', name: 'cart', component: Cart },
     {   path: '/checkout', name: 'checkout', component: Checkout },
+    
+    // Manage Side or Login Users 
+    {   path: '/manage/dashboard', name: 'manage.dashboard', component: ManageDashboard, meta: { auth:true, layout:'admin'} },
+    {   path: '/manage/notification', name: 'manage.notification', component: ManageNotification, meta: { auth:true, layout:'admin'} },
+    
     // Admin Side
-    {   path: '/dashboard', name: 'dashboard', component: Dashboard, meta: { auth:true, layout:'admin'} },
-    {   path: '/notification', name: 'notification', component: Notification, meta: { auth:true, layout:'admin'} },
-    {   path: '/admin-products', name: 'admin_products', component: AdminProducts, meta: { auth:true, layout:'admin'} },
+    {   path: '/admin/dashboard', name: 'admin.dashboard', component: AdminDashboard, meta: { auth:true, layout:'admin'} },
+    {   path: '/admin/products', name: 'admin.products', component: AdminProducts, meta: { auth:true, layout:'admin'} },
   ];
 
   function isLoggedIn() {
@@ -52,7 +60,7 @@ const routers = [
     } else if (to.matched.some(record => record.meta.guest)) {
       if (isLoggedIn()) {
         next({
-          path: '/dashboard',
+          path: '/admin/dashboard',
           query: { redirect: to.fullPath }
         })
       } else {

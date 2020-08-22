@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto">
-                    <router-link to="dashboard" class="navbar-brand" >
+                    <router-link :to="{name:'admin.dashboard'}" class="navbar-brand" >
                         <div class="brand-logo"></div>
                         <h2 class="brand-text mb-0">Cyberr</h2>
                     </router-link>
@@ -16,7 +16,7 @@
                 <li class=" navigation-header"><span>Menu</span>
                 </li>
                 <li class=" nav-item">
-                    <router-link to="dashboard">
+                    <router-link :to="{name:'admin.dashboard'}">
                         <i class="feather icon-home"></i>
                         <span class="menu-title" data-i18n="Dashboard">
                             Dashboard
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class=" nav-item">
-                    <router-link :to="{name:'admin_products'}">
+                    <router-link :to="{name:'admin.products'}">
                         <i class="feather icon-home"></i>
                         <span class="menu-title" data-i18n="Products">
                             Products
