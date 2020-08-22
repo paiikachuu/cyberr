@@ -1,6 +1,5 @@
 <template>
     <div class="content-body">
-
         <!-- Knowledge base Jumbotron -->
         <section id="knowledge-base-search">
             <div class="row">
