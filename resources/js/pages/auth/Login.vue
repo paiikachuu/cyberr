@@ -66,7 +66,7 @@
                                             </div>
                                             <div class="text-right"><a href="auth-forgot-password.html" class="card-link">Forgot Password?</a></div>
                                         </div>
-                                        <router-link class="btn btn-outline-primary float-left btn-inline" :to="'register'">Register</router-link>
+                                        <router-link :to="{name:'app'}" class="btn btn-outline-primary float-left btn-inline">Cancel</router-link>
                                         <button @click.prevent="login()" class="btn btn-primary float-right btn-inline">Login</button>
                                     </form>
                                 </div>

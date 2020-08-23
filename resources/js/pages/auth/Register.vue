@@ -67,7 +67,7 @@
                                                 </fieldset>
                                             </div>
                                         </div>
-                                        <router-link class="btn btn-outline-primary float-left btn-inline mb-50" :to="'login'">Login</router-link>
+                                        <router-link :to="{name:'app'}" class="btn btn-outline-primary float-left btn-inline mb-50">Cancel</router-link>
                                         <button @click.prevent="formSubmit()" class="btn btn-primary float-right btn-inline mb-50">Submit</button>
                                     </form>
                                 </div>

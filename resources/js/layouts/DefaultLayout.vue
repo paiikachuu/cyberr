@@ -243,8 +243,13 @@
 import Notification from "../components/layout/Notification";
 
 export default {
-  components: {
-    Notification,
-  },
+    components: {
+        Notification,
+    },
+    mounted() {
+        $('body').removeClass()
+        $('body').addClass('vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static')
+        $('body').attr('data-col', '1-column')
+    },
 };
 </script>

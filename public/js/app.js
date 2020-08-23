@@ -2824,6 +2824,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Notification: _components_layout_Notification__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  mounted: function mounted() {
+    $('body').removeClass();
+    $('body').addClass('vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static');
+    $('body').attr('data-col', '1-column');
   }
 });
 
@@ -46134,9 +46139,9 @@ var render = function() {
                           {
                             staticClass:
                               "btn btn-outline-primary float-left btn-inline",
-                            attrs: { to: "register" }
+                            attrs: { to: { name: "app" } }
                           },
-                          [_vm._v("Register")]
+                          [_vm._v("Cancel")]
                         ),
                         _vm._v(" "),
                         _c(
@@ -46605,9 +46610,9 @@ var render = function() {
                           {
                             staticClass:
                               "btn btn-outline-primary float-left btn-inline mb-50",
-                            attrs: { to: "login" }
+                            attrs: { to: { name: "app" } }
                           },
-                          [_vm._v("Login")]
+                          [_vm._v("Cancel")]
                         ),
                         _vm._v(" "),
                         _c(
