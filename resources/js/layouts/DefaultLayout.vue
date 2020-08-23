@@ -14,7 +14,9 @@
                   </a>
                 </li>
                  <li v-if="!$store.state.currentUser.is_auth">
-                  Cyberr Gadget Shopping
+                    <router-link :to="{name:'app'}">
+                        Cyberr Gadget Shopping
+                    </router-link>
                 </li>
               </ul>
               <ul v-if="$store.state.currentUser.is_auth" class="nav navbar-nav bookmark-icons">
@@ -241,7 +243,6 @@
 
 <script>
 import Notification from "../components/layout/Notification";
-
 export default {
     components: {
         Notification,

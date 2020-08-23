@@ -91,35 +91,40 @@
 </template>
 
 <script>
-  import User from "../../apis/User"
-  export default {  
-    data() {
-      return {
-        form : {
-          email : null,
-          password : null,
-        },
+    import html_mixins from '../../mixins/html';
+    import User from "../../apis/User"
+    export default {  
+        mixins: [html_mixins],
+        data() {
+        return {
+            form : {
+            email : null,
+            password : null,
+            },
 
-        errors : [],
-      }
-    },
-    methods : {
-      login() {
-        User.login(this.form)
-          .then((res)=> {
-            User.auth().then((res)=>{
-              this.$store.commit('currentUser/setUser', res.data)
-              this.$store.commit('currentUser/setIsAuth', true)
-            //   this.$router.push({ name: 'dashboard' })
-    		    window.location.replace(window.config.appUrl + '/admin/dashboard')
+            errors : [],
+        }
+        },
+        mounted() {
+            this.appendCss("/app-assets/css/pages/authentication.css")
+        },
+        methods : {
+        login() {
+            User.login(this.form)
+            .then((res)=> {
+                User.auth().then((res)=>{
+                this.$store.commit('currentUser/setUser', res.data)
+                this.$store.commit('currentUser/setIsAuth', true)
+                //   this.$router.push({ name: 'dashboard' })
+                    window.location.replace(window.config.appUrl + '/admin/dashboard')
+                })
             })
-          })
-          .catch((err)=> {
-            if(err.response.status) {
-              this.errors = err.response.data.errors;
-            }
-          })
-      },
+            .catch((err)=> {
+                if(err.response.status) {
+                this.errors = err.response.data.errors;
+                }
+            })
+        },
+        }
     }
-  }
 </script>

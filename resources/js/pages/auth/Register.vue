@@ -81,37 +81,42 @@
 </template>
 
 <script>
-  import User from "../../apis/User"
-  export default {  
-    data() {
-      return {
-        form : {
-          first_name : null,
-          last_name : null,
-          email : null,
-          password : null,
-          password_confirmation : null,
-        },
+    import html_mixins from '../../mixins/html';
+    import User from "../../apis/User"
+    export default {  
+        mixins: [html_mixins],
+        data() {
+            return {
+                form : {
+                first_name : null,
+                last_name : null,
+                email : null,
+                password : null,
+                password_confirmation : null,
+                },
 
-        errors : [],
-      }
-    },
-    methods : {
-      formSubmit() {
-        User.register(this.form)
-          .then((res)=> {
-            User.auth().then((res)=>{
-              this.$store.commit('currentUser/setUser', res.data)
-              this.$store.commit('currentUser/setIsAuth', true)
-              this.$router.push({ name: 'app' })
-            })
-          })
-          .catch((err)=> {
-            if(err.response.status) {
-              this.errors = err.response.data.errors;
+                errors : [],
             }
-          })
-      },
+        },
+        mounted() {
+            this.appendCss("/app-assets/css/pages/authentication.css")
+        },
+        methods : {
+        formSubmit() {
+            User.register(this.form)
+            .then((res)=> {
+                User.auth().then((res)=>{
+                this.$store.commit('currentUser/setUser', res.data)
+                this.$store.commit('currentUser/setIsAuth', true)
+                this.$router.push({ name: 'app' })
+                })
+            })
+            .catch((err)=> {
+                if(err.response.status) {
+                this.errors = err.response.data.errors;
+                }
+            })
+        },
+        }
     }
-  }
 </script>

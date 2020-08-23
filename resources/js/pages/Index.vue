@@ -102,10 +102,11 @@
 </template>
 
 <script>
-export default {
-  components: {}
-};
+    import html_mixins from '../mixins/html';
+    export default {  
+        mixins: [html_mixins],
+        mounted() {
+            this.appendCss("/app-assets/css/pages/knowledge-base.css")
+        }
+    }
 </script>
-
-<style scoped>
-</style>

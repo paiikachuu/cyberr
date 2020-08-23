@@ -21,6 +21,7 @@
         <div class="drag-target"></div>
 
         <Footer />
+
     </div>
     <!-- <div class="container pt-4">
         <Navigation/>
@@ -38,11 +39,9 @@ import Header from '../components/admin/Header'
 import Sidebar from '../components/admin/Sidebar'
 import Footer from '../components/admin/Footer'
 
-import html_mixins from '../mixins/html';
 import User from "../apis/User";
 
 export default {
-    mixins: [html_mixins],
     components: {
         Header,
         Sidebar,
@@ -53,27 +52,6 @@ export default {
     created() {
     },
     mounted() {
-        this.appendCss("/app-assets/vendors/css/charts/apexcharts.css")
-        this.appendCss("/app-assets/vendors/css/extensions/tether-theme-arrows.css")
-        this.appendCss("/app-assets/vendors/css/extensions/tether.min.css")
-        this.appendCss("/app-assets/vendors/css/extensions/shepherd-theme-default.css")
-        this.appendCss("/app-assets/css/pages/dashboard-analytics.css")
-        this.appendCss("/app-assets/css/pages/card-analytics.css")
-        this.appendCss("/app-assets/css/plugins/tour/tour.css")
-        this.appendCss("/app-assets/vendors/css/tables/datatable/datatables.min.css")
-        this.appendCss("/app-assets/vendors/css/file-uploaders/dropzone.min.css")
-        this.appendCss("/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css")
-        this.appendCss("/app-assets/css/plugins/file-uploaders/dropzone.css")
-        this.appendCss("/app-assets/css/pages/data-list-view.css")
-
-        this.appendJavascript("/app-assets/vendors/js/extensions/dropzone.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/dataTables.select.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js")
-        this.appendJavascript("/app-assets/js/scripts/ui/data-list-view.js")
 
         $('body').removeClass()
         $('body').addClass('vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static')
@@ -91,6 +69,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-</style>
