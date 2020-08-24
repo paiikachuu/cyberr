@@ -1,142 +1,134 @@
 <template>
-    <section id="dashboard-analytics">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="mb-0">Users Lists</h4>
-                    </div>
-                    <div class="card-content">
-                        <div class="table-responsive mt-1">
-                            <table class="table table-hover-animation mb-0">
-                                <thead>
-                                    <tr>
-                                        <th>ORDER</th>
-                                        <th>STATUS</th>
-                                        <th>OPERATORS</th>
-                                        <th>LOCATION</th>
-                                        <th>DISTANCE</th>
-                                        <th>START DATE</th>
-                                        <th>EST DEL. DT</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>#879985</td>
-                                        <td><i class="fa fa-circle font-small-3 text-success mr-50"></i>Moving</td>
-                                        <td class="p-1">
-                                            <ul class="list-unstyled users-list m-0  d-flex align-items-center">
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Vinnie Mostowy" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Elicia Rieske" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-7.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Julee Rossignol" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-10.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Darcey Nooner" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>Anniston, Alabama</td>
-                                        <td>
-                                            <span>130 km</span>
-                                            <div class="progress progress-bar-success mt-1 mb-0">
-                                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>14:58 26/07/2018</td>
-                                        <td>28/07/2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#156897</td>
-                                        <td><i class="fa fa-circle font-small-3 text-warning mr-50"></i>Pending</td>
-                                        <td class="p-1">
-                                            <ul class="list-unstyled users-list m-0  d-flex align-items-center">
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Trina Lynes" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Lilian Nenez" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Alberto Glotzbach" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>Cordova, Alaska</td>
-                                        <td>
-                                            <span>234 km</span>
-                                            <div class="progress progress-bar-warning mt-1 mb-0">
-                                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>14:58 26/07/2018</td>
-                                        <td>28/07/2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#568975</td>
-                                        <td><i class="fa fa-circle font-small-3 text-success mr-50"></i>Moving</td>
-                                        <td class="p-1">
-                                            <ul class="list-unstyled users-list m-0  d-flex align-items-center">
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Lai Lewandowski" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-6.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Elicia Rieske" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-7.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Darcey Nooner" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Julee Rossignol" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-10.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Jeffrey Gerondale" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-9.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>Florence, Alabama</td>
-                                        <td>
-                                            <span>168 km</span>
-                                            <div class="progress progress-bar-success mt-1 mb-0">
-                                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>14:58 26/07/2018</td>
-                                        <td>28/07/2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#245689</td>
-                                        <td><i class="fa fa-circle font-small-3 text-danger mr-50"></i>Canceled</td>
-                                        <td class="p-1">
-                                            <ul class="list-unstyled users-list m-0  d-flex align-items-center">
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Vinnie Mostowy" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Elicia Rieske" class="avatar pull-up">
-                                                    <img class="media-object rounded-circle" src="/app-assets/images/portrait/small/avatar-s-7.jpg" alt="Avatar" height="30" width="30">
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>Clifton, Arizona</td>
-                                        <td>
-                                            <span>125 km</span>
-                                            <div class="progress progress-bar-danger mt-1 mb-0">
-                                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </td>
-                                        <td>14:58 26/07/2018</td>
-                                        <td>28/07/2018</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+    <section class="users-list-wrapper">
+        <!-- users filter start -->
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Filters</h4>
+                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                        <li><a data-action=""><i class="feather icon-rotate-cw users-data-filter"></i></a></li>
+                        <li><a data-action="close"><i class="feather icon-x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-content collapse show">
+                <div class="card-body">
+                    <div class="users-list-filter">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-role">Role</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-role">
+                                            <option value="">All</option>
+                                            <option value="user">User</option>
+                                            <option value="staff">Staff</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-status">Status</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-status">
+                                            <option value="">All</option>
+                                            <option value="Active">Active</option>
+                                            <option value="Blocked">Blocked</option>
+                                            <option value="deactivated">Deactivated</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-verified">Verified</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-verified">
+                                            <option value="">All</option>
+                                            <option value="true">Yes</option>
+                                            <option value="false">No</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3">
+                                    <label for="users-list-department">Department</label>
+                                    <fieldset class="form-group">
+                                        <select class="form-control" id="users-list-department">
+                                            <option value="">All</option>
+                                            <option value="Sales">Sales</option>
+                                            <option value="Devlopment">Devlopment</option>
+                                            <option value="Management">Management</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- users filter end -->
+        <!-- Ag Grid users list section start -->
+        <div id="basic-examples">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="ag-grid-btns d-flex justify-content-between flex-wrap mb-1">
+                                    <div class="dropdown sort-dropdown mb-1 mb-sm-0">
+                                        <button class="btn btn-white filter-btn dropdown-toggle border text-dark" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            1 - 20 of 50
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton6">
+                                            <a class="dropdown-item" href="#">20</a>
+                                            <a class="dropdown-item" href="#">50</a>
+                                        </div>
+                                    </div>
+                                    <div class="ag-btns d-flex flex-wrap">
+                                        <input type="text" class="ag-grid-filter form-control w-50 mr-1 mb-1 mb-sm-0" id="filter-text-box" placeholder="Search...." />
+                                        <div class="action-btns">
+                                            <div class="btn-dropdown ">
+                                                <div class="btn-group dropdown actions-dropodown">
+                                                    <button type="button" class="btn btn-white px-2 py-75 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Actions
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#"><i class="feather icon-trash-2"></i> Delete</a>
+                                                        <a class="dropdown-item" href="#"><i class="feather icon-clipboard"></i> Archive</a>
+                                                        <a class="dropdown-item" href="#"><i class="feather icon-printer"></i> Print</a>
+                                                        <a class="dropdown-item" href="#"><i class="feather icon-download"></i> CSV</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="myGrid" class="aggrid ag-theme-material"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ag Grid users list section end -->
     </section>
 </template>
+
+<script>
+
+import html_mixins from '../../../mixins/html';
+
+export default {
+    mixins: [html_mixins],
+    created() {
+        this.appendJavascript("/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js")
+    },
+    mounted() {
+        this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-grid.css")
+        this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css")
+        this.appendCss("/app-assets/css/pages/app-user.css")
+        this.appendCss("/app-assets/css/pages/aggrid.css")
+        this.appendJavascript("/app-assets/js/scripts/pages/app-user.js")
+    }
+};
+</script>
