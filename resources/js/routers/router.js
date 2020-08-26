@@ -50,6 +50,14 @@ const routers = [
   })
 
   router.beforeEach((to, from, next) => {
+    
+    for (let script of window.config.appendedJavascripts) {
+        $(`script[src='${script}']`).remove()
+    }
+    for (let css of window.config.appendedCss) {
+        $(`link[href='${css}']`).remove()
+    }
+
     if (to.matched.some(record => record.meta.auth)) {
       if (!isLoggedIn()) {
         next({

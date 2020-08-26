@@ -4211,6 +4211,625 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/Dashboard.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/admin/Dashboard.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mixins_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../mixins/html */ "./resources/js/mixins/html.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [_mixins_html__WEBPACK_IMPORTED_MODULE_0__["default"]],
+  created: function created() {
+    this.appendCss("/app-assets/vendors/css/tables/datatable/datatables.min.css");
+    this.appendCss("/app-assets/vendors/css/file-uploaders/dropzone.min.css");
+    this.appendCss("/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css");
+    this.appendCss("/app-assets/css/plugins/file-uploaders/dropzone.css");
+    this.appendCss("/app-assets/css/pages/data-list-view.css");
+    this.appendJavascript("/app-assets/vendors/js/extensions/dropzone.min.js");
+    this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.min.js");
+    this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js");
+    this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js");
+    this.appendJavascript("/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js");
+    this.appendJavascript("/app-assets/vendors/js/tables/datatable/dataTables.select.min.js");
+    this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js");
+  },
+  mounted: function mounted() {
+    this.appendJavascript("/app-assets/js/scripts/ui/data-list-view.js");
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/admin/users/index.vue?vue&type=script&lang=js& ***!
@@ -42481,11 +43100,1324 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { attrs: { id: "dashboard-analytics" } }, [
-    _vm._v("\n    Dashboard Here ...\n")
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "data-list-view-header", attrs: { id: "data-list-view" } },
+      [
+        _c("div", { staticClass: "action-btns d-none" }, [
+          _c("div", { staticClass: "btn-dropdown mr-1 mb-1" }, [
+            _c("div", { staticClass: "btn-group dropdown actions-dropodown" }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "dropdown",
+                    "aria-haspopup": "true",
+                    "aria-expanded": "false"
+                  }
+                },
+                [_vm._v("\n                    Actions\n                ")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "dropdown-menu" }, [
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-trash" }),
+                    _vm._v("Delete")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-archive" }),
+                    _vm._v("Archive")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-file" }),
+                    _vm._v("Print")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "dropdown-item", attrs: { href: "#" } },
+                  [
+                    _c("i", { staticClass: "feather icon-save" }),
+                    _vm._v("Another Action")
+                  ]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "table-responsive" }, [
+          _c("table", { staticClass: "table data-list-view" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th"),
+                _vm._v(" "),
+                _c("th", [_vm._v("NAME")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("CATEGORY")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("POPULARITY")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("ORDER STATUS")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("PRICE")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("ACTION")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", [
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Apple Watch series 4 GPS")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-success" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "97%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$69.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Beats HeadPhones")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "83%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("Delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$69.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Altec Lansing - Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "57%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Aluratek - Bluetooth Audio Receiver")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "65%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$29.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Aluratek - Bluetooth Audio Transmitter")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Basis - Peak Fitness and Sleep Tracker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "47%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Antec - Nano Diamond Thermal Compound")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "55%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$29.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Antec - SmartBean Bluetooth Adapter")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computer")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "63%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$39.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Beats by Dr. Dre - 3' USB-to-Micro USB Cable")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computer")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Beats by Dr. Dre - Bike Mount for Pill Speakers")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "40%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$49.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Bose® - SoundLink® Color Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "90%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$129.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("BRAVEN - Portable Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Craig - Portable Wireless Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-danger" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "20%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Definitive Technology - Wireless Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "75%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$399.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v(
+                    "Fitbit - Charge HR Activity Tracker + Heart Rate (Large)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "60%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$149.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v('Fitbit - Flex 1" USB Charging Cable')
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$14.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Fitbit - Activity Tracker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-danger" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "35%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-danger" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("canceled")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$99.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Fitbit - Charge Wireless Activity Tracker (Large)")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-primary" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("pending")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$129.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Craig - Tower Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Audio")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-warning" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "68%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$69.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("BRAVEN - Outdoor Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "97%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Bose® - Bluetooth Speaker Travel Bag")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Computers")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-primary" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "89%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-warning" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("on hold")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$44.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td"),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-name" }, [
+                  _vm._v("Altec Lansing - Mini H2O Bluetooth Speaker")
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-category" }, [
+                  _vm._v("Fitness")
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "progress progress-bar-success" }, [
+                    _c("div", {
+                      staticClass: "progress-bar",
+                      staticStyle: { width: "87%" },
+                      attrs: {
+                        role: "progressbar",
+                        "aria-valuenow": "40",
+                        "aria-valuemin": "40",
+                        "aria-valuemax": "100"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "chip chip-success" }, [
+                    _c("div", { staticClass: "chip-body" }, [
+                      _c("div", { staticClass: "chip-text" }, [
+                        _vm._v("delivered")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-price" }, [_vm._v("$199.99")]),
+                _vm._v(" "),
+                _c("td", { staticClass: "product-action" }, [
+                  _c("span", { staticClass: "action-edit" }, [
+                    _c("i", { staticClass: "feather icon-edit" })
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "action-delete" }, [
+                    _c("i", { staticClass: "feather icon-trash" })
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "add-new-data-sidebar" }, [
+          _c("div", { staticClass: "overlay-bg" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "add-new-data" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "div mt-2 px-2 d-flex new-data-title justify-content-between"
+              },
+              [
+                _c("div", [
+                  _c("h4", { staticClass: "text-uppercase" }, [
+                    _vm._v("List View Data")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "hide-data-sidebar" }, [
+                  _c("i", { staticClass: "feather icon-x" })
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "data-items pb-3" }, [
+              _c("div", { staticClass: "data-fields px-2 mt-3" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-name" } }, [
+                      _vm._v("Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "data-name" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-category" } }, [
+                      _vm._v(" Category ")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        staticClass: "form-control",
+                        attrs: { id: "data-category" }
+                      },
+                      [
+                        _c("option", [_vm._v("Audio")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Computers")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Fitness")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Appliance")])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-status" } }, [
+                      _vm._v("Order Status")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        staticClass: "form-control",
+                        attrs: { id: "data-status" }
+                      },
+                      [
+                        _c("option", [_vm._v("Pending")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Canceled")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Delivered")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("On Hold")])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 data-field-col" }, [
+                    _c("label", { attrs: { for: "data-price" } }, [
+                      _vm._v("Price")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "data-price" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "col-sm-12 data-field-col data-list-upload"
+                    },
+                    [
+                      _c(
+                        "form",
+                        {
+                          staticClass: "dropzone dropzone-area",
+                          attrs: { action: "#", id: "dataListUpload" }
+                        },
+                        [
+                          _c("div", { staticClass: "dz-message" }, [
+                            _vm._v("Upload Image")
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "add-data-footer d-flex justify-content-around px-3 mt-2"
+              },
+              [
+                _c("div", { staticClass: "add-data-btn" }, [
+                  _c("button", { staticClass: "btn btn-primary" }, [
+                    _vm._v("Add Data")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "cancel-data-btn" }, [
+                  _c("button", { staticClass: "btn btn-outline-danger" }, [
+                    _vm._v("Cancel")
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -62106,9 +64038,10 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (is_appended === false) {
+        window.config.appendedJavascripts.push(path);
         var plugin = document.createElement("script");
         plugin.setAttribute("src", path);
-        plugin.async = true;
+        plugin.defer = true;
         document.head.appendChild(plugin);
       } else {// alert(path + ' already imported!. Please remove it.')
       }
@@ -62124,11 +64057,11 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (is_appended === false) {
+        window.config.appendedCss.push(path);
         var plugin = document.createElement("link");
         plugin.setAttribute("rel", "stylesheet");
         plugin.setAttribute("type", "text/css");
         plugin.setAttribute("href", path);
-        plugin.async = true;
         document.head.appendChild(plugin);
       } else {// alert(path + ' already imported!. Please remove it.')
       }
@@ -62543,15 +64476,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Dashboard_vue_vue_type_template_id_1456335b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard.vue?vue&type=template&id=1456335b& */ "./resources/js/pages/admin/Dashboard.vue?vue&type=template&id=1456335b&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dashboard.vue?vue&type=script&lang=js& */ "./resources/js/pages/admin/Dashboard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Dashboard_vue_vue_type_template_id_1456335b___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Dashboard_vue_vue_type_template_id_1456335b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -62565,6 +64500,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/pages/admin/Dashboard.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/admin/Dashboard.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/pages/admin/Dashboard.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Dashboard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/admin/Dashboard.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -63009,6 +64958,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_admin_Dashboard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../pages/admin/Dashboard */ "./resources/js/pages/admin/Dashboard.vue");
 /* harmony import */ var _pages_admin_users_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../pages/admin/users/index */ "./resources/js/pages/admin/users/index.vue");
 /* harmony import */ var _pages_admin_Products__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../pages/admin/Products */ "./resources/js/pages/admin/Products.vue");
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
 
@@ -63119,6 +65074,34 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: routers
 });
 router.beforeEach(function (to, from, next) {
+  var _iterator = _createForOfIteratorHelper(window.config.appendedJavascripts),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var script = _step.value;
+      $("script[src='".concat(script, "']")).remove();
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  var _iterator2 = _createForOfIteratorHelper(window.config.appendedCss),
+      _step2;
+
+  try {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      var css = _step2.value;
+      $("link[href='".concat(css, "']")).remove();
+    }
+  } catch (err) {
+    _iterator2.e(err);
+  } finally {
+    _iterator2.f();
+  }
+
   if (to.matched.some(function (record) {
     return record.meta.auth;
   })) {

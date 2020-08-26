@@ -1,6 +1,8 @@
 @php
 $config = [
     'appUrl' => config('app.url'),
+    'appendedJavascripts' => [],
+    'appendedCss' => [],
 ];
 @endphp
 <!doctype html>
@@ -46,20 +48,20 @@ $config = [
     </div>
     
     <!-- BEGIN: Vendor JS-->
-    <script src="/app-assets/vendors/js/vendors.min.js"></script>
+    <script src="/app-assets/vendors/js/vendors.min.js" defer></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
-    <script src="/app-assets/js/core/app-menu.js"></script>
-    <script src="/app-assets/js/core/app.js"></script>
-    <script src="/app-assets/js/scripts/components.js"></script>
+    <script src="/app-assets/js/core/app-menu.js" defer></script>
+    <script src="/app-assets/js/core/app.js" defer></script>
+    <script src="/app-assets/js/scripts/components.js" defer></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="/app-assets/js/scripts/pages/faq-kb.js"></script>
+    <script src="/app-assets/js/scripts/pages/faq-kb.js" defer></script>
     <!-- END: Page JS-->
     
     <script>
