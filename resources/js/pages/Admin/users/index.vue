@@ -121,13 +121,13 @@ import html_mixins from '../../../mixins/html';
 export default {
     mixins: [html_mixins],
     created() {
-        this.appendJavascript("/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js")
-    },
-    mounted() {
         this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-grid.css")
         this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css")
         this.appendCss("/app-assets/css/pages/app-user.css")
         this.appendCss("/app-assets/css/pages/aggrid.css")
+        this.appendJavascript("/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js")
+    },
+    mounted() {
         this.appendJavascript("/app-assets/js/scripts/pages/app-user.js")
     }
 };

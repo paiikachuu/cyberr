@@ -105,8 +105,13 @@
     import html_mixins from '../mixins/html';
     export default {  
         mixins: [html_mixins],
-        mounted() {
+        created() {
+            this.appendCss("/app-assets/css/core/menu/menu-types/vertical-menu.css")
+            this.appendCss("/app-assets/css/core/colors/palette-gradient.css")
             this.appendCss("/app-assets/css/pages/knowledge-base.css")
+        },
+        mounted() {
+            this.appendJavascript("/app-assets/js/scripts/pages/faq-kb.js")
         }
     }
 </script>

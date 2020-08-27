@@ -33,13 +33,8 @@ $config = [
     <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/dark-layout.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/semi-dark-layout.css">
 
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/core/colors/palette-gradient.css">
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 </head>
 <body class="vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
     
@@ -51,19 +46,12 @@ $config = [
     <script src="/app-assets/vendors/js/vendors.min.js" defer></script>
     <!-- BEGIN Vendor JS-->
 
-    <!-- BEGIN: Page Vendor JS-->
-    <!-- END: Page Vendor JS-->
-
     <!-- BEGIN: Theme JS-->
     <script src="/app-assets/js/core/app-menu.js" defer></script>
     <script src="/app-assets/js/core/app.js" defer></script>
     <script src="/app-assets/js/scripts/components.js" defer></script>
     <!-- END: Theme JS-->
 
-    <!-- BEGIN: Page JS-->
-    <script src="/app-assets/js/scripts/pages/faq-kb.js" defer></script>
-    <!-- END: Page JS-->
-    
     <script>
         window.config = @json($config);
     </script>

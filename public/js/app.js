@@ -3061,8 +3061,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [_mixins_html__WEBPACK_IMPORTED_MODULE_0__["default"]],
-  mounted: function mounted() {
+  created: function created() {
+    this.appendCss("/app-assets/css/core/menu/menu-types/vertical-menu.css");
+    this.appendCss("/app-assets/css/core/colors/palette-gradient.css");
     this.appendCss("/app-assets/css/pages/knowledge-base.css");
+  },
+  mounted: function mounted() {
+    this.appendJavascript("/app-assets/js/scripts/pages/faq-kb.js");
   }
 });
 
@@ -4195,7 +4200,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [_mixins_html__WEBPACK_IMPORTED_MODULE_0__["default"]],
-  mounted: function mounted() {
+  created: function created() {
     this.appendCss("/app-assets/vendors/css/extensions/nouislider.min.css");
     this.appendCss("/app-assets/vendors/css/ui/prism.min.css");
     this.appendCss("/app-assets/vendors/css/forms/select/select2.min.css");
@@ -4205,6 +4210,8 @@ __webpack_require__.r(__webpack_exports__);
     this.appendJavascript("/app-assets/vendors/js/extensions/wNumb.js");
     this.appendJavascript("/app-assets/vendors/js/extensions/nouislider.min.js");
     this.appendJavascript("/app-assets/vendors/js/forms/select/select2.full.min.js");
+  },
+  mounted: function mounted() {
     this.appendJavascript("/app-assets/js/scripts/pages/app-ecommerce-shop.js");
   }
 });
@@ -4960,13 +4967,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [_mixins_html__WEBPACK_IMPORTED_MODULE_0__["default"]],
   created: function created() {
-    this.appendJavascript("/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js");
-  },
-  mounted: function mounted() {
     this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-grid.css");
     this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css");
     this.appendCss("/app-assets/css/pages/app-user.css");
     this.appendCss("/app-assets/css/pages/aggrid.css");
+    this.appendJavascript("/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js");
+  },
+  mounted: function mounted() {
     this.appendJavascript("/app-assets/js/scripts/pages/app-user.js");
   }
 });
