@@ -1,8 +1,6 @@
 @php
 $config = [
     'appUrl' => config('app.url'),
-    'appendedJavascripts' => [],
-    'appendedCss' => [],
 ];
 @endphp
 <!doctype html>
@@ -18,9 +16,7 @@ $config = [
     <link rel="apple-touch-icon" href="{{ asset('/app-assets/images/ico/apple-icon-120.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/app-assets/images/ico/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
-
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/vendors.min.css">
     <!-- END: Vendor CSS-->
@@ -55,5 +51,7 @@ $config = [
     <script>
         window.config = @json($config);
     </script>
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

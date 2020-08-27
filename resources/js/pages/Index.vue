@@ -1,5 +1,5 @@
 <template>
-    <div class="content-body">
+    <div class="content-body" id="postscribe-id">
         <!-- Knowledge base Jumbotron -->
         <section id="knowledge-base-search">
             <div class="row">
@@ -102,16 +102,14 @@
 </template>
 
 <script>
-    import html_mixins from '../mixins/html';
+    import postscribe from 'postscribe'
     export default {  
-        mixins: [html_mixins],
-        created() {
-            this.appendCss("/app-assets/css/core/menu/menu-types/vertical-menu.css")
-            this.appendCss("/app-assets/css/core/colors/palette-gradient.css")
-            this.appendCss("/app-assets/css/pages/knowledge-base.css")
-        },
         mounted() {
-            this.appendJavascript("/app-assets/js/scripts/pages/faq-kb.js")
+            postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/vertical-menu.css">`)
+            postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/core/colors/palette-gradient.css">`)
+            postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/pages/knowledge-base.css">`)
+            
+            postscribe('#postscribe-id', `<script src="/app-assets/js/scripts/pages/faq-kb.js"><\/script>`)
         }
     }
 </script>

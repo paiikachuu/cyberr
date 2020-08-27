@@ -26,6 +26,7 @@
         "@fortawesome/fontawesome-free": "^5.13.1",
         "axios": "^0.19.2",
         "js-cookie": "^2.2.1",
+        "postscribe": "^2.0.8",
         "vue-router": "^3.3.4",
         "vuex": "^3.5.1",
         "vuex-persistedstate": "^3.0.1"

@@ -584,29 +584,23 @@
 </template>
 
 <script>
-
-import html_mixins from '../../mixins/html';
-
+import postscribe from 'postscribe'
 export default {
-    mixins: [html_mixins],
-    created() {
-        this.appendCss("/app-assets/vendors/css/tables/datatable/datatables.min.css")
-        this.appendCss("/app-assets/vendors/css/file-uploaders/dropzone.min.css")
-        this.appendCss("/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css")
-
-        this.appendCss("/app-assets/css/plugins/file-uploaders/dropzone.css")
-        this.appendCss("/app-assets/css/pages/data-list-view.css")
-
-        this.appendJavascript("/app-assets/vendors/js/extensions/dropzone.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/dataTables.select.min.js")
-        this.appendJavascript("/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js")
-    },
     mounted() {
-        this.appendJavascript("/app-assets/js/scripts/ui/data-list-view.js")
+        postscribe('#data-list-view', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/tables/datatable/datatables.min.css">`)
+        postscribe('#data-list-view', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/file-uploaders/dropzone.min.css">`)
+        postscribe('#data-list-view', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css">`)
+        postscribe('#data-list-view', `<link rel="stylesheet" type="text/css" href="/app-assets/css/plugins/file-uploaders/dropzone.css">`)
+        postscribe('#data-list-view', `<link rel="stylesheet" type="text/css" href="/app-assets/css/pages/data-list-view.css">`)
+
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/extensions/dropzone.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/tables/datatable/datatables.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/tables/datatable/dataTables.select.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"><\/script>`)
+        postscribe('#data-list-view', `<script src="/app-assets/js/scripts/ui/data-list-view.js"><\/script>`)
     }
 };
 </script>

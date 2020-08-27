@@ -1,5 +1,5 @@
 <template>
-    <section class="users-list-wrapper">
+    <section id="postscribe-id" class="users-list-wrapper">
         <!-- users filter start -->
         <div class="card">
             <div class="card-header">
@@ -115,20 +115,16 @@
 </template>
 
 <script>
-
-import html_mixins from '../../../mixins/html';
-
+import postscribe from 'postscribe'
 export default {
-    mixins: [html_mixins],
-    created() {
-        this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-grid.css")
-        this.appendCss("/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css")
-        this.appendCss("/app-assets/css/pages/app-user.css")
-        this.appendCss("/app-assets/css/pages/aggrid.css")
-        this.appendJavascript("/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js")
-    },
     mounted() {
-        this.appendJavascript("/app-assets/js/scripts/pages/app-user.js")
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/tables/ag-grid/ag-grid.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-user.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/pages/aggrid.css">`)
+
+        postscribe('#postscribe-id', `<script src="/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js"><\/script>`)
+        postscribe('#postscribe-id', `<script src="/app-assets/js/scripts/pages/app-user.js"><\/script>`)
     }
 };
 </script>

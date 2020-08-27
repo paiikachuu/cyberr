@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="postscribe-id">
         <div class="content-detached content-right">
             <div class="content-body">
                 <!-- Ecommerce Content Section Starts -->
@@ -999,25 +999,20 @@
 </template>
 
 <script>
-
-import html_mixins from '../mixins/html';
-
+import postscribe from 'postscribe'
 export default {
-    mixins: [html_mixins],
-    created() {
-        this.appendCss("/app-assets/vendors/css/extensions/nouislider.min.css")
-        this.appendCss("/app-assets/vendors/css/ui/prism.min.css")
-        this.appendCss("/app-assets/vendors/css/forms/select/select2.min.css")
-        this.appendCss("/app-assets/css/plugins/extensions/noui-slider.min.css")
-        this.appendCss("/app-assets/css/pages/app-ecommerce-shop.css")
-
-        this.appendJavascript("/app-assets/vendors/js/ui/prism.min.js")
-        this.appendJavascript("/app-assets/vendors/js/extensions/wNumb.js")
-        this.appendJavascript("/app-assets/vendors/js/extensions/nouislider.min.js")
-        this.appendJavascript("/app-assets/vendors/js/forms/select/select2.full.min.js")
-    },
     mounted() {
-        this.appendJavascript("/app-assets/js/scripts/pages/app-ecommerce-shop.js")
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/extensions/nouislider.min.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/ui/prism.min.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/forms/select/select2.min.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/plugins/extensions/noui-slider.min.css">`)
+        postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-ecommerce-shop.css">`)
+        
+        postscribe('#postscribe-id', `<script src="/app-assets/vendors/js/ui/prism.min.js"><\/script>`)
+        postscribe('#postscribe-id', `<script src="/app-assets/vendors/js/extensions/wNumb.js"><\/script>`)
+        postscribe('#postscribe-id', `<script src="/app-assets/vendors/js/extensions/nouislider.min.js"><\/script>`)
+        postscribe('#postscribe-id', `<script src="/app-assets/vendors/js/forms/select/select2.full.min.js"><\/script>`)
+        postscribe('#postscribe-id', `<script src="/app-assets/js/scripts/pages/app-ecommerce-shop.js"><\/script>`)
     }
 };
 </script>

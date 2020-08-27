@@ -1,5 +1,5 @@
 <template>
-    <section class="row flexbox-container">
+    <section class="row flexbox-container" id="postscribe-id">
         <div class="col-xl-8 col-10 d-flex justify-content-center">
             <div class="card bg-authentication rounded-0 mb-0">
                 <div class="row m-0">
@@ -81,10 +81,9 @@
 </template>
 
 <script>
-    import html_mixins from '../../mixins/html';
+    import postscribe from 'postscribe'
     import User from "../../apis/User"
     export default {  
-        mixins: [html_mixins],
         data() {
             return {
                 form : {
@@ -99,7 +98,7 @@
             }
         },
         mounted() {
-            this.appendCss("/app-assets/css/pages/authentication.css")
+            postscribe('#postscribe-id', `<link rel="stylesheet" type="text/css" href="/app-assets/css/pages/authentication.css">`)
         },
         methods : {
         formSubmit() {
