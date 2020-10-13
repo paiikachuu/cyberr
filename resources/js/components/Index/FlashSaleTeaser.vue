@@ -9,14 +9,22 @@
       </div>
       <div class="card-body">
         <div class="row col-12">
-          <div class="card m-1 product" v-for="(product, i) in products" :key="i">
+          <div
+            class="card m-1 product"
+            v-for="(product, i) in products"
+            :key="i"
+          >
             <img class="card-img-top" src="/images/laptop-nitro5.png" />
             <div class="card-body">
               <p class="card-title">{{ product.name }}</p>
               <p>{{ product.description }}</p>
               <p>{{ product.price }}</p>
               <div>
-                <router-link class="btn btn-sm btn-primary" :to="'/product-detail'">View details</router-link>
+                <router-link
+                  class="btn btn-sm btn-primary"
+                  :to="'/product-detail'"
+                  >View details</router-link
+                >
               </div>
             </div>
           </div>
@@ -34,32 +42,32 @@
 </template>
 
 <script>
-import Product from "../../apis/Product"
+import Product from "../../apis/Product";
 
 export default {
   mounted() {
     this.loadProducts();
   },
 
-  data: function() {
+  data: function () {
     return {
-      products: []
+      products: [],
     };
   },
 
   methods: {
     loadProducts() {
       Product.getProducts()
-        .then((res)=> {
+        .then((res) => {
           products = res.data;
         })
-        .catch((err)=> {
-          if(err.response) {
+        .catch((err) => {
+          if (err.response) {
             this.errors = err.response.data.errors;
           }
-        })
-    }
-  }
+        });
+    },
+  },
 };
 </script>
 

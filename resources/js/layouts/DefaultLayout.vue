@@ -6,20 +6,31 @@
       <div class="navbar-wrapper">
         <div class="navbar-container content">
           <div class="navbar-collapse" id="navbar-mobile">
-            <div  class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+            <div
+              class="mr-auto float-left bookmark-wrapper d-flex align-items-center"
+            >
               <ul class="nav navbar-nav">
-                <li v-if="$store.state.currentUser.is_auth" class="nav-item mobile-menu d-xl-none mr-auto">
-                  <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                <li
+                  v-if="$store.state.currentUser.is_auth"
+                  class="nav-item mobile-menu d-xl-none mr-auto"
+                >
+                  <a
+                    class="nav-link nav-menu-main menu-toggle hidden-xs"
+                    href="#"
+                  >
                     <i class="ficon feather icon-menu"></i>
                   </a>
                 </li>
-                 <li v-if="!$store.state.currentUser.is_auth">
-                    <router-link :to="{name:'app'}">
-                        Cyberr Gadget Shopping
-                    </router-link>
+                <li v-if="!$store.state.currentUser.is_auth">
+                  <router-link :to="{ name: 'app' }">
+                    Cyberr Gadget Shopping
+                  </router-link>
                 </li>
               </ul>
-              <ul v-if="$store.state.currentUser.is_auth" class="nav navbar-nav bookmark-icons">
+              <ul
+                v-if="$store.state.currentUser.is_auth"
+                class="nav navbar-nav bookmark-icons"
+              >
                 <li class="nav-item d-none d-lg-block">
                   <a
                     class="nav-link"
@@ -54,7 +65,10 @@
                   </a>
                 </li>
               </ul>
-              <ul v-if="$store.state.currentUser.is_auth" class="nav navbar-nav">
+              <ul
+                v-if="$store.state.currentUser.is_auth"
+                class="nav navbar-nav"
+              >
                 <li class="nav-item d-none d-lg-block">
                   <a class="nav-link bookmark-star">
                     <i class="ficon feather icon-star warning"></i>
@@ -106,7 +120,10 @@
 
               <!-- Notification here -->
               <Notification></Notification>
-              <li v-if="$store.state.currentUser.is_auth" class="dropdown dropdown-user nav-item">
+              <li
+                v-if="$store.state.currentUser.is_auth"
+                class="dropdown dropdown-user nav-item"
+              >
                 <a
                   class="dropdown-toggle nav-link dropdown-user-link"
                   href="#"
@@ -145,17 +162,24 @@
                   </a>
                 </div>
               </li>
-              <li v-if="!$store.state.currentUser.is_auth" class="dropdown dropdown-user nav-item">
+              <li
+                v-if="!$store.state.currentUser.is_auth"
+                class="dropdown dropdown-user nav-item"
+              >
                 <a
                   class="dropdown-toggle nav-link dropdown-user-link"
                   href="#"
                   data-toggle="dropdown"
                 >
                   <div>
-                    <router-link class="btn btn-default" :to="'login'">Login</router-link>
+                    <router-link class="btn btn-default" :to="'login'"
+                      >Login</router-link
+                    >
                   </div>
                   <div>
-                    <router-link class="btn btn-default" :to="'register'">Sign Up</router-link>
+                    <router-link class="btn btn-default" :to="'register'"
+                      >Sign Up</router-link
+                    >
                   </div>
                 </a>
               </li>
@@ -171,7 +195,10 @@
     <div class="app-content content">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
-      <div class="content-wrapper" style="padding:padding:0rem; margin-top:0rem;">
+      <div
+        class="content-wrapper"
+        style="padding:padding:0rem; margin-top:0rem;"
+      >
         <div class="content-header row">
           <div class="content-header-left col-md-9 col-12 mb-2">
             <div class="row breadcrumbs-top">
@@ -180,7 +207,7 @@
                 <div class="breadcrumb-wrapper col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link :to="{name:'app'}">Home</router-link>
+                      <router-link :to="{ name: 'app' }">Home</router-link>
                     </li>
                     <li class="breadcrumb-item active">Shop</li>
                   </ol>
@@ -188,7 +215,9 @@
               </div>
             </div>
           </div>
-          <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+          <div
+            class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none"
+          >
             <div class="form-group breadcrum-right">
               <div class="dropdown">
                 <button
@@ -226,7 +255,8 @@
             class="text-bold-800 grey darken-2"
             href="https://1.envato.market/pixinvent_portfolio"
             target="_blank"
-          >Pixinvent,</a>All rights Reserved
+            >Pixinvent,</a
+          >All rights Reserved
         </span>
         <span class="float-md-right d-none d-md-block">
           Hand-crafted & Made with
@@ -244,13 +274,15 @@
 <script>
 import Notification from "../components/layout/Notification";
 export default {
-    components: {
-        Notification,
-    },
-    mounted() {
-        $('body').removeClass()
-        $('body').addClass('vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static')
-        $('body').attr('data-col', '1-column')
-    },
+  components: {
+    Notification,
+  },
+  mounted() {
+    $("body").removeClass();
+    $("body").addClass(
+      "vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static"
+    );
+    $("body").attr("data-col", "1-column");
+  },
 };
 </script>

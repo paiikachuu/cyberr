@@ -26,14 +26,16 @@
               v-if="!$store.state.currentUser.is_auth"
               class="nav-link"
               :to="'login'"
-            >Login</router-link>
+              >Login</router-link
+            >
           </li>
           <li class="nav-item">
             <router-link
               v-if="!$store.state.currentUser.is_auth"
               class="nav-link"
               :to="'register'"
-            >Register</router-link>
+              >Register</router-link
+            >
           </li>
           <li class="nav-item">
             <router-link
@@ -50,9 +52,13 @@
               v-if="$store.state.currentUser.is_auth"
               class="nav-link"
               :to="'dashboard'"
-            >Dashboard</router-link>
+              >Dashboard</router-link
+            >
           </li>
-          <li v-if="$store.state.currentUser.is_auth" class="nav-item dropdown inline">
+          <li
+            v-if="$store.state.currentUser.is_auth"
+            class="nav-item dropdown inline"
+          >
             <a
               id="navbarDropdown"
               class="nav-link dropdown-toggle"
@@ -65,18 +71,23 @@
               {{ $store.state.currentUser.user.first_name }}
               <span>Settings</span>
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+            >
               <router-link
                 v-if="$store.state.currentUser.is_auth"
                 class="dropdown-item"
                 :to="'dashboard'"
-              >My Profile</router-link>
+                >My Profile</router-link
+              >
               <a
                 @click="logout()"
                 onclick="event.preventDefault();"
                 class="dropdown-item"
                 href="#"
-              >Logout</a>
+                >Logout</a
+              >
             </div>
           </li>
         </ul>

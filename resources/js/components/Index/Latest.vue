@@ -7,16 +7,14 @@
           <router-link :to="'register'">Go to shop</router-link>
         </div>
       </div>
-      <div class="card-body">
-      
-      </div>
+      <div class="card-body"></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  components: {}
+  components: {},
 };
 </script>
 

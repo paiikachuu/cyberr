@@ -8,18 +8,14 @@
         <div class="col-sm-4 col-md col-sm-4 col-12 col">
           <h5 class="hseadin5_amrc col_white_amrc pt2">Customer Service</h5>
           <!--headin5_amrc-->
-          <p
-            class="mb10"
-          >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-          <p>
-            <i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35
+          <p class="mb10">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
           </p>
-          <p>
-            <i class="fa fa-phone"></i> +91-9999878398
-          </p>
-          <p>
-            <i class="fa fa fa-envelope"></i> pailou.nuneza@gmail.com
-          </p>
+          <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35</p>
+          <p><i class="fa fa-phone"></i> +91-9999878398</p>
+          <p><i class="fa fa fa-envelope"></i> pailou.nuneza@gmail.com</p>
         </div>
 
         <div class="col-sm-4 col-md col-6 col">
@@ -85,9 +81,7 @@
               </a>
               <p>
                 Lorem Ipsum is simply dummy text of the printing...
-                <a
-                  href="#"
-                >https://www.lipsum.com/</a>
+                <a href="#">https://www.lipsum.com/</a>
               </p>
             </li>
             <li>
@@ -96,9 +90,7 @@
               </a>
               <p>
                 Lorem Ipsum is simply dummy text of the printing...
-                <a
-                  href="#"
-                >https://www.lipsum.com/</a>
+                <a href="#">https://www.lipsum.com/</a>
               </p>
             </li>
             <li>
@@ -107,9 +99,7 @@
               </a>
               <p>
                 Lorem Ipsum is simply dummy text of the printing...
-                <a
-                  href="#"
-                >https://www.lipsum.com/</a>
+                <a href="#">https://www.lipsum.com/</a>
               </p>
             </li>
           </ul>

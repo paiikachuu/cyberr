@@ -33,9 +33,14 @@
                 />
                 <div class="d-inline-block align-middle">
                   <h5 class="mb-0">
-                    <a href="#" class="text-dark d-inline-block align-middle">Acer Nitro 5</a>
+                    <a href="#" class="text-dark d-inline-block align-middle"
+                      >Acer Nitro 5</a
+                    >
                   </h5>
-                  <span class="text-muted font-weight-normal font-italic d-block">Category: Laptops</span>
+                  <span
+                    class="text-muted font-weight-normal font-italic d-block"
+                    >Category: Laptops</span
+                  >
                 </div>
               </div>
             </th>
@@ -60,7 +65,7 @@
 
 <script>
 export default {
-  components: {}
+  components: {},
 };
 </script>
 

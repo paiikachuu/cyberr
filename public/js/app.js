@@ -1970,6 +1970,41 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1988,7 +2023,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this.$store.commit("currentUser/setIsAuth", false); // this.$router.push({ name: "login" });
 
 
-        window.location.replace(window.config.appUrl + '/login');
+        window.location.replace(window.config.appUrl + "/login");
       });
     }
   },
@@ -2006,6 +2041,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2173,6 +2213,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {}
 });
@@ -2188,6 +2255,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -2249,6 +2318,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -2332,6 +2403,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {}
 });
@@ -2347,6 +2420,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -2387,6 +2462,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {}
 });
@@ -2402,8 +2479,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -2461,17 +2536,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import Footer from '../components/layout/Footer'
-// import Navigation from '../components/layout/Navigation'
 
 
 
@@ -2486,9 +2550,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {},
   mounted: function mounted() {
-    $('body').removeClass();
-    $('body').addClass('vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static');
-    $('body').attr('data-col', '2-columns');
+    $("body").removeClass();
+    $("body").addClass("vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static");
+    $("body").attr("data-col", "2-columns");
   },
   methods: {
     logout: function logout() {
@@ -2500,7 +2564,7 @@ __webpack_require__.r(__webpack_exports__);
         _this.$store.commit("currentUser/setIsAuth", false); // this.$router.push({ name: "login" });
 
 
-        window.location.replace(window.config.appUrl + '/login');
+        window.location.replace(window.config.appUrl + "/login");
       });
     }
   }
@@ -2530,18 +2594,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   mounted: function mounted() {
-    $('body').removeClass();
-    $('body').addClass('vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  blank-page blank-page');
-    $('body').attr('data-col', '1-column');
+    $("body").removeClass();
+    $("body").addClass("vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  blank-page blank-page");
+    $("body").attr("data-col", "1-column");
   }
 });
 
@@ -2800,15 +2858,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Notification: _components_layout_Notification__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   mounted: function mounted() {
-    $('body').removeClass();
-    $('body').addClass('vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static');
-    $('body').attr('data-col', '1-column');
+    $("body").removeClass();
+    $("body").addClass("vertical-layout vertical-menu-modern 1-column content-detached-left-sidebar ecommerce-application navbar-sticky footer-static");
+    $("body").attr("data-col", "1-column");
   }
 });
 
@@ -2835,7 +2923,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {},
   computed: {
     layout: function layout() {
-      return (this.$route.meta.layout || 'default') + '-layout';
+      return (this.$route.meta.layout || "default") + "-layout";
     }
   }
 });
@@ -2853,6 +2941,24 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_cart_Items__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/cart/Items */ "./resources/js/components/cart/Items.vue");
 /* harmony import */ var _components_product_AlsoLike__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/product/AlsoLike */ "./resources/js/components/product/AlsoLike.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3059,13 +3165,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/core/menu/menu-types/vertical-menu.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/core/colors/palette-gradient.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/knowledge-base.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/js/scripts/pages/faq-kb.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/core/menu/menu-types/vertical-menu.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/core/colors/palette-gradient.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/knowledge-base.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/js/scripts/pages/faq-kb.js\"></script>");
   }
 });
 
@@ -4196,19 +4355,237 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/extensions/nouislider.min.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/ui/prism.min.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/forms/select/select2.min.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/plugins/extensions/noui-slider.min.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/app-ecommerce-shop.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/vendors/js/ui/prism.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/vendors/js/extensions/wNumb.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/vendors/js/extensions/nouislider.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/vendors/js/forms/select/select2.full.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/js/scripts/pages/app-ecommerce-shop.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/extensions/nouislider.min.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/ui/prism.min.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/forms/select/select2.min.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/plugins/extensions/noui-slider.min.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/app-ecommerce-shop.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/vendors/js/ui/prism.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/vendors/js/extensions/wNumb.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/vendors/js/extensions/nouislider.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/vendors/js/forms/select/select2.full.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/js/scripts/pages/app-ecommerce-shop.js\"></script>");
   }
 });
 
@@ -4810,22 +5187,254 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/datatable/datatables.min.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/file-uploaders/dropzone.min.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/plugins/file-uploaders/dropzone.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/data-list-view.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/extensions/dropzone.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/tables/datatable/dataTables.select.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#data-list-view', "<script src=\"/app-assets/js/scripts/ui/data-list-view.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/datatable/datatables.min.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/file-uploaders/dropzone.min.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/plugins/file-uploaders/dropzone.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/data-list-view.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/extensions/dropzone.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/tables/datatable/dataTables.select.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#data-list-view", "<script src=\"/app-assets/js/scripts/ui/data-list-view.js\"></script>");
   }
 });
 
@@ -4958,15 +5567,58 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/ag-grid/ag-grid.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/app-user.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/aggrid.css\">");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js\"></script>");
-    postscribe__WEBPACK_IMPORTED_MODULE_0___default()('#postscribe-id', "<script src=\"/app-assets/js/scripts/pages/app-user.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/ag-grid/ag-grid.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/vendors/css/tables/ag-grid/ag-theme-material.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/app-user.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<link rel=\"stylesheet\" type=\"text/css\" href=\"/app-assets/css/pages/aggrid.css\">");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js\"></script>");
+    postscribe__WEBPACK_IMPORTED_MODULE_0___default()("#postscribe-id", "<script src=\"/app-assets/js/scripts/pages/app-user.js\"></script>");
   }
 });
 
@@ -40216,11 +40868,11 @@ var render = function() {
                                     { staticClass: "user-name text-bold-600" },
                                     [
                                       _vm._v(
-                                        "\n                                        " +
+                                        "\n                    " +
                                           _vm._s(_vm.user.first_name) +
                                           " " +
                                           _vm._s(_vm.user.last_name) +
-                                          "\n                                    "
+                                          "\n                  "
                                       )
                                     ]
                                   ),
@@ -40266,9 +40918,7 @@ var render = function() {
                                   _c("i", {
                                     staticClass: "feather icon-power"
                                   }),
-                                  _vm._v(
-                                    " Logout\n                                "
-                                  )
+                                  _vm._v(" Logout\n                ")
                                 ]
                               )
                             ]
@@ -40457,7 +41107,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "li",
-              { staticClass: " nav-item" },
+              { staticClass: "nav-item" },
               [
                 _c(
                   "router-link",
@@ -40471,11 +41121,7 @@ var render = function() {
                         staticClass: "menu-title",
                         attrs: { "data-i18n": "Dashboard" }
                       },
-                      [
-                        _vm._v(
-                          "\n                        Dashboard\n                    "
-                        )
-                      ]
+                      [_vm._v(" Dashboard ")]
                     )
                   ]
                 )
@@ -40485,7 +41131,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "li",
-              { staticClass: " nav-item" },
+              { staticClass: "nav-item" },
               [
                 _c("router-link", { attrs: { to: { name: "admin.users" } } }, [
                   _c("i", { staticClass: "feather icon-user" }),
@@ -40496,11 +41142,7 @@ var render = function() {
                       staticClass: "menu-title",
                       attrs: { "data-i18n": "Users" }
                     },
-                    [
-                      _vm._v(
-                        "\n                        Users\n                    "
-                      )
-                    ]
+                    [_vm._v(" Users ")]
                   )
                 ])
               ],
@@ -40509,7 +41151,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "li",
-              { staticClass: " nav-item" },
+              { staticClass: "nav-item" },
               [
                 _c(
                   "router-link",
@@ -40523,11 +41165,7 @@ var render = function() {
                         staticClass: "menu-title",
                         attrs: { "data-i18n": "Products" }
                       },
-                      [
-                        _vm._v(
-                          "\n                        Products\n                    "
-                        )
-                      ]
+                      [_vm._v(" Products ")]
                     )
                   ]
                 )
@@ -40545,7 +41183,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("li", { staticClass: " navigation-header" }, [
+    return _c("li", { staticClass: "navigation-header" }, [
       _c("span", [_vm._v("Menu")])
     ])
   }
@@ -40822,7 +41460,7 @@ var staticRenderFns = [
                   _c(
                     "h6",
                     { staticClass: "success media-heading red darken-1" },
-                    [_vm._v("99% Server load")]
+                    [_vm._v("\n              99% Server load\n            ")]
                   ),
                   _vm._v(" "),
                   _c("small", { staticClass: "notification-text" }, [
@@ -40863,7 +41501,11 @@ var staticRenderFns = [
                   _c(
                     "h6",
                     { staticClass: "danger media-heading yellow darken-3" },
-                    [_vm._v("Warning notifixation")]
+                    [
+                      _vm._v(
+                        "\n              Warning notifixation\n            "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c("small", { staticClass: "notification-text" }, [
@@ -41522,7 +42164,7 @@ var render = function() {
                                 { attrs: { to: { name: "app" } } },
                                 [
                                   _vm._v(
-                                    "\n                      Cyberr Gadget Shopping\n                  "
+                                    "\n                  Cyberr Gadget Shopping\n                "
                                   )
                                 ]
                               )
@@ -42128,7 +42770,7 @@ var render = function() {
                     staticClass:
                       "bg-light px-4 py-3 text-uppercase font-weight-bold"
                   },
-                  [_vm._v("Order summary")]
+                  [_vm._v("\n              Order summary\n            ")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -42137,7 +42779,7 @@ var render = function() {
                   [
                     _c("p", { staticClass: "font-italic mb-4" }, [
                       _vm._v(
-                        "Shipping and additional costs are calculated based on values you have entered."
+                        "\n                Shipping and additional costs are calculated based on values\n                you have entered.\n              "
                       )
                     ]),
                     _vm._v(" "),
@@ -42151,7 +42793,7 @@ var render = function() {
                       },
                       [
                         _c("i", { staticClass: "fas fa-shopping-cart" }),
-                        _vm._v("Proceed to Checkout\n          ")
+                        _vm._v("Proceed to Checkout\n              ")
                       ]
                     )
                   ],
@@ -42177,12 +42819,14 @@ var staticRenderFns = [
       _c(
         "div",
         { staticClass: "bg-light px-4 py-2 text-uppercase font-weight-bold" },
-        [_vm._v("Coupon code")]
+        [_vm._v("\n              Coupon code\n            ")]
       ),
       _vm._v(" "),
       _c("div", { staticClass: "p-2" }, [
         _c("p", { staticClass: "font-italic mb-4" }, [
-          _vm._v("If you have a coupon code, please enter it in the box below")
+          _vm._v(
+            "\n                If you have a coupon code, please enter it in the box below\n              "
+          )
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "input-group mb-4 border p-2" }, [
@@ -42214,13 +42858,13 @@ var staticRenderFns = [
       _c(
         "div",
         { staticClass: "bg-light px-4 py-3 text-uppercase font-weight-bold" },
-        [_vm._v("Instructions for seller")]
+        [_vm._v("\n              Instructions for seller\n            ")]
       ),
       _vm._v(" "),
       _c("div", { staticClass: "p-4" }, [
         _c("p", { staticClass: "font-italic mb-4" }, [
           _vm._v(
-            "If you have some information for the seller you can leave them in the box below"
+            "\n                If you have some information for the seller you can leave them\n                in the box below\n              "
           )
         ]),
         _vm._v(" "),
@@ -42330,11 +42974,11 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("SALES AUTOMATION")]),
+                      _c("h4", [_vm._v("MOBILE PHONES")]),
                       _vm._v(" "),
                       _c("small", { staticClass: "text-dark" }, [
                         _vm._v(
-                          "Muffin lemon drops chocolate carrot cake chocolate bar sweet roll."
+                          "Muffin lemon drops chocolate carrot cake chocolate bar sweet\n                roll."
                         )
                       ])
                     ])
@@ -42364,11 +43008,11 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("MARKETING AUTOMATION")]),
+                      _c("h4", [_vm._v("LAPTOPS")]),
                       _vm._v(" "),
                       _c("small", { staticClass: "text-dark" }, [
                         _vm._v(
-                          "Gingerbread sesame snaps wafer soufflé. Macaroon brownie ice cream"
+                          "Gingerbread sesame snaps wafer soufflé. Macaroon brownie ice\n                cream"
                         )
                       ])
                     ])
@@ -42398,11 +43042,11 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("MARKETING BI")]),
+                      _c("h4", [_vm._v("TABLETS")]),
                       _vm._v(" "),
                       _c("small", { staticClass: "text-dark" }, [
                         _vm._v(
-                          "cotton candy caramels danish chocolate cake pie candy. Lemon drops tart."
+                          "cotton candy caramels danish chocolate cake pie candy. Lemon\n                drops tart."
                         )
                       ])
                     ])
@@ -42432,11 +43076,11 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("PERSONALIZATION")]),
+                      _c("h4", [_vm._v("DESKTOP PC")]),
                       _vm._v(" "),
                       _c("small", { staticClass: "text-dark" }, [
                         _vm._v(
-                          "Pudding oat cake carrot cake lemon drops gummies marshmallow."
+                          "Pudding oat cake carrot cake lemon drops gummies\n                marshmallow."
                         )
                       ])
                     ])
@@ -42466,11 +43110,11 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("EMAIL MARKETING")]),
+                      _c("h4", [_vm._v("PHERIPERAL DEVICES")]),
                       _vm._v(" "),
                       _c("small", { staticClass: "text-dark" }, [
                         _vm._v(
-                          "Gummi bears pudding icing sweet caramels chocolate.Muffin croissant"
+                          "Gummi bears pudding icing sweet caramels chocolate.Muffin\n                croissant"
                         )
                       ])
                     ])
@@ -42500,11 +43144,11 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("DEMAND GENERATION")]),
+                      _c("h4", [_vm._v("SPEAKERS")]),
                       _vm._v(" "),
                       _c("small", { staticClass: "text-dark" }, [
                         _vm._v(
-                          "Dragée jelly beans candy canes pudding cake wafer. Muffin croissant."
+                          "Dragée jelly beans candy canes pudding cake wafer. Muffin\n                croissant."
                         )
                       ])
                     ])
@@ -42530,14 +43174,10 @@ var staticRenderFns = [
           _c("div", { staticClass: "card knowledge-base-bg white" }, [
             _c("div", { staticClass: "card-content" }, [
               _c("div", { staticClass: "card-body p-sm-4 p-2" }, [
-                _c("h1", { staticClass: "white" }, [
-                  _vm._v("Dedicated Source Used on Website")
-                ]),
+                _c("h1", { staticClass: "white" }, [_vm._v("SEARCH")]),
                 _vm._v(" "),
                 _c("p", { staticClass: "card-text mb-2" }, [
-                  _vm._v(
-                    "\n                                  Bonbon sesame snaps lemon drops marshmallow ice cream carrot cake croissant wafer.\n                              "
-                  )
+                  _vm._v("Affordable gadgets on demand")
                 ]),
                 _vm._v(" "),
                 _c("form", [
@@ -42553,7 +43193,7 @@ var staticRenderFns = [
                         attrs: {
                           type: "text",
                           id: "searchbar",
-                          placeholder: "Search Topic or Keyword"
+                          placeholder: "Enter keyword"
                         }
                       }),
                       _vm._v(" "),
@@ -42809,9 +43449,7 @@ var staticRenderFns = [
                     ),
                     _vm._v(" "),
                     _c("div", { staticClass: "search-results" }, [
-                      _vm._v(
-                        "\n                                    16285 results found\n                                "
-                      )
+                      _vm._v("16285 results found")
                     ])
                   ]),
                   _vm._v(" "),
@@ -42920,9 +43558,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $39.99\n                                    "
-                          )
+                          _vm._v("$39.99")
                         ])
                       ])
                     ]),
@@ -42939,7 +43575,7 @@ var staticRenderFns = [
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Google")
                         ])
@@ -42949,7 +43585,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice remote lets you\n                                    deliver hands-free commands when you want to watch television or engage with other applications. With a\n                                    quad-core processor, 1GB internal memory and 8GB of storage, this portable Amazon Fire TV stick works fast\n                                    for buffer-free streaming.\n                                "
+                          "\n                  Enjoy smart access to videos, games and apps with this\n                  Amazon Fire TV stick. Its Alexa voice remote lets you\n                  deliver hands-free commands when you want to watch\n                  television or engage with other applications. With a\n                  quad-core processor, 1GB internal memory and 8GB of storage,\n                  this portable Amazon Fire TV stick works fast for\n                  buffer-free streaming.\n                "
                         )
                       ])
                     ])
@@ -42971,9 +43607,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $39.99\n                                    "
-                          )
+                          _vm._v("$39.99")
                         ])
                       ])
                     ]),
@@ -43034,9 +43668,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $35.00\n                                    "
-                          )
+                          _vm._v("$35.00")
                         ])
                       ])
                     ]),
@@ -43049,7 +43681,7 @@ var staticRenderFns = [
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Amazon")
                         ])
@@ -43059,7 +43691,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to your HDTV's HDMI\n                                    interface and your home Wi-Fi network to get started. You can stream your favorite apps from your compatible\n                                    phone, tablet or laptop, plus use your phone as a remote to search, play and pause content.\n                                "
+                          "\n                  Google Chromecast: Enjoy a world of entertainment with\n                  Google Chromecast. Just connect to your HDTV's HDMI\n                  interface and your home Wi-Fi network to get started. You\n                  can stream your favorite apps from your compatible phone,\n                  tablet or laptop, plus use your phone as a remote to search,\n                  play and pause content.\n                "
                         )
                       ])
                     ])
@@ -43081,16 +43713,14 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $35.00\n                                    "
-                          )
+                          _vm._v("$35.00")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43146,9 +43776,7 @@ var staticRenderFns = [
                       _c("div", [
                         _c("div", { staticClass: "item-cost" }, [
                           _c("h6", { staticClass: "item-price" }, [
-                            _vm._v(
-                              "\n                                            $499.99\n                                        "
-                            )
+                            _vm._v("$499.99")
                           ])
                         ])
                       ])
@@ -43166,7 +43794,7 @@ var staticRenderFns = [
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Dell")
                         ])
@@ -43176,7 +43804,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop. Supported by an\n                                    Intel Core i5-5200U processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple\n                                    applications without lag. The 1TB hard drive in this Dell Inspiron laptop lets you store multiple music,\n                                    video and document files.\n                                "
+                          "\n                  Dell Inspiron Laptop: Get speed and performance from this\n                  15.6-inch Dell Inspiron laptop. Supported by an Intel Core\n                  i5-5200U processor and 6GB of DDR3L RAM, this slim touch\n                  screen laptop lets you run multiple applications without\n                  lag. The 1TB hard drive in this Dell Inspiron laptop lets\n                  you store multiple music, video and document files.\n                "
                         )
                       ])
                     ])
@@ -43198,25 +43826,21 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $499.99\n                                    "
-                          )
+                          _vm._v("$499.99")
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "shipping" }, [
                           _c("i", {
                             staticClass: "feather icon-shopping-cart"
                           }),
-                          _vm._v(
-                            " Free Shipping\n                                    "
-                          )
+                          _vm._v(" Free Shipping\n                  ")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43271,9 +43895,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $49.99\n                                    "
-                          )
+                          _vm._v("$49.99")
                         ])
                       ])
                     ]),
@@ -43286,7 +43908,7 @@ var staticRenderFns = [
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Amazon")
                         ])
@@ -43296,7 +43918,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Echo Dot is the latest addition to Amazon's voice-controlled devices.\n                                    Deliver your favorite playlist anywhere in your home with the Amazon Echo Dot voice-controlled device.\n                                    Control most electric devices through voice activation, or schedule a ride with Uber and order a pizza. The\n                                    Amazon Echo Dot voice-controlled device turns any home into a smart home with the Alexa app on a smartphone\n                                    or tablet.\n                                "
+                          "\n                  Echo Dot is the latest addition to Amazon's voice-controlled\n                  devices. Deliver your favorite playlist anywhere in your\n                  home with the Amazon Echo Dot voice-controlled device.\n                  Control most electric devices through voice activation, or\n                  schedule a ride with Uber and order a pizza. The Amazon Echo\n                  Dot voice-controlled device turns any home into a smart home\n                  with the Alexa app on a smartphone or tablet.\n                "
                         )
                       ])
                     ])
@@ -43318,16 +43940,14 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $49.99\n                                    "
-                          )
+                          _vm._v("$49.99")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43382,9 +44002,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $999.99\n                                    "
-                          )
+                          _vm._v("$999.99")
                         ])
                       ])
                     ]),
@@ -43395,13 +44013,13 @@ var staticRenderFns = [
                         { attrs: { href: "app-ecommerce-details.html" } },
                         [
                           _vm._v(
-                            '\n                                    Apple - MacBook Air® (Latest Model) - 13.3" Display - Silver\n                                '
+                            '\n                  Apple - MacBook Air® (Latest Model) - 13.3" Display - Silver\n                '
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Apple")
                         ])
@@ -43411,7 +44029,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    MacBook Air is a thin, lightweight laptop from Apple.\n                                    MacBook Air features up to 8GB of memory, a fifth-generation Intel Core processor, Thunderbolt 2, great\n                                    built-in apps, and all-day battery life.1 Its thin, light, and durable enough to take everywhere you go-and\n                                    powerful enough to do everything once you get there, better.\n                                "
+                          "\n                  MacBook Air is a thin, lightweight laptop from Apple.\n                  MacBook Air features up to 8GB of memory, a fifth-generation\n                  Intel Core processor, Thunderbolt 2, great built-in apps,\n                  and all-day battery life.1 Its thin, light, and durable\n                  enough to take everywhere you go-and powerful enough to do\n                  everything once you get there, better.\n                "
                         )
                       ])
                     ])
@@ -43433,16 +44051,14 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $999.99\n                                    "
-                          )
+                          _vm._v("$999.99")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43497,9 +44113,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $429.99\n                                    "
-                          )
+                          _vm._v("$429.99")
                         ])
                       ])
                     ]),
@@ -43510,13 +44124,13 @@ var staticRenderFns = [
                         { attrs: { href: "app-ecommerce-details.html" } },
                         [
                           _vm._v(
-                            '\n                                    Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black\n                                '
+                            '\n                  Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black\n                '
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Sharp")
                         ])
@@ -43526,7 +44140,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Only at Best Buy Sharp LC-50LB481U LED Roku TV: Get a TV that enjoys full Internet connectivity with this\n                                    Sharp 49.5-inch smart TV. Full HD resolutions give you plenty of detail whether you're streaming content\n                                    from the Internet using the integrated Roku player or watching via cable.\n                                "
+                          "\n                  Only at Best Buy Sharp LC-50LB481U LED Roku TV: Get a TV\n                  that enjoys full Internet connectivity with this Sharp\n                  49.5-inch smart TV. Full HD resolutions give you plenty of\n                  detail whether you're streaming content from the Internet\n                  using the integrated Roku player or watching via cable.\n                "
                         )
                       ])
                     ])
@@ -43548,25 +44162,21 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $429.99\n                                    "
-                          )
+                          _vm._v("$429.99")
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "shipping" }, [
                           _c("i", {
                             staticClass: "feather icon-shopping-cart"
                           }),
-                          _vm._v(
-                            " Free Shipping\n                                    "
-                          )
+                          _vm._v(" Free Shipping\n                  ")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43621,9 +44231,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $129\n                                    "
-                          )
+                          _vm._v("$129")
                         ])
                       ])
                     ]),
@@ -43634,13 +44242,13 @@ var staticRenderFns = [
                         { attrs: { href: "app-ecommerce-details.html" } },
                         [
                           _vm._v(
-                            "\n                                    Google - Google Home - White/Slate fabric\n                                "
+                            "\n                  Google - Google Home - White/Slate fabric\n                "
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Google")
                         ])
@@ -43650,7 +44258,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Simplify your everyday life with the Google Home, a voice-activated speaker powered by the Google Assistant.\n                                    Use voice commands to enjoy music, get answers from Google and manage everyday tasks. Google Home is\n                                    compatible with Android and iOS operating systems, and can control compatible smart devices such as\n                                    Chromecast or Nest.\n                                "
+                          "\n                  Simplify your everyday life with the Google Home, a\n                  voice-activated speaker powered by the Google Assistant. Use\n                  voice commands to enjoy music, get answers from Google and\n                  manage everyday tasks. Google Home is compatible with\n                  Android and iOS operating systems, and can control\n                  compatible smart devices such as Chromecast or Nest.\n                "
                         )
                       ])
                     ])
@@ -43672,25 +44280,21 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $129\n                                    "
-                          )
+                          _vm._v("$129")
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "shipping" }, [
                           _c("i", {
                             staticClass: "feather icon-shopping-cart"
                           }),
-                          _vm._v(
-                            " Free Shipping\n                                    "
-                          )
+                          _vm._v(" Free Shipping\n                  ")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43745,9 +44349,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $29.99\n                                    "
-                          )
+                          _vm._v("$29.99")
                         ])
                       ])
                     ]),
@@ -43758,13 +44360,13 @@ var staticRenderFns = [
                         { attrs: { href: "app-ecommerce-details.html" } },
                         [
                           _vm._v(
-                            "\n                                    Apple - EarPods™ with Remote and Mic - White\n                                "
+                            "\n                  Apple - EarPods™ with Remote and Mic - White\n                "
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Apple")
                         ])
@@ -43774,7 +44376,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Apple EarPods are white in-ear headphones included with music players and smartphones designed and marketed\n                                    by Apple Inc. They are designed to fit the ear while retaining a new design pushed by Apple alongside the\n                                    iPod and iPod Touch products, with which they were sold together.\n                                "
+                          "\n                  Apple EarPods are white in-ear headphones included with\n                  music players and smartphones designed and marketed by Apple\n                  Inc. They are designed to fit the ear while retaining a new\n                  design pushed by Apple alongside the iPod and iPod Touch\n                  products, with which they were sold together.\n                "
                         )
                       ])
                     ])
@@ -43796,16 +44398,14 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $29.99\n                                    "
-                          )
+                          _vm._v("$29.99")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -43860,9 +44460,7 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $14.99\n                                    "
-                          )
+                          _vm._v("$14.99")
                         ])
                       ])
                     ]),
@@ -43873,13 +44471,13 @@ var staticRenderFns = [
                         { attrs: { href: "app-ecommerce-details.html" } },
                         [
                           _vm._v(
-                            "\n                                    Philips - hue A19 Smart LED Light Bulb - White Only\n                                "
+                            "\n                  Philips - hue A19 Smart LED Light Bulb - White Only\n                "
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c("p", { staticClass: "item-company" }, [
-                        _vm._v("By "),
+                        _vm._v("\n                  By "),
                         _c("span", { staticClass: "company-name" }, [
                           _vm._v("Philips")
                         ])
@@ -43889,7 +44487,7 @@ var staticRenderFns = [
                     _c("div", [
                       _c("p", { staticClass: "item-description" }, [
                         _vm._v(
-                          "\n                                    Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can easily dim this light\n                                    bulb and set timers and alarms using your smartphone or tablet. Plus, LED technology offers lasting\n                                    illumination while using minimal energy.Get lighting that's as smart as you are.\n                                "
+                          "\n                  Philips hue A19 Smart LED Light Bulb: Get lighting that's as\n                  smart as you are. You can easily dim this light bulb and set\n                  timers and alarms using your smartphone or tablet. Plus, LED\n                  technology offers lasting illumination while using minimal\n                  energy.Get lighting that's as smart as you are.\n                "
                         )
                       ])
                     ])
@@ -43911,16 +44509,14 @@ var staticRenderFns = [
                       _vm._v(" "),
                       _c("div", { staticClass: "item-cost" }, [
                         _c("h6", { staticClass: "item-price" }, [
-                          _vm._v(
-                            "\n                                        $14.99\n                                    "
-                          )
+                          _vm._v("$14.99")
                         ])
                       ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "wishlist" }, [
                       _c("i", { staticClass: "fa fa-heart-o mr-25" }),
-                      _vm._v(" Wishlist\n                            ")
+                      _vm._v(" Wishlist\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "cart" }, [
@@ -44538,9 +45134,7 @@ var staticRenderFns = [
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "ml-50" }, [
-                              _vm._v(
-                                "Video Games\n                                        "
-                              )
+                              _vm._v("Video Games ")
                             ])
                           ]
                         )
@@ -44632,11 +45226,7 @@ var staticRenderFns = [
                                     )
                                   ]),
                                   _vm._v(" "),
-                                  _c("span", {}, [
-                                    _vm._v(
-                                      "\n                                                Samsung\n                                            "
-                                    )
-                                  ])
+                                  _c("span", {}, [_vm._v(" Samsung ")])
                                 ]
                               ),
                               _vm._v(" "),
@@ -44675,11 +45265,7 @@ var staticRenderFns = [
                                     )
                                   ]),
                                   _vm._v(" "),
-                                  _c("span", {}, [
-                                    _vm._v(
-                                      "\n                                                Metra\n                                            "
-                                    )
-                                  ])
+                                  _c("span", {}, [_vm._v(" Metra ")])
                                 ]
                               ),
                               _vm._v(" "),
@@ -45134,7 +45720,7 @@ var staticRenderFns = [
                           "ul",
                           {
                             staticClass:
-                              "unstyled-list list-inline ratings-list mb-0 "
+                              "unstyled-list list-inline ratings-list mb-0"
                           },
                           [
                             _c("li", { staticClass: "ratings-list-item" }, [
@@ -45182,7 +45768,9 @@ var staticRenderFns = [
                   _vm._v(" "),
                   _c("div", { attrs: { id: "clear-filters" } }, [
                     _c("button", { staticClass: "btn btn-block btn-primary" }, [
-                      _vm._v("CLEAR ALL FILTERS")
+                      _vm._v(
+                        "\n                CLEAR ALL FILTERS\n              "
+                      )
                     ])
                   ])
                 ])
@@ -45241,7 +45829,7 @@ var staticRenderFns = [
                     "aria-expanded": "false"
                   }
                 },
-                [_vm._v("\n                    Actions\n                ")]
+                [_vm._v("\n          Actions\n        ")]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "dropdown-menu" }, [
@@ -45702,7 +46290,9 @@ var staticRenderFns = [
                 _c("td"),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
-                  _vm._v("Beats by Dr. Dre - 3' USB-to-Micro USB Cable")
+                  _vm._v(
+                    "\n            Beats by Dr. Dre - 3' USB-to-Micro USB Cable\n          "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-category" }, [
@@ -45751,7 +46341,9 @@ var staticRenderFns = [
                 _c("td"),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
-                  _vm._v("Beats by Dr. Dre - Bike Mount for Pill Speakers")
+                  _vm._v(
+                    "\n            Beats by Dr. Dre - Bike Mount for Pill Speakers\n          "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-category" }, [
@@ -45800,7 +46392,9 @@ var staticRenderFns = [
                 _c("td"),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
-                  _vm._v("Bose® - SoundLink® Color Bluetooth Speaker")
+                  _vm._v(
+                    "\n            Bose® - SoundLink® Color Bluetooth Speaker\n          "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-category" }, [
@@ -45947,7 +46541,9 @@ var staticRenderFns = [
                 _c("td"),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
-                  _vm._v("Definitive Technology - Wireless Speaker")
+                  _vm._v(
+                    "\n            Definitive Technology - Wireless Speaker\n          "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-category" }, [
@@ -45997,7 +46593,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
                   _vm._v(
-                    "Fitbit - Charge HR Activity Tracker + Heart Rate (Large)"
+                    "\n            Fitbit - Charge HR Activity Tracker + Heart Rate (Large)\n          "
                   )
                 ]),
                 _vm._v(" "),
@@ -46145,7 +46741,9 @@ var staticRenderFns = [
                 _c("td"),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
-                  _vm._v("Fitbit - Charge Wireless Activity Tracker (Large)")
+                  _vm._v(
+                    "\n            Fitbit - Charge Wireless Activity Tracker (Large)\n          "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-category" }, [
@@ -46341,7 +46939,9 @@ var staticRenderFns = [
                 _c("td"),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-name" }, [
-                  _vm._v("Altec Lansing - Mini H2O Bluetooth Speaker")
+                  _vm._v(
+                    "\n            Altec Lansing - Mini H2O Bluetooth Speaker\n          "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "product-category" }, [
@@ -46602,7 +47202,7 @@ var staticRenderFns = [
                             staticClass:
                               "fa fa-circle font-small-3 text-success mr-50"
                           }),
-                          _vm._v("Moving")
+                          _vm._v("Moving\n                  ")
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "p-1" }, [
@@ -46610,7 +47210,7 @@ var staticRenderFns = [
                             "ul",
                             {
                               staticClass:
-                                "list-unstyled users-list m-0  d-flex align-items-center"
+                                "list-unstyled users-list m-0 d-flex align-items-center"
                             },
                             [
                               _c(
@@ -46755,7 +47355,7 @@ var staticRenderFns = [
                             staticClass:
                               "fa fa-circle font-small-3 text-warning mr-50"
                           }),
-                          _vm._v("Pending")
+                          _vm._v("Pending\n                  ")
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "p-1" }, [
@@ -46763,7 +47363,7 @@ var staticRenderFns = [
                             "ul",
                             {
                               staticClass:
-                                "list-unstyled users-list m-0  d-flex align-items-center"
+                                "list-unstyled users-list m-0 d-flex align-items-center"
                             },
                             [
                               _c(
@@ -46883,7 +47483,7 @@ var staticRenderFns = [
                             staticClass:
                               "fa fa-circle font-small-3 text-success mr-50"
                           }),
-                          _vm._v("Moving")
+                          _vm._v("Moving\n                  ")
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "p-1" }, [
@@ -46891,7 +47491,7 @@ var staticRenderFns = [
                             "ul",
                             {
                               staticClass:
-                                "list-unstyled users-list m-0  d-flex align-items-center"
+                                "list-unstyled users-list m-0 d-flex align-items-center"
                             },
                             [
                               _c(
@@ -47061,7 +47661,7 @@ var staticRenderFns = [
                             staticClass:
                               "fa fa-circle font-small-3 text-danger mr-50"
                           }),
-                          _vm._v("Canceled")
+                          _vm._v("Canceled\n                  ")
                         ]),
                         _vm._v(" "),
                         _c("td", { staticClass: "p-1" }, [
@@ -47069,7 +47669,7 @@ var staticRenderFns = [
                             "ul",
                             {
                               staticClass:
-                                "list-unstyled users-list m-0  d-flex align-items-center"
+                                "list-unstyled users-list m-0 d-flex align-items-center"
                             },
                             [
                               _c(
@@ -47400,7 +48000,7 @@ var staticRenderFns = [
                               },
                               [
                                 _vm._v(
-                                  "\n                                        1 - 20 of 50\n                                    "
+                                  "\n                    1 - 20 of 50\n                  "
                                 )
                               ]
                             ),
@@ -47449,7 +48049,7 @@ var staticRenderFns = [
                           }),
                           _vm._v(" "),
                           _c("div", { staticClass: "action-btns" }, [
-                            _c("div", { staticClass: "btn-dropdown " }, [
+                            _c("div", { staticClass: "btn-dropdown" }, [
                               _c(
                                 "div",
                                 {
@@ -47471,7 +48071,7 @@ var staticRenderFns = [
                                     },
                                     [
                                       _vm._v(
-                                        "\n                                                    Actions\n                                                "
+                                        "\n                          Actions\n                        "
                                       )
                                     ]
                                   ),
@@ -64847,13 +65447,14 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 var Api = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: "http://127.0.0.1:8000" + "/api"
+  baseURL: process.env.MIX_APP_URL + "/api"
 });
 /* harmony default export */ __webpack_exports__["default"] = (Api);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -64896,13 +65497,14 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 var Http = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: "http://127.0.0.1:8000"
+  baseURL: process.env.MIX_APP_URL
 });
 /* harmony default export */ __webpack_exports__["default"] = (Http);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -67262,8 +67864,8 @@ var actions = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\User\Desktop\Websites\cyberr\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\User\Desktop\Websites\cyberr\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Personal Projects\cyberr\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Personal Projects\cyberr\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

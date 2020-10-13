@@ -28,12 +28,11 @@
 
 <script>
 export default {
-  components: {}
+  components: {},
 };
 </script>
 
 <style>
-
 .gallery-wrap .img-small-wrap .item-gallery {
   width: 60px;
   height: 60px;

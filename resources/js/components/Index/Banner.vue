@@ -14,7 +14,7 @@
                 aria-controls="home"
               >
                 Laptops
-                <i class="fa fa-laptop" style="float:right"></i>
+                <i class="fa fa-laptop" style="float: right"></i>
               </a>
               <a
                 class="list-group-item list-group-item-action"
@@ -25,7 +25,10 @@
                 aria-controls="profile"
               >
                 Mobiles
-                <i class="fa fa-mobile-alt" style="float:right; padding-right:4px;"></i>
+                <i
+                  class="fa fa-mobile-alt"
+                  style="float: right; padding-right: 4px"
+                ></i>
               </a>
               <a
                 class="list-group-item list-group-item-action"
@@ -36,7 +39,10 @@
                 aria-controls="messages"
               >
                 Tablet
-                <i class="fa fa-tablet-alt" style="float:right; padding-right:3px;"></i>
+                <i
+                  class="fa fa-tablet-alt"
+                  style="float: right; padding-right: 3px"
+                ></i>
               </a>
               <a
                 class="list-group-item list-group-item-action"
@@ -47,7 +53,7 @@
                 aria-controls="settings"
               >
                 Desktop
-                <i class="fa fa-desktop" style="float:right"></i>
+                <i class="fa fa-desktop" style="float: right"></i>
               </a>
             </div>
           </div>

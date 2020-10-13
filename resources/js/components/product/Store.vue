@@ -5,9 +5,7 @@
         <b>Store Details</b>
       </div>
       <div class="card-body">
-          <div class="col-12">
-              
-          </div>
+        <div class="col-12"></div>
       </div>
     </div>
   </div>
@@ -15,7 +13,7 @@
 
 <script>
 export default {
-  components: {}
+  components: {},
 };
 </script>
 
